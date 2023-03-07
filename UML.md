@@ -1,4 +1,4 @@
-# Programmablaufplan (PAP)
+# Programmablaufplan (PAP) [^1]
 - Wird auch als Flussdiagramm (Flowchart) oder Programmsturkturplan bezeichnet
 Die Grafische Darstellung eines Algorithmus in einem Programm und beschreibt die
 - Folge von Operationen zur Lösung einer Aufgabe
@@ -13,7 +13,7 @@ Die Grafische Darstellung eines Algorithmus in einem Programm und beschreibt die
 - Parallelogramm: Ein- und Ausgabe
 ---
 <br></br>
-# Klassendiagramm
+# Klassendiagramm [^2]
 Ein Klassendiagramm ist ein UML-Diagrammtyp, der ein System beschreibt, indem er die verschiedene Objekttypen innerhalb eines Systems und die Arten der statischen Beziehungen, die zwischen ihnen bestehen, visualisiert. Sie veranschaulicht auch die Operation und Attribute der Klassen.
 
 ## Klasse
@@ -32,7 +32,7 @@ Ein Klassendiagramm ist ein UML-Diagrammtyp, der ein System beschreibt, indem er
 <br/>
 - Das Paketsymbol wird verwendet, um Klassen oder Schnittstellen zu gruppieren, die entweder von ähnlicher Art oder verwandt sind. Die Gruppierung dieser Entwurfselemente mit Hilfe der Gehäusesymbole verbessert die Lesbarkeit des Diagramms.
 
-## Beziehungen
+## Beziehungen [^3]
 <img title="Relations" src="./img/UML-Klassendiagramm/Class-Diagram-Relations.png"></img>
 <br/>
 
@@ -78,3 +78,7 @@ Autos und Schiffe sind Fahrzeuge, und das Fahrzeug ist nur ein abstraktes Konzep
 <br/>
 
 ### Abhängigkeit - Dependency
+
+[^1]: https://de.wikipedia.org/wiki/Programmablaufplan
+[^2]: https://creately.com/blog/de/diagramme/uml-klassendiagramm/
+[^3]: https://blog.visual-paradigm.com/de/what-are-the-six-types-of-relationships-in-uml-class-diagrams/
