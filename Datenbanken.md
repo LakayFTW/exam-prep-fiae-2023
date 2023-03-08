@@ -9,6 +9,14 @@
       - [Änderungs-Anomalie](#änderungs-anomalie)
       - [Lösch-Anomalie](#lösch-anomalie)
   - [2. Normalform](#2-normalform)
+    - [Erläuterung](#erläuterung-1)
+    - [Beispiel](#beispiel-1)
+    - [Mögliche Fehler](#mögliche-fehler-1)
+      - [Änderungs-Anomalie](#änderungs-anomalie-1)
+  - [3. Normalform](#3-normalform)
+    - [Erläuterung](#erläuterung-2)
+    - [Beispiel](#beispiel-2)
+    - [Mögliche Fehler](#mögliche-fehler-2)
 
 ---
 <br>
@@ -61,6 +69,37 @@ Das Ergebnis könnte so aussehen:
 - Einige Daten könnten verloren gehen wenn ein Tupel gelöscht wird.
 
 ## 2. Normalform
+### Erläuterung
+Eine Relation ist dann in der zweiten Normalform wenn die erste Normalform erreicht wurde und kein Nichtprimärattribut funktionial von einer echten Teilmenge eines Schlüsselkandidaten abhängt.
+
+### Beispiel
+Wir müssen die Tabelle aus dem Beispiel der ersten Normalform aufteilen, da weder der Name des Studenten noch die Bezeichnung des Prüfungsfach voll vom Pirmärschlüssel abhängig sind. Das Attribut Note ist voll vom Primäschlüssel abhängig und bleibt in der Relation.<br>
+So ergibt sich folgende Realtionen in der zweiten Normalform.
+
+<br>
+<img title="2. Normalform" src="./img/Normalformen/normalisierung_2nf_bsp.png">
+<br>
+
+In allen entstandenen Relationen sind alle Nicht-Primärschlüssel-Attribute voll funktional abhängig von den jeweiligen Primärschlüsseln.
+
+### Mögliche Fehler
+#### Änderungs-Anomalie
+4. Wenn der Name des Professors sich ändert, muss dies in allen Zeilen geschehen.
+
+## 3. Normalform
+### Erläuterung
+Eine Relation befindet sich in der dritten Normalform, wenn die zweite Normalform erfüllt ist und keine Abhängigkeiten der Nichtschlüssel-Attribute untereinander bestehen. Solche Abhängigkeiten bezeichnet man auch als __transitive__ Abhängigkeiten. Weiterhin müssen alle Nichtschlüssel voll funktional abhängig vom Schlüsselattribut sein.
+<br>
+
+### Beispiel
+Durch die Überführung in die zweite Normalform haben wir Redundanzen weitgehend beseitigt, jedoch fällt auf, dass das Attribut "ProfName" mehrmals vorkommt. obwohl mit ProfNr der Name des Professors schon gegeben wäre. Dies können wir mit der Überführung in die dritte Normalform beseitigen.
+
+<br>
+<img title="3. Normalform" src="./img/Normalformen/normalisierung_3nf_bsp.png">
+<br>
+
+### Mögliche Fehler
+Nun sind alle Anomalien / Redundanzen beseitigt.
 
 [^1]: https://de.wikipedia.org/wiki/Normalisierung_(Datenbank)#Normalformen
 [^2]: https://info-wsf.de/Normalformen/
