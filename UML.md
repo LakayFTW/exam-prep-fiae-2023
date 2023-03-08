@@ -14,6 +14,8 @@
     - [Abhängigkeit - Dependency](#abhängigkeit---dependency)
     - [Aggregation](#aggregation)
     - [Komposition - Composition](#komposition---composition)
+- [Entity-Relationship-Modell](#entity-relationship-modell)
+  - [Grundlegende Komponenten](#grundlegende-komponenten)
 
 ---
 <br>
@@ -139,6 +141,26 @@ Eine Person besteht aus einem Kopf und einem Körper. Beide sind unzertrennlich 
 <br>
 <img title="Komposition" src="./img/UML-Klassendiagramm/examples-relations/class-diagram-composition-example.png">
 
+---
+<br>
+
+# Entity-Relationship-Modell
+[^4]<br>
+Das Entity-Relationship-Modell - kurz ER-Modell oder ERM, dient dazu im Rahmen der semeantischen Datenmodellierung den in einem gegeben Kontext relevanten Ausschnitt der realen Welt zu bestimmen und darzustellen.
+
+## Grundlegende Komponenten
+- Entität (Entitiy): Typisierung gleichartiger Entitäten.
+  - BSP: Angestellter
+  - <img title="Entität" src="./img/ERM/Entity.png" height="40px">
+- Beziehung (Relationship): Verknüpfung / Zusammenhang zwischen zwei oder mehreren Entitäten.
+  - BSP: Angestellter __leitet__
+  - <img title="Relation" src="./img/ERM/Relation.png" height="40px">
+- Eigenschaft (attribute): Was über eine Entität (im Kontext) von Interesse ist. Diese Attribute Identifizieren.
+  - BSP: Name des Angestellten
+  - <img title="Attribut" src="./img/ERM/Attribute.png" height="40px">
+
+
 [^1]: https://de.wikipedia.org/wiki/Programmablaufplan
 [^2]: https://creately.com/blog/de/diagramme/uml-klassendiagramm/
 [^3]: https://blog.visual-paradigm.com/de/what-are-the-six-types-of-relationships-in-uml-class-diagrams/
+[^4]: https://de.wikipedia.org/wiki/Entity-Relationship-Modell
