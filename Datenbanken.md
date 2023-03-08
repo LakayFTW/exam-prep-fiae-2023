@@ -24,12 +24,12 @@
 # Normalformen
 [^2] [^1]<br>
 Zurzeit gebräuchliche Normalformen sind:
-- 1. Normalform (1NF)
-- 2. Nromalform (2NF)
-- 3. Normalform (3NF)
+- 1 Normalform (1NF)
+- 2 Nromalform (2NF)
+- 3 Normalform (3NF)
 - Boyce-Codd-Normalform (BCNF) [Wird hier nicht besprochen]
-- 4. Normalform (4NF) [Wird hier nicht besprochen]
-- 5. Normalform (5NF) [Wird hier nicht besprochen]
+- 4 Normalform (4NF) [Wird hier nicht besprochen]
+- 5 Normalform (5NF) [Wird hier nicht besprochen]
 
 ## 1. Normalform
 ### Erläuterung
