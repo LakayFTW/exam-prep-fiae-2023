@@ -9,6 +9,7 @@
 - [OOA (Object Oriented Analysis)](#ooa-object-oriented-analysis)
 - [OOD (Object Oriented Design)](#ood-object-oriented-design)
 - [OOP (Object Oriented Programming)](#oop-object-oriented-programming)
+- [SSO (Single-Sign-On)](#sso-single-sign-on)
 - [GP (Geschäftsprozesse)](#gp-geschäftsprozesse)
 - [BAB (Bietriebsablaufbogen)](#bab-bietriebsablaufbogen)
 - [EPK (Ereignisgesteuerte Prozessketten)](#epk-ereignisgesteuerte-prozessketten)
@@ -44,6 +45,8 @@
 # OOD (Object Oriented Design)
 
 # OOP (Object Oriented Programming)
+
+# SSO (Single-Sign-On)
 
 # GP (Geschäftsprozesse)
 - Zusammenhängende Folgen von Aktivitäten/Tätigkeiten, für die ein oder mehrere Inputs benötigt werden und die dann der Erreicherung von Unternehmenszielen dienen.
