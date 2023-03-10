@@ -102,12 +102,15 @@ IPv4 benutzt 32-Bit-Adressen. IPv4-Adressen werden üblicherweise dezimal in vie
 <br>
 
 # Docker
-[^6]<br>
+[^6] [^9]<br>
 Docker ist eine freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung.
 <br><br>
 
 Docker vereinfacht die Bereitstellung von Anwendungen, weil sich Container, die alle nötigen Pakete enthalten, leicht als Dateien transportieren und installieren lassen. Container gewährleisten die Trennung und Verwaltung der auf einem Rechner genutzten Ressourcen. Das umfasst laut Aussage der Entwickler: Code, Laufzeitmodul, Systemwerkzeuge, Systembibliotheken – alles was auf einem Rechner installiert werden kann.
 <br>
+
+<img title="Docker Architecture" src="./img/Docker/architecture.svg"><br>
+[^8]
 
 ## Grundlagen
 Docker basiert auf Linux-Techniken wie __Cgroups__ und __Namespaces__, um Container zu realisieren. Während anfänglich noch die LXC-Schnittstelle des Linux-Kernels verwendet wurde, haben die Docker-Entwickler mittlerweile eine eigene Programmierschnittstelle namens __libcontainer__ entwickelt, die auch anderen Projekten zur Verfügung steht.
@@ -168,7 +171,7 @@ Eine Registry, wie zum Beispiel __Docker Hub__ oder __Artifactory__, dient der V
 
 ### Installieren von Docker Engine
 1. "Update the package index:"
-    ```sh
+    ```sh 
     $ sudo apt-get-update
     ```
 2. "Install Docker Engine, containerd, and Docker Compose:"
@@ -190,3 +193,5 @@ Eine Registry, wie zum Beispiel __Docker Hub__ oder __Artifactory__, dient der V
 [^5]: https://de.wikipedia.org/wiki/IPv4
 [^6]: https://de.wikipedia.org/wiki/Docker_(Software)
 [^7]: https://docs.docker.com/engine/install/ubuntu/
+[^8]: https://docs.docker.com/assets/images/architecture.svg
+[^9]: https://docs.docker.com/get-started/overview/
