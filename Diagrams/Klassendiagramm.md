@@ -1,8 +1,5 @@
 # Table of Content
 - [Table of Content](#table-of-content)
-- [Programmablaufplan (PAP)](#programmablaufplan-pap)
-  - [Elemente](#elemente)
-  - [](#)
 - [Klassendiagramm](#klassendiagramm)
   - [Klasse](#klasse)
   - [Schnittstelle](#schnittstelle)
@@ -14,59 +11,30 @@
     - [Abhängigkeit - Dependency](#abhängigkeit---dependency)
     - [Aggregation](#aggregation)
     - [Komposition - Composition](#komposition---composition)
-- [Entity-Relationship-Modell](#entity-relationship-modell)
-  - [Grundlegende Komponenten](#grundlegende-komponenten)
-
----
-<br>
-
-# Programmablaufplan (PAP)
-[^1]
-- Wird auch als Flussdiagramm (Flowchart) oder Programmsturkturplan bezeichnet
-Die Grafische Darstellung eines Algorithmus in einem Programm und beschreibt die
-- Folge von Operationen zur Lösung einer Aufgabe
-- DIN 66001 für Datenflusspläne
-
-## Elemente
-- Kreis; Oval/Rechtek abgerundet: Terminator<br>
-<img title="Start/Stop" src="./img/pap/Start-Stop_(PAP).png">
-- Pfeil, Linie: Verbindung zum nächsten Element<br>
-<img title="Connection" src="./img/pap/Connection(PAP).png">
-- Rechteck: Operation (Tätigkeit)<br>
-<img title="Operation" src="./img/pap/Operation_(PAP).png">
-- Rechteck mit doppelten, vertikalen Linien: Unterpogramm ausführen<br>
-<img title="Sub-Program" src="./img/pap/Sub-Program_(PAP).png">
-- Raute: Verzweigung / Entscheidung</br>
-<img title="Branching" src="./img/pap/Branching_(PAP).png">
-- Parallelogramm: Ein- und Ausgabe<br>
-<img title="In-Out" src="./img/pap/In-Out_(PAP).png">
----
-
-<br>
 
 # Klassendiagramm
-[^2]<br>
+[^1]<br>
 Ein Klassendiagramm ist ein UML-Diagrammtyp, der ein System beschreibt, indem er die verschiedene Objekttypen innerhalb eines Systems und die Arten der statischen Beziehungen, die zwischen ihnen bestehen, visualisiert. Sie veranschaulicht auch die Operation und Attribute der Klassen.
 
 ## Klasse
-<img title="Klassendiagramm" src="./img/UML-Klassendiagramm/Class-Notation.png">
+<img title="Klassendiagramm" src="../img/UML-Klassendiagramm/Class-Notation.png">
 <br>
 - Klassen stellen die zentralen Objekte in einem System dar. Sie wird durch ein Rechteck mit bis zu 3 Fächern dargestellt.
 - Die erste zeigt den Namen der Klasse, während die mittlere die Attribute der Klasse zeigt, die die Merkmale der Objekte sind. Die untere listet die Operationen der Klasse auf, die das Verhalten der Klasse darstellt.
 
 ## Schnittstelle
-<img title="Interface" src="./img/UML-Klassendiagramm/Interface-notation.png">
+<img title="Interface" src="../img/UML-Klassendiagramm/Interface-notation.png">
 <br>
 - Das Schnittstellensymbol in Klassendiagrammen zeigt eine Reihe von Operationen an, die die Verantwortung einer Klasse detailliert beschreiben würde.
 
 ## Paket
-<img title="Package" src="./img/UML-Klassendiagramm/Package.png">
+<img title="Package" src="../img/UML-Klassendiagramm/Package.png">
 <br>
 - Das Paketsymbol wird verwendet, um Klassen oder Schnittstellen zu gruppieren, die entweder von ähnlicher Art oder verwandt sind. Die Gruppierung dieser Entwurfselemente mit Hilfe der Gehäusesymbole verbessert die Lesbarkeit des Diagramms.
 
 ## Beziehungen
-[^3]<br>
-<img title="Relations" src="./img/UML-Klassendiagramm/Class-Diagram-Relations.png">
+[^2]<br>
+<img title="Relations" src="../img/UML-Klassendiagramm/Class-Diagram-Relations.png">
 <br>
 
 ### Assoziation - Association
@@ -80,7 +48,7 @@ Ein Klassendiagramm ist ein UML-Diagrammtyp, der ein System beschreibt, indem er
 __BSP:__<br>
 Autos und Fahrer, ein Auto entspricht einem bestimmten Fahrer und ein Fahrer kann mehrere Autos fahren.
 <br>
-<img title="Assoziation" src="./img/UML-Klassendiagramm/examples-relations/class-diagram-association-example.png" >
+<img title="Assoziation" src="../img/UML-Klassendiagramm/examples-relations/class-diagram-association-example.png" >
 <br>
 - In UML-Diagrammen können bidirektionale Assoziationen zwei Pfeile oder keine Pfeile haben und unidirektionale Assoziationen oder Selbstassoziationen haben einen Pfeil.
 - In einer Multiplizitätsbeziehung können Sie der zugehörigen Zeile direkt eine Zahl hinzufügen, um die Anzahl der Objekte in der entpsrechenden Klasse anzugeben
@@ -97,7 +65,7 @@ Autos und Fahrer, ein Auto entspricht einem bestimmten Fahrer und ein Fahrer kan
 __BSP:__<br>
 Busse, Taxen und Autos sind Autos, sie alle haben Namen und sie können alle auf der Straße sein.
 <br>
-<img title="Vererbung" src="./img/UML-Klassendiagramm/examples-relations/class-diagram-inheritance-example.png">
+<img title="Vererbung" src="../img/UML-Klassendiagramm/examples-relations/class-diagram-inheritance-example.png">
 <br>
 
 ### Realisierung / Umsetzung - Realization / Implementation
@@ -107,7 +75,7 @@ Busse, Taxen und Autos sind Autos, sie alle haben Namen und sie können alle auf
 __BSP:__<br>
 Autos und Schiffe sind Fahrzeuge, und das Fahrzeug ist nur ein abstraktes Konzept eines mobilen Werkzeugs, und das Schiff und das Fahrzeug realisieren die spezifischen mobilen Funktionen.
 <br>
-<img title="Realisierung-Umsetzung" src="./img/UML-Klassendiagramm/examples-relations/class-diagram-realization-example.png">
+<img title="Realisierung-Umsetzung" src="../img/UML-Klassendiagramm/examples-relations/class-diagram-realization-example.png">
 <br>
 
 ### Abhängigkeit - Dependency
@@ -118,7 +86,7 @@ In den meisten Fällen spiegeln sich Abhängigkeiten in Methoden einer Klasse wi
 __BSP:__<br>
 Das Auto ist auf Benzin angewiesen. Wenn kein Benzin vorhanden ist, kann das Auto nicht fahren.
 <br>
-<img title="Abhängigkeit" src="./img/UML-Klassendiagramm/examples-relations/class-diagram-dependency-example.png">
+<img title="Abhängigkeit" src="../img/UML-Klassendiagramm/examples-relations/class-diagram-dependency-example.png">
 <br>
 
 ### Aggregation
@@ -129,7 +97,7 @@ Das Auto ist auf Benzin angewiesen. Wenn kein Benzin vorhanden ist, kann das Aut
 __BSP:__<br>
 Busfahrer und Arbeitskleidung sind Teil der Gesamtbeziehung, aber sie können auch unabhängig voneinander existieren. Die gegeben Arbeitskleidung kann vom Busfahrer getragen werden, es kann aber auch was anders getragen werden.
 <br>
-<img title="Aggregation" src="./img/UML-Klassendiagramm/examples-relations/class-diagram-aggregation-example.png">
+<img title="Aggregation" src="../img/UML-Klassendiagramm/examples-relations/class-diagram-aggregation-example.png">
 <br>
 
 ### Komposition - Composition
@@ -139,28 +107,7 @@ Busfahrer und Arbeitskleidung sind Teil der Gesamtbeziehung, aber sie können au
 __BSP:__<br>
 Eine Person besteht aus einem Kopf und einem Körper. Beide sind unzertrennlich und koexistieren.
 <br>
-<img title="Komposition" src="./img/UML-Klassendiagramm/examples-relations/class-diagram-composition-example.png">
+<img title="Komposition" src="../img/UML-Klassendiagramm/examples-relations/class-diagram-composition-example.png">
 
----
-<br>
-
-# Entity-Relationship-Modell
-[^4]<br>
-Das Entity-Relationship-Modell - kurz ER-Modell oder ERM, dient dazu im Rahmen der semeantischen Datenmodellierung den in einem gegeben Kontext relevanten Ausschnitt der realen Welt zu bestimmen und darzustellen.
-
-## Grundlegende Komponenten
-- Entität (Entitiy): Typisierung gleichartiger Entitäten.
-  - BSP: Angestellter
-  - <img title="Entität" src="./img/ERM/Entity.PNG" height="40px">
-- Beziehung (Relationship): Verknüpfung / Zusammenhang zwischen zwei oder mehreren Entitäten.
-  - BSP: Angestellter __leitet__
-  - <img title="Relation" src="./img/ERM/Relation.PNG" height="40px">
-- Eigenschaft (attribute): Was über eine Entität (im Kontext) von Interesse ist. Diese Attribute Identifizieren.
-  - BSP: Name des Angestellten
-  - <img title="Attribut" src="./img/ERM/Attribute.PNG" height="40px">
-
-
-[^1]: https://de.wikipedia.org/wiki/Programmablaufplan
-[^2]: https://creately.com/blog/de/diagramme/uml-klassendiagramm/
-[^3]: https://blog.visual-paradigm.com/de/what-are-the-six-types-of-relationships-in-uml-class-diagrams/
-[^4]: https://de.wikipedia.org/wiki/Entity-Relationship-Modell
+[^1]: https://creately.com/blog/de/diagramme/uml-klassendiagramm/
+[^2]: https://blog.visual-paradigm.com/de/what-are-the-six-types-of-relationships-in-uml-class-diagrams/

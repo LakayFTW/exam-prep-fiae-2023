@@ -8,6 +8,16 @@ Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 - [It Schutz und Sicherheit](It-Schutz-Sicherheit.md)
 - [UML](UML.md)
 - [Elektrotechnik](Elektrotechnik.md)
+- [Diagrams](/Diagrams/)
+  - [Nassi-Shneidermann-Diagram](Diagrams/Nassi-Shneiderman-Diagram.md)
+  - [Programmablaufplan](Diagrams/Programmablaufplan.md)
+  - [Klassendiagramm](Diagrams/Klassendiagramm.md)
+  - [Entity-Relationship-Modell](Diagrams/Entity-Relationship-Modell.md)
+  - [Zustandsdiagramm]
+  - [Objektdiagramm]
+  - [Use-Case-Diagramm]
+  - [Sequenzdiagramm]
+  - [Aktivitätsdiagramm]
 
 ---
 ## Reminder
