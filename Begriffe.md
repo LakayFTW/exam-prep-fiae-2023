@@ -7,6 +7,7 @@
   - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
 - [Architektur](#architektur)
   - [CORBA (Common Object Request Broker Architecture)](#corba-common-object-request-broker-architecture)
+  - [MVC (Model-View-Controller)](#mvc-model-view-controller)
 - [Auszeichnungssprachen](#auszeichnungssprachen)
   - [DTD (Document Type Definition)](#dtd-document-type-definition)
 - [UML (Unified Modelling Language)](#uml-unified-modelling-language)
@@ -48,6 +49,8 @@
 # Architektur
 
 ## CORBA (Common Object Request Broker Architecture)
+
+## MVC (Model-View-Controller)
 <br>
 
 # Auszeichnungssprachen
