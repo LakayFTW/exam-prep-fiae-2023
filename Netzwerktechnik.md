@@ -140,11 +140,11 @@ Eine Registry, wie zum Beispiel __Docker Hub__ oder __Artifactory__, dient der V
 ### Setup vom Repository
 1. "Update the __apt__ package index and install packages to allow apt to use a repository over HTTPS:"
 
-    ```
+    ```sh
     $ sudo apt update
     ```
 
-    ```
+    ```sh
     $ sudo apt-get install \
      ca-certificates \
      curl \
@@ -154,13 +154,13 @@ Eine Registry, wie zum Beispiel __Docker Hub__ oder __Artifactory__, dient der V
 
 2. "Add Docker’s official GPG key:"
 
-    ```
+    ```sh
     $ sudo mkdir -m 0755 -p /etc/apt/keyrings
     $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
     ```
 
 3. "Use the following command to set up the repository:"
-    ```
+    ```sh
     $ echo \
      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
@@ -168,16 +168,16 @@ Eine Registry, wie zum Beispiel __Docker Hub__ oder __Artifactory__, dient der V
 
 ### Installieren von Docker Engine
 1. "Update the package index:"
-    ```
+    ```sh
     $ sudo apt-get-update
     ```
 2. "Install Docker Engine, containerd, and Docker Compose:"
-    ```
+    ```sh
     $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     ```
 
 3. "Verify that the Docker Engine is successful by running `hello-world` image:"
-    ```
+    ```sh
     $ sudo docker run hello-world
     ```
 
