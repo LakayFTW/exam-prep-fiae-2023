@@ -11,8 +11,10 @@ Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 
 ---
 ## Reminder
-Der Inhalt stellt kein offizielles Dokument weder eine offizielle Hilfestellung dar. Keine Haftung auf Fehler oder falschinformationen. <br>
-Quellenangaben fehlen momentan noch, da ich da am Anfang nicht dran gedacht habe. Ich versuche alles so gut wie möglich einzutragen.
+Der Inhalt stellt kein offizielles Dokument weder eine offizielle Hilfestellung dar. Keine Haftung auf Fehler oder falschinformationen.
+
+## Quellen
+Die Quellen sind jeweils per Fußnote referenziert. Die zugehörigen Quellen sind unter den Überschriften oder den Bildern direkt zu finden.
 
 ## Contribution
 Stell doch 'nen Pull-Request wenn du was ergänzen oder Korrigieren möchtest.
