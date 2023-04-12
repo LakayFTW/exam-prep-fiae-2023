@@ -14,7 +14,7 @@ Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
   - [Entity-Relationship-Modell](Diagrams/Entity-Relationship-Modell.md)
   - [Zustandsdiagramm]
   - [Objektdiagramm]
-  - [Use-Case-Diagramm]
+  - [Use-Case-Diagramm](Diagrams/Use-Case-Diagramm.md)
   - [Sequenzdiagramm]
   - [Aktivitätsdiagramm]
 
