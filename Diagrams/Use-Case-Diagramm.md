@@ -18,6 +18,8 @@
 
 # Use-Case Diagramm
 
+[^1]
+
 Das Use-Case DIagramm wird auch Anwendungsfalldiagramm bezeichnet und ist eine der Diagrammarten der Unified Modelling Language (UML). Es stellt Anwendungsfälle und Akteure mit ihren jeweiligen Abhängigkeiten und Beziehungen dar.
 
 ## Keywords
@@ -93,3 +95,5 @@ Extend-Beziehung mit extension point, wobei Anwendungsfall A den Anwendungsfall 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Uml-UseCase-Anwendungsfall2.svg/1920px-Uml-UseCase-Anwendungsfall2.svg.png" width="150">
 
 Anwendungsfall mit extension point.
+
+[^1]: https://de.wikipedia.org/wiki/Anwendungsfalldiagramm
