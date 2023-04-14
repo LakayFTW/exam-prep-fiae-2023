@@ -17,6 +17,10 @@
     - [Erläuterung](#erläuterung-2)
     - [Beispiel](#beispiel-2)
     - [Mögliche Fehler](#mögliche-fehler-2)
+- [Beziehungen](#beziehungen)
+  - [1:1 Beziehung](#11-beziehung)
+  - [1:n Beziehung](#1n-beziehung)
+  - [n:m Beziehung](#nm-beziehung)
 
 ---
 <br>
@@ -39,7 +43,9 @@ Das heißt, dass pro Datenfeld nur maximal ein Wert enthalten sein darf.
 ### Beispiel
 __0. Normalform__
 <br>
-<img title="0 Normalform" src="./img/Normalformen/normalisierung_0nf_bsp.png">
+<a href="https://info-wsf.de/Normalformen/">
+  <img title="0 Normalform" src="./img/Normalformen/normalisierung_0nf_bsp.png">
+</a>
 <br>
 Im oberen Beispiel werden mehrere Daten in einem Datenfeld gespeichert. Dies wird auch die 0. Normalform oder NF² (Non-First-Normal-Form) genannt.<br>
 Datensätze aus dieser Tabelle können hier nicht einzelnd entnommen werden. Möchte man z.B. PrüfFachNr von Meier bekommen, bekommt man "10", "12" und "16".
@@ -52,7 +58,9 @@ Es gibt zwei Arten Mehrfachattribute zu beseitigen:
 
 Das Ergebnis könnte so aussehen:
 <br>
-<img title="1. Normalform" src="./img/Normalformen/normalisierung_1nf_bsp.png">
+<a href="https://info-wsf.de/Normalformen/">
+  <img title="1. Normalform" src="./img/Normalformen/normalisierung_1nf_bsp.png">
+</a>
 <br>
 
 ### Mögliche Fehler
@@ -77,7 +85,9 @@ Wir müssen die Tabelle aus dem Beispiel der ersten Normalform aufteilen, da wed
 So ergibt sich folgende Realtionen in der zweiten Normalform.
 
 <br>
-<img title="2. Normalform" src="./img/Normalformen/normalisierung_2nf_bsp.png">
+<a href="https://info-wsf.de/Normalformen/">
+  <img title="2. Normalform" src="./img/Normalformen/normalisierung_2nf_bsp.png">
+</a>
 <br>
 
 In allen entstandenen Relationen sind alle Nicht-Primärschlüssel-Attribute voll funktional abhängig von den jeweiligen Primärschlüsseln.
@@ -95,11 +105,32 @@ Eine Relation befindet sich in der dritten Normalform, wenn die zweite Normalfor
 Durch die Überführung in die zweite Normalform haben wir Redundanzen weitgehend beseitigt, jedoch fällt auf, dass das Attribut "ProfName" mehrmals vorkommt. obwohl mit ProfNr der Name des Professors schon gegeben wäre. Dies können wir mit der Überführung in die dritte Normalform beseitigen.
 
 <br>
-<img title="3. Normalform" src="./img/Normalformen/normalisierung_3nf_bsp.png">
+<a href="https://info-wsf.de/Normalformen/">
+  <img title="3. Normalform" src="./img/Normalformen/normalisierung_3nf_bsp.png">
+</a> 
 <br>
 
 ### Mögliche Fehler
 Nun sind alle Anomalien / Redundanzen beseitigt.
 
+# Beziehungen
+[^3]
+## 1:1 Beziehung
+In einer **"eins zu eins"-Beziehung in relationalen Datenbanken** ist jeder Datensatz in Tabelle A genau einem Datensatz in Tabelle B zugeordnet und umgekehrt. Diese Art von Beziehung sollte in der Modellierung vermieden werden, weil die meisten Informationen, die auf diese Weise in Beziehung stehen, sich in einer Tabelle befinden können. Eine 1:1-Beziehung verwendet man nur, um eine Tabelle aufgrund ihrer Komplexität zu teilen oder um einen Teil der Tabelle aus Gründen der Zugriffsrechte zu isolieren.
+
+<img title="1:1" src="./img/ERM/OneToOne.png">
+
+## 1:n Beziehung
+Eine **"eins zu viele"-Beziehung in relationalen Datenbanken** ist der häufigste Beziehungstyp in einer Datenbank. In einer **1:n-Beziehung** können einem Datensatz in Tabelle A mehrere passende Datensätze in Tabelle B zugeordnet sein, aber einem Datensatz in Tabelle B ist nie mehr als ein Datensatz in Tabelle A zugeordnet.
+
+<img title="1:n" src="./img/ERM/OneToMany.png">
+
+## n:m Beziehung
+Bei **"viele zu viele"-Beziehungen in relationalen Datenbanken** können jedem Datenstz in Tabelle A mehrere passende Datensätze in Tabelle B zugeordnet sein und umgekehrt. Diese Beziehung können nur über eine dritte Tabelle, eine Verbindungstabelle C, realisiert werden. Die Verbindungstabelle C enthält in der Regel nur die Fremdschlüssel der beiden anderen Tabellen (A/B). Der Primärschlüssel der Verbindungstabelle wird aus diesen beiden Fremschlüsseln gebildet. Daraus folgt das eine m:n Beziehung in Wirklichkeit zwei 1:n Beziehungen sind.
+
+<img title="m:n" src="./img/ERM/ManyToMany.png">
+
+
 [^1]: https://de.wikipedia.org/wiki/Normalisierung_(Datenbank)#Normalformen
 [^2]: https://info-wsf.de/Normalformen/
+[^3]: https://www.datenbanken-verstehen.de/datenmodellierung/beziehungen-datenbanken/
