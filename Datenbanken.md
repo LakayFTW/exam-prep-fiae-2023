@@ -36,6 +36,9 @@
     - [Gruppieren von Aggregat-Funktionen (GROUP BY)](#gruppieren-von-aggregat-funktionen-group-by)
     - [Zusammenfassung eines SELECT](#zusammenfassung-eines-select)
   - [INSERT-Abfragen (Einfügen von Datensätzen)](#insert-abfragen-einfügen-von-datensätzen)
+  - [Ändern von Datensätzen (UPDATE)](#ändern-von-datensätzen-update)
+  - [Löschen von Datensätzen (DELETE)](#löschen-von-datensätzen-delete)
+  - [SQL-Datentypen](#sql-datentypen)
 
 ---
 <br>
@@ -369,6 +372,53 @@ Bemerkung: `COUNT(Professor.PersNr)` oder `COUNT(*)` wären falsch (`NULL`-Werte
 ```sql
 INSERT INTO Vorlesung (VorlNr, Titel, PersNr) VALUES (1000, 'Softwareentwicklung 1', 12);
 ```
+
+## Ändern von Datensätzen (UPDATE)
+
+```sql
+UPDATE Vorlesung SET VorlNr = VorlNr + 1000, PersNr = 20 WHERE PersNr = 15;
+```
+
+ändert alle Datensätze, für die PersNr den Wert 15 hat. Der Wert von `VorlNr` wird um 1000 erhöht und der Wert von PersNr auf 20 gesetzt.
+
+## Löschen von Datensätzen (DELETE)
+
+```sql
+DELETE FROM Vorlesung WHERE PersNr = 12;
+```
+
+löscht alle Datensätze, für die PersNr den Wert 12 hat.
+
+## SQL-Datentypen
+
+- **INTEGER:**
+  - Ganze Zahl (positiv oder negativ), wobei je nach Zahl der verwendeten Bits Bezeichnungen wie `SMALINT`, `TINYINT` oder `BIGINT` verwendet werden.
+- **NUMERIC(n, m) oder DECIMAL(n, m):**
+  - Festkommazahl (positiv oder negativ) mit insgesamt n Stellen, davon m Nachkommastellen.
+- **FLOAT(m):**
+  - Gleitkommazahl (positiv oder negativ) mit maximal m Nachkommastellen
+- **REAL:**
+  - Gleitkommazahl (positiv oder negativ). Die Genauigkeit für diesen Datentyp ist jeweils vom Datenbanksystem definiert.
+- **DOUBLE oder DOUBLE PRECISION:**
+  - Gleitkommazahl (positiv oder negativ). Die Genauigkeit ist jeweils vom Datenbanksystem definiert.
+- **FLOAT UND DOUBLE:**
+  - Sind für technisch-wissenschaftliche Werte geeignet und umfassen auch die Exponentialdarstellung. Wegen der Speicherung im Binärformat sind sie aber für Geldbeträge nicht geeignet, weil sich beispielsweise der Wert 0,10€ (entrspricht 10 Cent) nichte exakt abbilden lässt.
+- **CHARACTER (n) oder CHAR (n):**
+  - Zeichenkette Text mit n Zeichen.
+- **TEXT:**
+  - Zeichenkette (zumindest theoretisch) beliebiger Länge. In manchen Systemen synonym zu `CLOB`.
+- **DATE:**
+  - Datum ohne Zeitangabe
+- **TIME:**
+  - Zeitangabe (evtl. inklusive Zeitzone)
+- **TIMESTAMP:**
+  - Zeitstempel (umfasst Datum und Uhrzeit; evtl. inklusive Zeitzone), meistens mit Millisekundenauflösung, teilweise auch mikrosekundengenau.
+- **Boolean:**
+  - Boolesche Variable (kann die Werte true oder false oder NULL annehmen). Dieser Datentyp ist laut SQL:2003 optional und nicht alle DBMS stellen diesen Datentypen bereit.
+- **BLOB (n) oder BINARY LARGE OBJECT (n):**
+  - Binärdaten von maximal n Bytes Länge.
+- **CLOB (n) oder CHARACTER LARGE OBJECT (n):**
+  - Zeichenkette mit maximal n Zeichen Länge.
 
 [^1]: https://de.wikipedia.org/wiki/Normalisierung_(Datenbank)#Normalformen
 [^2]: https://info-wsf.de/Normalformen/
