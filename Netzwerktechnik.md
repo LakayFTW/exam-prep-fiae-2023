@@ -19,6 +19,19 @@
     - [Ethernet-Frame (In Reihenfolge links rechts)](#ethernet-frame-in-reihenfolge-links-rechts)
     - [MAC-Adressen](#mac-adressen)
     - [IPv4](#ipv4)
+- [DHCP](#dhcp)
+  - [Konzept](#konzept)
+  - [DHCP-Server](#dhcp-server)
+    - [Statische Zuordnung](#statische-zuordnung)
+      - [Vorteil](#vorteil)
+      - [Nachteil](#nachteil)
+    - [Automatische Zuordnung](#automatische-zuordnung)
+      - [Vorteil](#vorteil-1)
+      - [Nachteil](#nachteil-1)
+    - [Dynamische Zuordnung](#dynamische-zuordnung)
+  - [DHCP-Nachrichten](#dhcp-nachrichten)
+  - [Mögliche Zuweisung / Einstellung die ein DHCP dem Client zuweisen kann](#mögliche-zuweisung--einstellung-die-ein-dhcp-dem-client-zuweisen-kann)
+  - [Einsatzbereiche](#einsatzbereiche)
 - [Docker](#docker)
   - [Grundlagen](#grundlagen)
   - [Begriffe](#begriffe)
@@ -97,6 +110,84 @@ Eine MAC-Adresse (Media Access Control Address) ist ein eindeutiger Identifier w
 IP-Adressen können in dezimal, binär, oktal und hexadezimal sowohl in der Punkt-, als auch in der Nichtpunktnotation dargestellt werden
 
 IPv4 benutzt 32-Bit-Adressen. IPv4-Adressen werden üblicherweise dezimal in vier Blöcken geschrieben, zum Beispiel 207.142.131.235. Ein Block darf nicht mit einer 0 führen. Jedes Oktett representiert 8 Bit und somit ist eine Reichweite von 0 bis 255 möglich.
+
+---
+<br>
+
+# DHCP
+[^10]<br>
+Das Dynamic Host Protocol (DHCP) ist ein Kommunikationsprotokoll. Durch einen Server können Clients die richtige Netzwerkkonfiguration erhalten.
+DHCP ist eine Erweiterung des Bootstrap-Protokols (BOOTP)
+
+Die länge eines DHCP-Pakets beträgt 32 Bit.
+
+DHCP ist in RFC 2131 und 2132 definiert.
+
+## Konzept
+
+Mit DHCP können Clients ohne manuelle Konfiguration der Netzwerkschnittstelle in ein bestehendes Netz aufgenommen werden. Informationen wie IP-Adresse, Subnetzmaske, Gateway und Name Server (DNS) sowie mögliche weitere Einstellungen werden automatisch vergeben.
+
+## DHCP-Server
+Der DHCP-Server wird wie alle gängigen Netzwerkdienste als Hintergrundprozess (Dienst oder Daemon) gestartet und wartet über UDP-Port 67 auf Anfragen von Clients.
+
+Es gibt drei verschiedene Betriebsmodi eines DHCP-Servers:
+
+### Statische Zuordnung
+In diesem Modi lassen sich IP-Adressen einer bestimmten MAC-Adresse zuordnen. Die Adressen werden den MAC-Adressen auf unbestimmte Zeit zugeteilt. 
+
+#### Vorteil
+Eine statische zuordnung kann dann von Vorteil sein, wenn Netzwerkdienste über eine bestimmte Adresse erreichbar sein sollen. Auch Portfreigaben von einem Router zu einem Client benötigen in der Regel eine feste IP-Adresse.
+
+#### Nachteil
+Dabei kann das Problem aufteten, dass keine weiteren Clients dem Netzwerk zugeteilt werden können, da alle Adressen fest vergeben sind. Das kann unter manchen Sicherheitsaspekten problematisch sein.
+
+### Automatische Zuordnung
+Bei der Automatischen zuordnung werden am DHCP-Server Bereiche von IP-Adressen (range) definiert. Neue Cleints erhalten dabei IP-Adressen welche den MAC-Adressen zugeordnet werden, das wird in einer Tabelle festgehalten. Im unterschied zur dynamischen Zuordung werden automatische Adressen fest vergeben und nicht entfernt. 
+
+#### Vorteil
+Der Vorteil darin liegt, dass IP-Adressen immer dem gleichen Host zugeordnet sind und keinem anderem Host zugeordnet werden können.
+
+#### Nachteil
+Der Nachteil darin besteht, dass neue Clients keine IP-Adresse erhalten wenn der gesamte Adressbereich bereits vergeben ist, auch wenn IP-Adressen nicht mehr aktiv genutzt werden.
+
+### Dynamische Zuordnung
+Die dynamische Zurodnung gleicht der automatischen Zurodnung, allerdings wird in der dynamischen Konfiguration festgelegt wie lange eine bestimmte IP-Adresse an einem Client vergeben werden darf. Nach dem Ablauf meldet sich der Client beim Server und beantragt eine "Verlängerung". Sollte sich der Client nicht melden, dann wird eie IP-Adresse frei und kann einem anderen (oder auch wieder dem selben) Client neu vergeben werden. Diese Zeit nennt man "Lease-Time" (Leihdauer).
+
+Manche Konfigurationen vergeben IP-Adressen abhängig von der MAC-Adresse, das heißt auch nach langer abstinenz kann eine IP-Adresse wieder an den gleichen Client vergeben werden, solange diese Adresse noch nicht neu vergeben wurde.
+
+## DHCP-Nachrichten
+
+- DHCP**DISCOVER**:
+  - EIn Client ohne IP-Adresse sendet eine Broadcast-Anfrage nach Adress-Angeboten an alle DHCP-Server im lokalen Netz.
+- DHCP**OFFER**:
+  - Die DHCP-Server antworten mit entsprechenden Werten auf eine DHCP**DISCOVER**-Anfrage.
+- DHCP**REQUEST**:
+  - Der Client fordert eine der angebotenen IP-Adressen, weitere Daten sowie Verlängerung der Lease-Zeit von einem der antwortenden DHCP-Server.
+- DHCP**ACK**:
+  - Bestätigung des DHCP-Servers zu einer DHCP**REQUEST**-Anforderung durch den DHCP-Server.
+- DHCP**NAK**:
+  - Ablehnung einer DHCP**REQUEST**-Anforderung durch den DHCP-Server.
+- DHCP**DECLINE**:
+  - Ablehnung durch den Client, da die IP-Adresse schon verwendet wird.
+- DHCP**RELEASE**:
+  - Der Client gibt die eigene Konfiguration frei, damit die Parameter wieder für andere Clients zur Verfügung stehen.
+- DHCP**INFORM**:
+  - Anfrage eines Clients nach weiteren Konfigurationsparametern, z.B. weil der Client eine statische IP-Adresse benutzt.
+
+## Mögliche Zuweisung / Einstellung die ein DHCP dem Client zuweisen kann
+- IP-Adresse
+- Subnetzmaske/Netzwerkmaske
+- Default-Gateway
+- Nameserver
+- Proxy-Konfig via WPAD
+- Time- und NTP-Server
+- DNS-Server, DNS Context und DNS Tree
+- Sekundärer DNS-Server
+- WINS-Server (für MS Windows Clients)
+
+## Einsatzbereiche
+- große Netzwerke mit häufigen Änderungen
+- normale Anwender, die einfach nur eine Netzwerkverbindung haben wollen, ohne sich großartig mit Netzwerkkonfig auskennen zu müssen.
 
 ---
 <br>
@@ -195,3 +286,4 @@ Eine Registry, wie zum Beispiel __Docker Hub__ oder __Artifactory__, dient der V
 [^7]: https://docs.docker.com/engine/install/ubuntu/
 [^8]: https://docs.docker.com/assets/images/architecture.svg
 [^9]: https://docs.docker.com/get-started/overview/
+[^10]: https://de.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
