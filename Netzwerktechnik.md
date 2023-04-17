@@ -1,24 +1,33 @@
 # Table of Content
 - [Table of Content](#table-of-content)
-- [Netzwerk und Hardware](#netzwerk-und-hardware)
-  - [Software und Hardware Raid](#software-und-hardware-raid)
-    - [Hardware Raid Vorteile](#hardware-raid-vorteile)
-    - [Hardware Raid Nachteile](#hardware-raid-nachteile)
-    - [Software Raid Vorteile](#software-raid-vorteile)
-    - [Software Raid Nachteile](#software-raid-nachteile)
+- [Software und Hardware Raid](#software-und-hardware-raid)
+  - [Hardware Raid Vorteile](#hardware-raid-vorteile)
+  - [Hardware Raid Nachteile](#hardware-raid-nachteile)
+  - [Software Raid Vorteile](#software-raid-vorteile)
+  - [Software Raid Nachteile](#software-raid-nachteile)
+  - [Host Raid](#host-raid)
   - [Verschiedene Raid Stufen](#verschiedene-raid-stufen)
-    - [Raid 0: Striping - Beschleunigung ohne Redundanz](#raid-0-striping---beschleunigung-ohne-redundanz)
-    - [Raid 1: Mirroring - Spiegelung](#raid-1-mirroring---spiegelung)
-    - [Raid 5: Leistung + Parität, Block-Level Striping mit verteilter Paritätsinformation](#raid-5-leistung--parität-block-level-striping-mit-verteilter-paritätsinformation)
-    - [Raid 01: Verbundsraid (Raid 1 über mehrere Raid 0)](#raid-01-verbundsraid-raid-1-über-mehrere-raid-0)
-    - [Raid 10: Verbundsraid (Raid 0 über mehrere Raid 1)](#raid-10-verbundsraid-raid-0-über-mehrere-raid-1)
-  - [Speichersysteme](#speichersysteme)
-    - [SAN (Storage Area Network)](#san-storage-area-network)
-    - [NAS (Network Attached Storaged)](#nas-network-attached-storaged)
-  - [Ethernet und MAC-Adressen](#ethernet-und-mac-adressen)
-    - [Ethernet-Frame (In Reihenfolge links rechts)](#ethernet-frame-in-reihenfolge-links-rechts)
-    - [MAC-Adressen](#mac-adressen)
-    - [IPv4](#ipv4)
+    - [RAID 0: Striping - Beschleunigung ohne Redundanz](#raid-0-striping---beschleunigung-ohne-redundanz)
+      - [Vorteile](#vorteile)
+      - [Nachteile](#nachteile)
+      - [Anwendung](#anwendung)
+    - [RAID 1: Mirroring - Spiegelung](#raid-1-mirroring---spiegelung)
+      - [Vorteile](#vorteile-1)
+      - [Nachteile](#nachteile-1)
+      - [Anwendung](#anwendung-1)
+    - [RAID 5: Leistung + Parität, Block-Level Striping mit verteilter Paritätsinformation](#raid-5-leistung--parität-block-level-striping-mit-verteilter-paritätsinformation)
+      - [Vorteile](#vorteile-2)
+      - [Nachteile](#nachteile-2)
+      - [Anwendung](#anwendung-2)
+    - [RAID 01: Verbundsraid (Raid 1 über mehrere Raid 0)](#raid-01-verbundsraid-raid-1-über-mehrere-raid-0)
+    - [RAID 10: Verbundsraid (Raid 0 über mehrere Raid 1)](#raid-10-verbundsraid-raid-0-über-mehrere-raid-1)
+- [Speichersysteme](#speichersysteme)
+  - [SAN (Storage Area Network)](#san-storage-area-network)
+  - [NAS (Network Attached Storaged)](#nas-network-attached-storaged)
+- [Ethernet und MAC-Adressen](#ethernet-und-mac-adressen)
+  - [Ethernet-Frame (In Reihenfolge links rechts)](#ethernet-frame-in-reihenfolge-links-rechts)
+  - [MAC-Adressen](#mac-adressen)
+  - [IPv4](#ipv4)
 - [DHCP](#dhcp)
   - [Konzept](#konzept)
   - [DHCP-Server](#dhcp-server)
@@ -48,50 +57,133 @@
 ---
 <br>
 
-# Netzwerk und Hardware
-## Software und Hardware Raid
+# Software und Hardware Raid
 [^1]
-### Hardware Raid Vorteile
+## Hardware Raid Vorteile
 - Der Datenzugriff bei Hardware Raids ist meist schneller
 - Der Controller verwaltet die Festplatten unabhängig vom zugehörigen Computer und muss keine Rechenleistung in Anspruch nehmen.
 - Es ist einfach eine kaputte Platte zu tauschen
 
-### Hardware Raid Nachteile
+## Hardware Raid Nachteile
 - Teurer als Software Raid
 - Kompatibilitätsprobleme mit einigen Betriebssystemen
 - Bei der Verwendung anderer Technologien wie z.B. SSDs können Leistungsprobleme auftreten
 
-### Software Raid Vorteile
+## Software Raid Vorteile
 - Billiger als Hardware Raid weil kein Controller benötigt wird
 - Der (Software)Controller verwaltet Festplatten als Teil des zugehörigen Controllers
 - Software Raids können in einem Betriebssystem implementiert werden und auf mehreren Geräten verwendet werden.
 
-### Software Raid Nachteile
+## Software Raid Nachteile
 - Datenzugriff kann im Vergleich zu Hardware Raid langsamer sein
 - Angeschlossene Geräte müssen mit dem Betriebssystem kompatible sein
 - Eine Platte zu tauschen ist aufwändiger da der Software erst gesagt werden muss den Raid Controller auszuschalten
 
+## Host Raid
+Host Raid ist eine Zwischenstufe von Hard- und Software-RAID.
+Hier werden Chipsätze, die sich auf dem Mainboard befinden oder günstige RAID-Adapter verwendet.
+Mainbords mit RAID-Funktion beherrschen meist nur RAID 0, 1 und teurere Varianten möglicherweise noch RAID 5.
+Man spricht von Host-RAID, da die RAID-Funktionen von der Firmware bzw. den Treibern erledigt werden.
+
 ## Verschiedene Raid Stufen
 [^2]
-### Raid 0: Striping - Beschleunigung ohne Redundanz
+### RAID 0: Striping - Beschleunigung ohne Redundanz
+Die Null in RAID 0 steht für die Null-Daten-Redundanz. Daher gehört RAID 0 eigentlich nicht zu den RAID-Systemen, da es eher ein schnelles Array of Independent Disks ist. Hier bei werden zwei oder mehrere Platten zu einem großen logischen Laufwerk zusammengeschaltet. Hier werden die Daten meist in Blöcke der Größe 64 oder 128 kB (Stripe = Streifen) unterteilt, daher kommt auch die Bezeichnung Striping.
+Bei RAID 0 empfielt es sich zwei gleich große Platten zu verwenden, da sich die Gesamtgröße des RAID nach der kleinsten Platte mal Anzahl der Platten richtet.
 
-### Raid 1: Mirroring - Spiegelung
+#### Vorteile
+- Steigerung des Datendurchsatzes, da die Platten-Zugriffe in höherem Maße parallel ablaufen.
+- Gilt aber nur bei sequenziellem Datentransfer.
 
-### Raid 5: Leistung + Parität, Block-Level Striping mit verteilter Paritätsinformation
+#### Nachteile
+- Fällt eine Platte aus, so sind die Daten nutzlos, denn von jeder gespeicherten Datei ist nur noch die Hälfte lesbar.
+- Fehlt ein Teil einer Datei, so kann der Rest nicht wiederhergestellt werden, somit wird in RAID 0 keine Datensicherung gewährleistet.
+- Die Ausfallsicherheit liegt höher als bei einer einzelnen Platte, d.H. sie steigt mit jeder zusätzlichen Platte.
+- Für den Klassischen Server-Betrieb ungeeignet.
 
-### Raid 01: Verbundsraid (Raid 1 über mehrere Raid 0)
-### Raid 10: Verbundsraid (Raid 0 über mehrere Raid 1)
+#### Anwendung
+- Wenn besonders große Datenmengen in kurzer Zeit gelesen werden soll und die Datensicherheit irrelevant ist.
+- Für temporäre Dateien, wie die Windows-Auslagerungsdatei oder Swap-Funktion von Linux.
+
+Darstellung Raid 0:<br>
+<a href="https://de.wikipedia.org/wiki/RAID">
+  <img title="RAID 0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/RAID_0.svg/220px-RAID_0.svg.png" width="200">
+</a>
+
+### RAID 1: Mirroring - Spiegelung
+RAID 1 ist der Verbund von zwei Platte, wobei auf allen Festplatten die gleichen Daten gespeichert werden (Spiegelung). Somit ist volle Redundanz geboten.
+Die Platten müssen paarweise vorhanden sein und die Kapazität richtet sich auch hier nach der kleinsten Platte. Beim Bescheiben ist das RAID nur so schnell wie die langsamste Platte.
+
+#### Vorteile
+- Bei Ausfall einer Platte kann ohne Daten- und mit geringen geschwindigkeitsverlust weiter gearbeitet werden.
+- Das bietet eine hohe Ausfall- und Datensicherheit.
+- Ein RAID 1-System kann beim Lesen auf mehr als einer Platte zugreifen und gleichzeitig verschiedene Sektoren von verschiedenen Platten einlsen, was die Leseleistung erhöht.
+
+#### Nachteile
+- Keine richtige Steigerung des Datendurchsatzes.
+- Es entsteht keine Datensicherung, da z.B. versehentliche oder fehlerhafte Schreiboperationen auf allen Platten genutzt werden.
+- Das Setup ist teuer, da immer der doppelte Preis gezahlt werden muss bei einfacher Speicherung.
+- Zwei Platten mit 500GB ergeben zwar 1TB aber da RAID 1 die Daten spiegelt, steht nur die hälfte zur Verfügung.
+
+#### Anwendung
+- Eher für kleine Server, da man große Datenmengen besser mit höheren RAID-Leveln speichert.
+
+Darstellung RAID 1:<br>
+<a href="https://de.wikipedia.org/wiki/RAID">
+  <img title="RAID 1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/RAID_1.svg/220px-RAID_1.svg.png" width="200">
+</a>
+
+### RAID 5: Leistung + Parität, Block-Level Striping mit verteilter Paritätsinformation
+Wie bei RAID 0 werden die Daten in Blöcke (Stripesets) zerlegt. Zusätzlich wird ein Bereich auf jeder Platte für Prüfnummern (Parity) verwendet, damit nachträglich Fehler beseitigt werden können. Die Parity wird mithilfe einer XOR-Operation bitweise berechnet. Dabei werden Datenblöcke von 64kB geteilt und aus diesen beiden Blöcken wird die Parity-Info gebildet, also einem dritten Block von 64kB. Für diese Art von RAID werden 3 Festplatten benötigt.
+RAID 5 anders als bei RAID 4 speichert die Parity-Bits und die Teil-Infos auf allen drei Platten verteilt.
+
+#### Vorteile
+- Steigerung des Datendurchsatzes
+- Datensicherheit
+- Relativ geringe Kosten (Dennoch: Es werden mindestens 3 Platten benötigt)
+- Bei Ausfall einer Platte können die Daten während des Betriebes dank der Paritätsinfo wiederhergestellt werden.
+
+#### Nachteile
+- Es darf nicht mehr als eine Platte ausfallen, da die Daten sonst verloren sind.
+- Schreibgeschwindigkeit ist geringer, da vor jedem Schreibzugriff erst die Paritätsinfo ausgelesen und danach neu erstellt werden müssen.
+- Kapazitätsverlust durch die Speicherung von Paritätsinfos. Bei einer Plattengröße von 500GB und drei Platten, hätte man 1,5TB - 500GB = 1TB Speicher.
+
+#### Anwendung
+- Für große Datenmengen mit kleinen Dateien, wegen der geringeren Schreibgeschwindigkeit.
+
+Darstellung RAID 5:<br>
+<a href="https://de.wikipedia.org/wiki/RAID">
+  <img title="RAID 5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/RAID_5.svg/220px-RAID_5.svg.png" width="200">
+</a>
+
+### RAID 01: Verbundsraid (Raid 1 über mehrere Raid 0)
+RAID 01 ist eine Kombination aus RAID 0 und 1, also Striping und Mirroring. Es sind mindestens drei Festplatten erforderlich. Die Daten werden in Blöcke (Stripesets) zerlegt und dann auf mehrere RAID 0 verteilt, somit werden die Eigenschaften Sicherheit und höherer Datendurchsatz kombiniert.
+
+Darstellung RAID 01<br>
+<a href="https://de.wikipedia.org/wiki/RAID">
+  <img title="RAOD 01" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RAID_01.svg/220px-RAID_01.svg.png" width="200">
+</a>
+
+### RAID 10: Verbundsraid (Raid 0 über mehrere Raid 1)
+RAID 10 ist eine kombination aus RAID 1 und 0. Hier sind mindestens 4 Platten erforderlich. Es werden die Daten vom RAID-Controller zuerst gespiegelt und danacha uf zwei RAID 1 gespeichert. Diese werden dann auf ein RAID 0 zusammengefasst. Das erhöht die Sicherheit der Daten (höher als bei RAID 01) und die Sicherheit des Datendurchsatzes.
+RAID 10 ist besonders geeignet um größere Datenmengen redundant zu speichern.
+
+Darstellung RAID 10:<br>
+<a href="https://de.wikipedia.org/wiki/RAID">
+  <img title="RAID 10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/RAID_10.svg/170px-RAID_10.svg.png" width="200">
+</a>
+
 ---
-## Speichersysteme
-### SAN (Storage Area Network)
+# Speichersysteme
+## SAN (Storage Area Network)
 - Ein SAN ist ein Netzwerkspeicher mit dem man über mehrere Clients zugreifen kann
 
-### NAS (Network Attached Storaged)
+## NAS (Network Attached Storaged)
 - Ein NAS ist ein Speichermedium welches im Lokalen Netzwerk liegt und man mit berechtigten Geräten Daten über das Lokale Netzwerk legen kann.
 
 ---
-## Ethernet und MAC-Adressen
-### Ethernet-Frame (In Reihenfolge links rechts)
+# Ethernet und MAC-Adressen
+## Ethernet-Frame (In Reihenfolge links rechts)
 [^3]
 - Preamble: 7 Bytes
 - Start Frame Delimiter (SFD): 1 Byte
@@ -101,11 +193,11 @@
 - Payload: 46 - 1.500 Bytes
 - Frame Check Sequence: 4 Bytes
 
-### MAC-Adressen
+## MAC-Adressen
 [^4]<br>
 Eine MAC-Adresse (Media Access Control Address) ist ein eindeutiger Identifier welcher zu einem Netzwerk Controller (Network Interface Controller [NIC]) zugewiesen wird. Eine MAC Adresse ist 48-bit lang
 
-### IPv4
+## IPv4
 [^5]<br>
 IP-Adressen können in dezimal, binär, oktal und hexadezimal sowohl in der Punkt-, als auch in der Nichtpunktnotation dargestellt werden
 
