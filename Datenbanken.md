@@ -62,7 +62,7 @@ Das heißt, dass pro Datenfeld nur maximal ein Wert enthalten sein darf.
 __0. Normalform__
 <br>
 <a href="https://info-wsf.de/Normalformen/">
-  <img title="0 Normalform" src="./img/Normalformen/normalisierung_0nf_bsp.png">
+  <img title="0. Normalform" src="./img/Normalformen/normalisierung_0nf_bsp.png">
 </a>
 <br>
 Im oberen Beispiel werden mehrere Daten in einem Datenfeld gespeichert. Dies wird auch die 0. Normalform oder NF² (Non-First-Normal-Form) genannt.<br>
@@ -176,7 +176,7 @@ Beispiel Datenbank:
 ### Einfache Abfrage
 
 ```sql
-SELECT * FROM STtudent;
+SELECT * FROM Student;
 ```
 Ergebnis:
 
