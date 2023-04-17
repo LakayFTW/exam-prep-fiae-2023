@@ -115,15 +115,15 @@ RAID 1 ist der Verbund von zwei Platte, wobei auf allen Festplatten die gleichen
 Die Platten müssen paarweise vorhanden sein und die Kapazität richtet sich auch hier nach der kleinsten Platte. Beim Bescheiben ist das RAID nur so schnell wie die langsamste Platte.
 
 #### Vorteile
-- Bei Ausfall einer Platte kann ohne Daten- und mit geringen geschwindigkeitsverlust weiter gearbeitet werden.
+- Bei Ausfall einer Platte kann ohne Daten- und mit geringen Geschwindigkeitsverlust weiter gearbeitet werden.
 - Das bietet eine hohe Ausfall- und Datensicherheit.
-- Ein RAID 1-System kann beim Lesen auf mehr als einer Platte zugreifen und gleichzeitig verschiedene Sektoren von verschiedenen Platten einlsen, was die Leseleistung erhöht.
+- Ein RAID 1-System kann beim Lesen auf mehr als einer Platte zugreifen und gleichzeitig verschiedene Sektoren von verschiedenen Platten einlesen, was die Leseleistung erhöht.
 
 #### Nachteile
 - Keine richtige Steigerung des Datendurchsatzes.
 - Es entsteht keine Datensicherung, da z.B. versehentliche oder fehlerhafte Schreiboperationen auf allen Platten genutzt werden.
 - Das Setup ist teuer, da immer der doppelte Preis gezahlt werden muss bei einfacher Speicherung.
-- Zwei Platten mit 500GB ergeben zwar 1TB aber da RAID 1 die Daten spiegelt, steht nur die hälfte zur Verfügung.
+- Zwei Platten mit 500GB ergeben zwar 1TB aber da RAID 1 die Daten spiegelt, steht nur die Hälfte zur Verfügung.
 
 #### Anwendung
 - Eher für kleine Server, da man große Datenmengen besser mit höheren RAID-Leveln speichert.
@@ -165,7 +165,7 @@ Darstellung RAID 01<br>
 </a>
 
 ### RAID 10: Verbundsraid (Raid 0 über mehrere Raid 1)
-RAID 10 ist eine kombination aus RAID 1 und 0. Hier sind mindestens 4 Platten erforderlich. Es werden die Daten vom RAID-Controller zuerst gespiegelt und danacha uf zwei RAID 1 gespeichert. Diese werden dann auf ein RAID 0 zusammengefasst. Das erhöht die Sicherheit der Daten (höher als bei RAID 01) und die Sicherheit des Datendurchsatzes.
+RAID 10 ist eine kombination aus RAID 1 und 0. Hier sind mindestens 4 Platten erforderlich. Es werden die Daten vom RAID-Controller zuerst gespiegelt und danach auf zwei RAID 1 gespeichert. Diese werden dann auf ein RAID 0 zusammengefasst. Das erhöht die Sicherheit der Daten (höher als bei RAID 01) und die Sicherheit des Datendurchsatzes.
 RAID 10 ist besonders geeignet um größere Datenmengen redundant zu speichern.
 
 Darstellung RAID 10:<br>
@@ -211,7 +211,7 @@ IPv4 benutzt 32-Bit-Adressen. IPv4-Adressen werden üblicherweise dezimal in vie
 Das Dynamic Host Protocol (DHCP) ist ein Kommunikationsprotokoll. Durch einen Server können Clients die richtige Netzwerkkonfiguration erhalten.
 DHCP ist eine Erweiterung des Bootstrap-Protokols (BOOTP)
 
-Die länge eines DHCP-Pakets beträgt 32 Bit.
+Die Länge eines DHCP-Pakets beträgt 32 Bit.
 
 DHCP ist in RFC 2131 und 2132 definiert.
 
@@ -228,13 +228,13 @@ Es gibt drei verschiedene Betriebsmodi eines DHCP-Servers:
 In diesem Modi lassen sich IP-Adressen einer bestimmten MAC-Adresse zuordnen. Die Adressen werden den MAC-Adressen auf unbestimmte Zeit zugeteilt. 
 
 #### Vorteil
-Eine statische zuordnung kann dann von Vorteil sein, wenn Netzwerkdienste über eine bestimmte Adresse erreichbar sein sollen. Auch Portfreigaben von einem Router zu einem Client benötigen in der Regel eine feste IP-Adresse.
+Eine statische Zuordnung kann dann von Vorteil sein, wenn Netzwerkdienste über eine bestimmte Adresse erreichbar sein sollen. Auch Portfreigaben von einem Router zu einem Client benötigen in der Regel eine feste IP-Adresse.
 
 #### Nachteil
 Dabei kann das Problem aufteten, dass keine weiteren Clients dem Netzwerk zugeteilt werden können, da alle Adressen fest vergeben sind. Das kann unter manchen Sicherheitsaspekten problematisch sein.
 
 ### Automatische Zuordnung
-Bei der Automatischen zuordnung werden am DHCP-Server Bereiche von IP-Adressen (range) definiert. Neue Cleints erhalten dabei IP-Adressen welche den MAC-Adressen zugeordnet werden, das wird in einer Tabelle festgehalten. Im unterschied zur dynamischen Zuordung werden automatische Adressen fest vergeben und nicht entfernt. 
+Bei der Automatischen Zuordnung werden am DHCP-Server Bereiche von IP-Adressen (range) definiert. Neue Cleints erhalten dabei IP-Adressen welche den MAC-Adressen zugeordnet werden, das wird in einer Tabelle festgehalten. Im Unterschied zur dynamischen Zuordung werden automatische Adressen fest vergeben und nicht entfernt. 
 
 #### Vorteil
 Der Vorteil darin liegt, dass IP-Adressen immer dem gleichen Host zugeordnet sind und keinem anderem Host zugeordnet werden können.
@@ -243,9 +243,9 @@ Der Vorteil darin liegt, dass IP-Adressen immer dem gleichen Host zugeordnet sin
 Der Nachteil darin besteht, dass neue Clients keine IP-Adresse erhalten wenn der gesamte Adressbereich bereits vergeben ist, auch wenn IP-Adressen nicht mehr aktiv genutzt werden.
 
 ### Dynamische Zuordnung
-Die dynamische Zurodnung gleicht der automatischen Zurodnung, allerdings wird in der dynamischen Konfiguration festgelegt wie lange eine bestimmte IP-Adresse an einem Client vergeben werden darf. Nach dem Ablauf meldet sich der Client beim Server und beantragt eine "Verlängerung". Sollte sich der Client nicht melden, dann wird eie IP-Adresse frei und kann einem anderen (oder auch wieder dem selben) Client neu vergeben werden. Diese Zeit nennt man "Lease-Time" (Leihdauer).
+Die dynamische Zuordnung gleicht der automatischen Zuordnung, allerdings wird in der dynamischen Konfiguration festgelegt wie lange eine bestimmte IP-Adresse an einem Client vergeben werden darf. Nach dem Ablauf meldet sich der Client beim Server und beantragt eine "Verlängerung". Sollte sich der Client nicht melden, dann wird eine IP-Adresse frei und kann einem anderen (oder auch wieder dem selben) Client neu vergeben werden. Diese Zeit nennt man "Lease-Time" (Leihdauer).
 
-Manche Konfigurationen vergeben IP-Adressen abhängig von der MAC-Adresse, das heißt auch nach langer abstinenz kann eine IP-Adresse wieder an den gleichen Client vergeben werden, solange diese Adresse noch nicht neu vergeben wurde.
+Manche Konfigurationen vergeben IP-Adressen abhängig von der MAC-Adresse, das heißt auch nach langer Abstinenz kann eine IP-Adresse wieder an den gleichen Client vergeben werden, solange diese Adresse noch nicht neu vergeben wurde.
 
 ## DHCP-Nachrichten
 
