@@ -24,7 +24,7 @@
   - [Transition](#transition)
   - [Operation](#operation)
   - [Improvement](#improvement)
-- [Service Lebenszyklus nach IMAC/R/D](#service-lebenszyklus-imacrd)
+- [Service Lebenszyklus nach IMAC/R/D](#service-lebenszyklus-nach-imacrd)
   - [Install](#install)
   - [Move](#move)
   - [Change](#change)
