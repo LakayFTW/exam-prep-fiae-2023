@@ -31,6 +31,10 @@
   - [Add](#add)
   - [Remove](#remove)
   - [Dispose](#dispose)
+- [Bedeutung von SLA's](#bedeutung-von-slas)
+  - [SLA Inhalt](#sla-inhalt)
+  - [SLA Qualität](#sla-qualität)
+  - [SLA Kosten](#sla-kosten)
 - [Incident Management](#incident-management)
 
 &nbsp;
@@ -317,6 +321,51 @@ Entsorgung oder Neuaufbereitung von ungebrauchten oder defekten Geräten.
 &nbsp;
 
 [^9]
+# Bedeutung von SLA's
+Eine Service-Level-Agreement ist eine Vereinbarung zwischen Kunde und Dienstleister für die detailiierte Regelung wiederkehrender Dienstleistungen.
+Der Kunde verlangt eine Dienstleistung festgelegt in einer SLA und kontrolliert, ob diese gemäß erfüllt wurde. Wenn es zu einem größeren Umfang kommt von einer Dienstleistung wird in der Regel Bezug auf die bestehende SLA genommen und nach Efüllung der Diesntleisung diese um den zusätzlichen Inhalt erweitert.
+
+In einer SLA sind die einzelnen Service Levels enthalten mit den Faktoren Qualität und Zeit. Hierfür werden auch Maßnahmen verfasst, wenn es zu Beeinträchtigungen kommt bei der Durchführung einer gewünschten Dienstleistung.
+Auch sind Stranfandrohungen enthalten wenn eine SLA nicht eingehalten wurde, wie Vereinbarungen zu Qualitätskontrollen der bestehenden SLA's.
+
+&nbsp;
+
+## SLA Inhalt
+- Beschreibung
+  - Welche Leistung wird wann und wo durch wen erbracht?
+- Teilleistungen
+  - Ergebnis der Dienstleistung und Kundennutzen aus deren Inanspruchnahme.
+- Ablauf
+  - Prozessschritte für Ablauf.
+- Rahmenbediengungen
+  - Systemumgebung, Infrastruktur, Mitwirkungspflichten, Out-of-Scope-Abgrenzung.
+
+&nbsp;
+
+## SLA Qualität
+- KPI's
+  - Betriebswirtschaftliche Kennzahlen (KPIs) werden zur Operationalisierung und Qualitätsdimensionierung benötigt
+- Messverfahren
+  - Messverfahren zur Ermittlung der Basisdaten der Kennzahlen und deren Aufbereitung (z.B. Balanced Scorecard)
+- Service Level
+  - Qualitätsdimensionen für die Dienstleistung z.B. Reaktionszeit, Wiederherstellungszeit, Verfügbarkeit in %, Performance, Erreichbarkeit, Sicherheit
+  - SLA-Einschränkungen (z.B. Einfluss Dritter)
+  - Wartungsfenster und Downtimes
+
+&nbsp;
+
+## SLA Kosten
+- Preismodell
+  - Verrechnungsmodell (Festpreis, variabel nach Zeit und Aufwand)
+  - Festgelegte Inhalte
+  - Nicht geregelte Inhalte
+  - Ausmaßen von SLA Verstößen
+  - Ausmaß von wiederholten SLA Verstößen
+  - Ablauf von SLA's
+
+&nbsp;
+
+[^10]
 # Incident Management
 Das Kernstück des Incident Managements ist die Behebung von jeglichen Zwischenfällen, welche auf unterschiedlichster Weise den Ablauf der Unternehmensprozesse negativ beeinflussen kann.
 
@@ -348,4 +397,5 @@ Alle Schritte werden auf dem Weg protokolliert und in der Know-Error-Database hi
 [^6]: https://www.freshworks.com/de/freshservice/itsm/itsm-framework/
 [^7]: https://de.education-wiki.com/9403688-itil-service-lifecycle
 [^8]: https://www.i-doit.com/blog/imac-r-d-serviceorientiertes-it-lifecycle-management/
-[^9]: https://advisera.com/20000academy/knowledgebase/itil-incident-management-separate-roles-different-support-levels/
+[^9]: https://www.cio.de/a/was-sie-ueber-service-level-agreements-wissen-muessen,3592458
+[^10]: https://advisera.com/20000academy/knowledgebase/itil-incident-management-separate-roles-different-support-levels/
