@@ -7,19 +7,35 @@
   - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
 - [Architektur](#architektur)
   - [CORBA (Common Object Request Broker Architecture)](#corba-common-object-request-broker-architecture)
+  - [COM/DCOM (Distributed / Component Object Model)](#comdcom-distributed--component-object-model)
   - [MVC (Model-View-Controller)](#mvc-model-view-controller)
 - [Auszeichnungssprachen](#auszeichnungssprachen)
   - [DTD (Document Type Definition)](#dtd-document-type-definition)
+  - [XSL](#xsl)
 - [UML (Unified Modelling Language)](#uml-unified-modelling-language)
 - [Paradigmen](#paradigmen)
   - [OOA (Object Oriented Analysis)](#ooa-object-oriented-analysis)
   - [OOD (Object Oriented Design)](#ood-object-oriented-design)
   - [OOP (Object Oriented Programming)](#oop-object-oriented-programming)
+- [Herangehensweisen](#herangehensweisen)
+  - [CI (Continuos Integration)](#ci-continuos-integration)
+  - [CD (Continuos Delivery)](#cd-continuos-delivery)
+  - [Scrum](#scrum)
 - [Wirtschaft](#wirtschaft)
   - [GP (Geschäftsprozesse)](#gp-geschäftsprozesse)
   - [BAB (Bietriebsablaufbogen)](#bab-bietriebsablaufbogen)
   - [EPK (Ereignisgesteuerte Prozessketten)](#epk-ereignisgesteuerte-prozessketten)
 - [Sandboxing](#sandboxing)
+- [Netzwerke](#netzwerke)
+  - [LAN (Local Area Network)](#lan-local-area-network)
+  - [WAN (Wide Area Network)](#wan-wide-area-network)
+  - [MAN (Metropolitan Area Network)](#man-metropolitan-area-network)
+  - [WLAN (Wireless Local Area Network)](#wlan-wireless-local-area-network)
+  - [NIC (Network Interface Controller)](#nic-network-interface-controller)
+  - [CIDR (Classless Inter-Domain Routing)](#cidr-classless-inter-domain-routing)
+  - [DHCP (Dynamic Host Protocol)](#dhcp-dynamic-host-protocol)
+  - [WPAD (Web Proxy Audodiscovery Protocol)](#wpad-web-proxy-audodiscovery-protocol)
+  - [DNS (Domain Name System)](#dns-domain-name-system)
 
 ---
 <br>
@@ -50,6 +66,8 @@
 
 ## CORBA (Common Object Request Broker Architecture)
 
+## COM/DCOM (Distributed / Component Object Model)
+
 ## MVC (Model-View-Controller)
 <br>
 
@@ -59,6 +77,8 @@
 [^4]<br>
 - Eine DTD beschreibt die Struktur und die Elemente eines XML Dokuments
 <br>
+
+## XSL
 
 # UML (Unified Modelling Language)
 
@@ -70,8 +90,15 @@
 ## OOD (Object Oriented Design)
 
 ## OOP (Object Oriented Programming)
+[^7]<br>
+Die objektorientierte Programmierung ist ein auf dem Konzept der Objektorientierung basierendes Programmierparadigma. Die Grundidee besteht darin, die Architektur einer Software an den Grundstrukturen desjenigen Bereichs der Wirklichkeit auszurichten, der die gegeben Anwendung betrifft.
 [^3]
 <br>
+
+# Herangehensweisen
+## CI (Continuos Integration)
+## CD (Continuos Delivery)
+## Scrum
 
 # Wirtschaft
 
@@ -87,7 +114,38 @@
 [^1]<br>
 Sandbox ist die englischsprachige Bezeichnung für Sandkiste oder Sandkasten und bezeichnet allgemein einen isolierten Bereich, innerhalb dessen jede Maßnahme keine Auswirkung auf die äußere Umgebung hat.
 
+# Netzwerke
+## LAN (Local Area Network)
+## WAN (Wide Area Network)
+## MAN (Metropolitan Area Network)
+## WLAN (Wireless Local Area Network)
+
+## NIC (Network Interface Controller)
+[^6]<br>
+Die NIC ist die Netzwerkkarte oder auch Netzwerkadapter eines Computers.
+
+## CIDR (Classless Inter-Domain Routing)
+[^5]<br>
+Classless Inter-Domain Routing beschreibt ein Verfahren zur effizienteren Nutzung des bestehenden 32-Bit-IP-Adress-Raumes für IPv4.
+
+## DHCP (Dynamic Host Protocol)
+Siehe [DHCP](/Netzwerktechnik.md/#dhcp)
+
+## WPAD (Web Proxy Audodiscovery Protocol)
+[^9]<br>
+Das Web Proxy Auto-Discovery Protocol ist ein Protokoll, mit dem Web-Clients zu verwendende Web-Proxys innerhalb eines Computernetzwerkes automatisch finden können, indem iene Proxy autoconfiguration-Datei unter einer erratbaren URL gespeichert wird.
+
+## DNS (Domain Name System)
+[^8]<br>
+Das Domain Name System, ist ein hierarchisches unterteiltes Bezeichnungssystem in einem meist IP-basierten Netz zur Beantwortung von Anfragen zu Domain-Namen (Namenauflösung)
+
+
 [^1]: https://de.wikipedia.org/wiki/Sandbox
 [^2]: https://de.wikipedia.org/wiki/SOAP
 [^3]: https://de.wikipedia.org/wiki/Objektorientierte_Programmierung
 [^4]: https://de.wikipedia.org/wiki/Dokumenttypdefinition
+[^5]: https://de.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+[^6]: https://de.wikipedia.org/wiki/Netzwerkkarte
+[^7]: https://de.wikipedia.org/wiki/Objektorientierte_Programmierung
+[^8]: https://de.wikipedia.org/wiki/DNS
+[^9]: https://de.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol
