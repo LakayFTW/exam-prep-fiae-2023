@@ -27,7 +27,12 @@
 - [Ethernet und MAC-Adressen](#ethernet-und-mac-adressen)
   - [Ethernet-Frame (In Reihenfolge links rechts)](#ethernet-frame-in-reihenfolge-links-rechts)
   - [MAC-Adressen](#mac-adressen)
+    - [Syntax](#syntax)
   - [IPv4](#ipv4)
+    - [Adressformat](#adressformat)
+    - [Private IP-Adressen](#private-ip-adressen)
+      - [Adressbereiche:](#adressbereiche)
+    - [Funktionsweise](#funktionsweise)
 - [DHCP](#dhcp)
   - [Konzept](#konzept)
   - [DHCP-Server](#dhcp-server)
@@ -195,13 +200,62 @@ Darstellung RAID 10:<br>
 
 ## MAC-Adressen
 [^4]<br>
-Eine MAC-Adresse (Media Access Control Address) ist ein eindeutiger Identifier welcher zu einem Netzwerk Controller (Network Interface Controller [NIC]) zugewiesen wird. Eine MAC Adresse ist 48-bit lang
+Eine MAC-Adresse (Media Access Control Address) ist ein eindeutiger Identifier welcher zu einem Netzwerk Controller (Network Interface Controller [NIC]) zugewiesen wird. Eine MAC Adresse ist 48-bit lang. Die MAC-Adresse wird auch als physische Adresse bezeichnet, weil er teilweise vom Hersteller in ein Gerät fest und nicht veränderbar einprogrammiert wird.
+
+### Syntax
+Im Falle von Ethernet-Netzen besteht die MAC-Adresse aus 48 Bit bzw. sechs Bytes. Die Adresse wird in hexadezimal geschrieben. Üblich ist eine byteweise schreibweise, wobei die einzelnen Bytes durch Bindestriche oder Doppelpunkte getrennt werden. z.B.<br>
+- `00-80-41-ae-fd-7e`
+- `008041-aefd7e` oder
+- `00:80:41:ae:fd:7e`
 
 ## IPv4
 [^5]<br>
 IP-Adressen können in dezimal, binär, oktal und hexadezimal sowohl in der Punkt-, als auch in der Nichtpunktnotation dargestellt werden
 
 IPv4 benutzt 32-Bit-Adressen. IPv4-Adressen werden üblicherweise dezimal in vier Blöcken geschrieben, zum Beispiel 207.142.131.235. Ein Block darf nicht mit einer 0 führen. Jedes Oktett representiert 8 Bit und somit ist eine Reichweite von 0 bis 255 möglich.
+
+### Adressformat
+IP-Adressen bestehen aus einem Netzanteil und einem Hostanteil. Der Netzteil definiert ein Teilnetz, der Hostteil definiert ein Gerät (Host) innerhalb eines Teilnetzes.
+
+Beispiel:
+||dezimal|||binär||
+|---|---|---|---|---|---|
+|IP-Adresse|192.168.0|.23| -> |11000000.10101000.00000000 |.00010111|
+|Subnetzmaske|255.255.255|.0| -> |11111111.11111111.11111111|.00000000|
+||Netzanteil|Hostanteil||Netzanteil|Hostanteil|
+
+Die Subnetzmaske sorgt für die genaue Aufteilung zwischen Netzanteil und Hostanteil. Eine Subnetzmaske definiert z.B. `255.255.255.0`. Bei Verwendung dieser Maske würde die IP-Adresse in der CIDR-Notation dann als `192.168.0.23/24` geschrieben, wobei die "24" bedeutet, dass die ersten 24 Bits der Subnetzmaske gleich "1" sind. Die Bits der Maske, die auf "1" sind, legen die Stellen der IP-Adresse fest, die zum Netzanteil gehören. Alle restlichen stellen, die dann auf "0" stehen, gehören dann zum Hostanteil.
+
+Merke: Die Adressen `192.168.0.0` und `192.168.0.255` sind reserviert.<br>
+`192.168.0.0`: Das Netzwerk selbst<br>
+`192.168.0.255`: Die Broadcast Adresse<br>
+
+### Private IP-Adressen
+Private IP-Adressen gehören zu bestimmten IP-Bereichen, die im Internet nicht groutet werden. Sie können von jedem innerhalb privater Netze (z.B. LANs) genutzt werden.
+Folgende Adressbereiche wurden aus dem öffentlichen Adressraum ausgespart für die private Nutzung.
+
+#### Adressbereiche:
+- Netzadressenbereich:
+  - 10.0.0.0 bis 10.255.255.255
+  - 172.16.0.0 bis 172.16.255.255
+  - 192.168.0.0 bis 192.168.255.255
+- Netzklassen:
+  - Klasse A -> 1 privates Netz mit 16.777.216 Adressen (10.0.0.0/8)
+  - Klasse B -> 16 private Netze mit jeweils 65.536 Adressen (172.16.0.0/16 bis 172.31.0.0/16)
+  - Klasse C -> 256 private Netze mit jeweils 256 Adressen (192.168.0.0/24 bis 192.168.255.0/24)
+- Anzahl Adressen:
+  - $2^{24} = 16.777.216$
+  - $2^{20} = 1.048.576$
+  - $2^{16} = 65.536$
+
+Somit hat man keinen unnützen administrativen Mehraufwand bei der Pflege lokaler Netzwerke.
+
+### Funktionsweise
+- PCs in einem Rechnernet, denen private IP-Adressen zugewiesen wurden, bilden ein Intranet und können nur untereinander kommunizieren. 
+- Aus dem Internet heraus kann nicht auf das Intranet zugegriffen werden
+- Internet-Router ignorieren die privaten Adressbereiche. 
+- Um einen Internetzugang herzustellen muss ein Gateway oder Router im privaten Netz plaziert werden, der sowohl eine private als auch eine öffentliche IP-Adresse besitzt.
+- Der genutzte private Adressbereich ist immer nur innerhalb des privaten Netzes sichtbar, womit die Adressen auch in anderen privaten Netzen vergeben werden können.
 
 ---
 <br>
