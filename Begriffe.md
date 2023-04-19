@@ -7,14 +7,20 @@
   - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
 - [Architektur](#architektur)
   - [CORBA (Common Object Request Broker Architecture)](#corba-common-object-request-broker-architecture)
+  - [COM/DCOM (Distributed / Component Object Model)](#comdcom-distributed--component-object-model)
   - [MVC (Model-View-Controller)](#mvc-model-view-controller)
 - [Auszeichnungssprachen](#auszeichnungssprachen)
   - [DTD (Document Type Definition)](#dtd-document-type-definition)
+  - [XSL](#xsl)
 - [UML (Unified Modelling Language)](#uml-unified-modelling-language)
 - [Paradigmen](#paradigmen)
   - [OOA (Object Oriented Analysis)](#ooa-object-oriented-analysis)
   - [OOD (Object Oriented Design)](#ood-object-oriented-design)
   - [OOP (Object Oriented Programming)](#oop-object-oriented-programming)
+- [Herangehensweisen](#herangehensweisen)
+  - [CI (Continuos Integration)](#ci-continuos-integration)
+  - [CD (Continuos Delivery)](#cd-continuos-delivery)
+  - [Scrum](#scrum)
 - [Wirtschaft](#wirtschaft)
   - [GP (Geschäftsprozesse)](#gp-geschäftsprozesse)
   - [BAB (Bietriebsablaufbogen)](#bab-bietriebsablaufbogen)
@@ -60,6 +66,8 @@
 
 ## CORBA (Common Object Request Broker Architecture)
 
+## COM/DCOM (Distributed / Component Object Model)
+
 ## MVC (Model-View-Controller)
 <br>
 
@@ -69,6 +77,8 @@
 [^4]<br>
 - Eine DTD beschreibt die Struktur und die Elemente eines XML Dokuments
 <br>
+
+## XSL
 
 # UML (Unified Modelling Language)
 
@@ -84,6 +94,11 @@
 Die objektorientierte Programmierung ist ein auf dem Konzept der Objektorientierung basierendes Programmierparadigma. Die Grundidee besteht darin, die Architektur einer Software an den Grundstrukturen desjenigen Bereichs der Wirklichkeit auszurichten, der die gegeben Anwendung betrifft.
 [^3]
 <br>
+
+# Herangehensweisen
+## CI (Continuos Integration)
+## CD (Continuos Delivery)
+## Scrum
 
 # Wirtschaft
 
