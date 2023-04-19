@@ -283,7 +283,7 @@ Bereitstellung, Verpackung, Neukonfiguration existierender Geräte mit folgendem
 
 ## Add
 Hinzufügen und Konfiguration zusätzlicher Komponenten.
->Beispiel: Einabu einer externen Grafikeinheit in einem Rechner mit abhängigen Grafiktreibern.  
+>Beispiel: Einbau einer externen Grafikeinheit in einem Rechner mit abhängigen Grafiktreibern.  
 
 &nbsp;
 
