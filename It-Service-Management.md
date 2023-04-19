@@ -51,7 +51,7 @@ Die Bereitstellung und Kontrolle von Services unterliegt nicht nur der IT Branch
 [^3]
 # Bedeutung eines Prozesses
 Ein Prozess ist eine geregelter Ablauf von folgenden Aktivitäten.
-Es besitzt immer ein definiertes Ende und auch einen definierten Startpunkt. Es folgte nach dem EVA Prinzip, dass durch das Einbringen gewünschter Anforderungen eine Folge an geregelten Schritten eintritt, um einen erhofftes Ergebnis zu erhalten.
+Es besitzt immer ein definiertes Ende und auch einen definierten Startpunkt. Es folgt nach dem EVA Prinzip, dass durch das Einbringen gewünschter Anforderungen eine Folge an geregelten Schritten eintritt, um einen erhofftes Ergebnis zu erhalten.
 
 <a href="https://qualitaetsmanagement.me/prozessmanagement/prozess/">
   <img src="https://qualitaetsmanagement.me/wp-content/uploads/2022/11/071122_Der-Prozess-einfach-erklaert_Logo.jpg" width="500" title="Einfacher Prozessablauf" />
@@ -72,7 +72,7 @@ Eine Reihung an Prozessen wird Prozesskette bezeichnet.
 
 &nbsp;
 
-Der Verlauf von mehreren Prozessen und deren Bedingungen, welche Wege eingeschlagen werden können, lassen sich in einer Ereignisgesteuerten Prozesskettenmodell(EPK Modell) darstellen.
+Der Verlauf von mehreren Prozessen und deren Bedingungen, welche Wege eingeschlagen werden können, lassen sich in einem Ereignisgesteuerten Prozesskettenmodell(EPK Modell) darstellen.
 
 <a href="http://de.processorientation.com/?p=668">
   <img src="https://imgs.search.brave.com/cWfLjTeeyPGmUGqsetbAOSxnWbtjExyPyiHlccT1uLw/rs:fit:766:1024:1/g:ce/aHR0cDovL2RlLnBy/b2Nlc3NvcmllbnRh/dGlvbi5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTIvMDEv/RVBLX0JlaXNwaWVs/LTc2NngxMDI0LnBu/Zw" width="400" title="Einfache Ereignisprozesskette">
@@ -81,9 +81,6 @@ Der Verlauf von mehreren Prozessen und deren Bedingungen, welche Wege eingeschla
 &nbsp;
 
 # Unterscheidung von Prozessketten
-
-&nbsp;
-
 __Die Prozessketten werden in folgende Arten unterteilt:__
 - Wertschöpfungsprozesse
 - Supportprozesse
@@ -110,7 +107,6 @@ Managementprozesse dienen der Planung, Diagnose und Steuerung von Wertschöpfung
 # Bedeutung von IT Services
 
 Ein IT Service bezieht sich auf die Dienstleistung, die mit der Anwendung von technischem und betriebswirtschaftlichem Fachwissen entwickelt wurden, um die Nutzung der Technologie für Unternehmen und Endbenutzer zu erleichtern.
-
 Die IT Services können im eigenen Unternehmen, als auch von Drittanbietern in Anspruch genommen werden.
 
 &nbsp;
@@ -141,9 +137,7 @@ __Die Meldungen unterteilen sich in weitere folgende Kategorien:__
 
 ## Kundenanfrage
 Eine formale Anfrage eines Kundens für die Verbesserung oder die Erzeugung eines neuen Services.
-Wenn Informationen oder Zugriff angefragt wird handelt es sich um einen Service Request und ist im Service-Katalog meistens hinterlegt. Diese werden über die bestehenden Prozesse durchgeführt.
-
-&nbsp;
+Wenn Informationen oder Zugriff angefragt wird, handelt es sich um einen Service Request und ist im Service-Katalog meistens hinterlegt. Diese werden über die bestehenden Prozesse durchgeführt.
 
 Wenn Anforderungen gestellt werden zur Aufrüstung der aktuellen Hard- und Software als Beispiel, handelt es sich um einen Request for Change, wo professionell der Aufwand betrieben und koordiniert werden muss.
 Hier werden Änderungen ausgelöst, welche bestehdende Prozesse umstruktuerieren und diese verständlich den anderen zur Verfügung gestellt werden muss.
@@ -189,7 +183,7 @@ Das COBIT IT Governance Framework legt ihren Fokus auf kontinuierlicher IT-Siche
 &nbsp;
 
 ## FitSM
-FitSM ist ein Standard für Leichtgewicht-Servicemanagement und zusätzlich das Service-Portfolio-Management.
+FitSM ist ein Standard für Leichtgewicht-Servicemanagement und besitzt zusätzlich das Service-Portfolio-Management.
 
 &nbsp;
 
@@ -213,6 +207,7 @@ Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spe
 
 &nbsp;
 
+[^7]
 # Service Lebenszyklus nach ITILv4
 
 <a href="https://de.education-wiki.com/9403688-itil-service-lifecycle">
@@ -221,16 +216,6 @@ Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spe
 
 &nbsp;
 
-[^7]
-Das ITSM besteht nach dem ITIL Lebenszyklus aus fünf festgelegten Phasen:
-- Strategy
-- Design
-- Transition
-- Operation
-- Improvement
-
-
-&nbsp;
 ## Strategy:
 - DevOps Einsatz
 - Business Relationship Management
@@ -272,7 +257,7 @@ Das ITSM besteht nach dem ITIL Lebenszyklus aus fünf festgelegten Phasen:
 
 [^8]
 # Service Lebenszyklus nach IMAC/R/D
-International verbreitet veranschaulichen Unternehem die Durchführung iheres Service Lebenszyklus nach der IMAC/R/D Darstellung.
+International verbreitet veranschaulichen Unternehmen die Durchführung iheres Service Lebenszyklus nach der IMAC/R/D Darstellung.
 Hier können Kunden ihre Probleme und oder Anfragen direkt in einer der Phasen einordnen wenn sie den Kontakt mit dem Unternehmen aufnehmen.
 Die Darstellung wird allgemein für alle Services verwendet und bietet Kunden eine bessere Findung in das bestehdende Unternehmenssystem durch die konkrete Unterscheidung aller Services.
 
@@ -304,13 +289,13 @@ Hinzufügen und Konfiguration zusätzlicher Komponenten.
 
 ## Change
 Aktualisierung oder Wechsel von existierenden Komponenten.
->Beispiel: Umtausch einer Festplatte mit allen gespeicherten Daten auf eine größerer mit mehr Speicherkapazität.
+>Beispiel: Umtausch einer Festplatte mit allen gespeicherten Daten auf einer größeren mit mehr Speicherkapazität.
 
 &nbsp;
 
 ## Remove
 Vorbereitung und Sichern von zu entfernenden Komponenten in einem eingesetzten System.
->Beispiel: Abbau eines Arbeitsplatzes mit allen Geräten.
+>Beispiel: Abbau eines Arbeitsplatzes mit allen angeschlossenen Geräten.
 
 &nbsp;
 
@@ -322,11 +307,11 @@ Entsorgung oder Neuaufbereitung von ungebrauchten oder defekten Geräten.
 
 [^9]
 # Bedeutung von SLA's
-Eine Service-Level-Agreement ist eine Vereinbarung zwischen Kunde und Dienstleister für die detailiierte Regelung wiederkehrender Dienstleistungen.
-Der Kunde verlangt eine Dienstleistung festgelegt in einer SLA und kontrolliert, ob diese gemäß erfüllt wurde. Wenn es zu einem größeren Umfang kommt von einer Dienstleistung wird in der Regel Bezug auf die bestehende SLA genommen und nach Efüllung der Diesntleisung diese um den zusätzlichen Inhalt erweitert.
+Eine Service-Level-Agreement ist eine Vereinbarung zwischen Kunde und Dienstleister für die detaillierte Regelung wiederkehrender Dienstleistungen.
+Der Kunde verlangt eine Dienstleistung festgelegt in einer SLA und kontrolliert, ob diese erfüllt wurde. Wenn es zu einem größeren Umfang kommt von einer Dienstleistung, wird in der Regel Bezug auf die bestehende SLA genommen und nach Erfüllung der Dienstleistung diese um den zusätzlichen Inhalt erweitert.
 
 In einer SLA sind die einzelnen Service Levels enthalten mit den Faktoren Qualität und Zeit. Hierfür werden auch Maßnahmen verfasst, wenn es zu Beeinträchtigungen kommt bei der Durchführung einer gewünschten Dienstleistung.
-Auch sind Stranfandrohungen enthalten wenn eine SLA nicht eingehalten wurde, wie Vereinbarungen zu Qualitätskontrollen der bestehenden SLA's.
+Auch sind Strafandrohungen enthalten wenn eine SLA nicht eingehalten wurde, wie Vereinbarungen zu Qualitätskontrollen der bestehenden SLA's.
 
 &nbsp;
 
@@ -375,18 +360,18 @@ Das Kernstück des Incident Managements ist die Behebung von jeglichen Zwischenf
 
 &nbsp;
 
-Wenn ein Vorfall vorliegt wird die Umgebung als erstes mit einem Track-System kategorisiert, ob es im Bereich Software, Hardware oder Netzwerk vorliegt. Danach erfolgt die Priorisierung des Vorfalls nach Dringlichkeit und Auswirkung. Dies geschieht beim Helpdesk oder allgemein dem Single Point of Contact (auch SPOC genannt) und leistet hier für die meldende Person den First-Level-Support.
+Wenn ein Vorfall vorliegt wird die Umgebung als erstes mit einem Tracking-System kategorisiert, ob es im Bereich Software, Hardware oder Netzwerk vorliegt. Danach erfolgt die Priorisierung des Vorfalls nach Dringlichkeit und Auswirkung. Dies geschieht beim Helpdesk oder allgemein dem Single Point of Contact (auch SPOC genannt) und leistet hier für die meldende Person den First-Level-Support.
 
-Hier wird in der Known-Error-Database nach einem ähnlichen Sachzusammenhang geguckt und eine Lösung hierzu angeboten. Wenn diese Lösung die Behebung der Störung erzielt hat wird somit der Prozess erfolgreich beendet und protokolliert.
+Hier wird in der Known-Error-Database nach einem ähnlichen Sachzusammenhang geguckt und versucht eine Lösung anzubieten. Wenn eine Lösung gefunden wurden und diese die Behebung der Störung erzielt hat, wird somit der Prozess erfolgreich beendet und protokolliert.
 
-Wenn das Problem mangels an Fachwissen und hinterlegten Einträgen nicht zur Zufriedenheit soweit behoben wird, werden die Anforderungen der definierten SLA's nicht erfüllt und der Incident wird eskaliert.
+Wenn das Problem mangels an Fachwissen und hinterlegten Einträgen nicht zur Zufriedenheit behoben wurde, werden die Anforderungen der definierten SLA's nicht erfüllt und der Incident wird eskaliert.
 
-Der Vorfall wird nun zu einem Problem und es erfolgt eine speziellere Behandlung von Fachpersonen mit mehr Kenntnissen in Second-Level-Support.
-Nicht jeder Incident wird automatisch zu einem Problem, da es von der Priorisierung und dem Umfeld abhängig ist,
-Wenn hier auch nach den verfassten SLA's keine Zufriedenheit geschaffen werden kann, dann erfolgt eine letzere Eskalation zum Third-Level-Support bei Fachkräften, die bei jdem Detailaspekt Einfluss besitzen das System auf jede Art und Weise zu verändern.
+Der Vorfall wird nun zu einem Problem und es erfolgt eine speziellere Behandlung von Fachpersonen mit mehr Kenntnissen im Second-Level-Support.
+Nicht jeder Incident wird automatisch zu einem Problem, da es von der Priorisierung und dem Umfeld abhängig ist.
+Wenn hier auch nach den verfassten SLA's keine Zufriedenheit geschaffen werden kann, dann erfolgt eine letzte Eskalation zum Third-Level-Support bei Fachkräften, die bei jedem Detailaspekt Einfluss besitzen das System auf jede Art und Weise zu verändern.
 
-Wenn eine Lösung gefunden wurde im aktuellen Level wird jeweils dem vorherigen ein Bericht erstattet bis nichts mehr weitergetragen werden kann.
-Alle Schritte werden auf dem Weg protokolliert und in der Know-Error-Database hintergelgt bei ähnlichen und gleichen Vorfällen.
+Wenn eine Lösung gefunden wurde im aktuellen Level, wird jeweils dem vorherigen ein Bericht erstattet bis nichts mehr weitergetragen werden kann.
+Alle Schritte werden auf dem Weg protokolliert und in der Known-Error-Database hintergelgt für zukünftig auftretende Vorfälle. Wenn der Kunde zufrieden ist nach allen ausgeführten Operationen, ist auch dieser Prozess erfolgreich beendet worden.
 
 
 [^1]: https://www.atlassian.com/de/itsm
