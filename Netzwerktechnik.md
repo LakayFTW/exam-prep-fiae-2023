@@ -325,9 +325,9 @@ Manche Konfigurationen vergeben IP-Adressen abhängig von der MAC-Adresse, das h
 - Subnetzmaske/Netzwerkmaske
 - Default-Gateway
 - Nameserver
-- Proxy-Konfig via WPAD
+- Proxy-Konfig via [WPAD](/Begriffe.md/#wpad-web-proxy-audodiscovery-protocol)
 - Time- und NTP-Server
-- DNS-Server, DNS Context und DNS Tree
+- DNS-Server, DNS Context und [DNS](/Begriffe.md/#dns-domain-name-system) Tree
 - Sekundärer DNS-Server
 - WINS-Server (für MS Windows Clients)
 
