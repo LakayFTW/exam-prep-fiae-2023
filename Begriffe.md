@@ -148,6 +148,7 @@ Das Web Proxy Auto-Discovery Protocol ist ein Protokoll, mit dem Web-Clients zu 
 Das Domain Name System, ist ein hierarchisches unterteiltes Bezeichnungssystem in einem meist IP-basierten Netz zur Beantwortung von Anfragen zu Domain-Namen (Namenauflösung)
 
 ## ISO/OSI-Referenzmodell
+[^10]<br>
 ### Schicht 1 - Bitübertragungsschicht (Physical Layer)
 ### Schicht 2 - Sicherungsschicht (Data Link Layer)
 ### Schicht 3 - Vermittlungsschicht (Network Layer)
@@ -170,3 +171,4 @@ Das Domain Name System, ist ein hierarchisches unterteiltes Bezeichnungssystem i
 [^7]: https://de.wikipedia.org/wiki/Objektorientierte_Programmierung
 [^8]: https://de.wikipedia.org/wiki/DNS
 [^9]: https://de.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol
+[^10]: https://de.wikipedia.org/wiki/OSI-Modell
