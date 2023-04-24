@@ -36,6 +36,14 @@
   - [DHCP (Dynamic Host Protocol)](#dhcp-dynamic-host-protocol)
   - [WPAD (Web Proxy Audodiscovery Protocol)](#wpad-web-proxy-audodiscovery-protocol)
   - [DNS (Domain Name System)](#dns-domain-name-system)
+  - [ISO/OSI-Referenzmodell](#isoosi-referenzmodell)
+    - [Schicht 1 - Bitübertragungsschicht (Physical Layer)](#schicht-1---bitübertragungsschicht-physical-layer)
+    - [Schicht 2 - Sicherungsschicht (Data Link Layer)](#schicht-2---sicherungsschicht-data-link-layer)
+    - [Schicht 3 - Vermittlungsschicht (Network Layer)](#schicht-3---vermittlungsschicht-network-layer)
+    - [Schicht 4 - Transportschicht (Transport Layer)](#schicht-4---transportschicht-transport-layer)
+    - [Schicht 5 - Sitzungsschicht (Session Layer)](#schicht-5---sitzungsschicht-session-layer)
+    - [Schicht 6 - Darstellungsschicht (Presentation Layer)](#schicht-6---darstellungsschicht-presentation-layer)
+    - [Schicht 7 - Anwendungsschicht (Application Layer)](#schicht-7---anwendungsschicht-application-layer)
 
 ---
 <br>
@@ -139,6 +147,19 @@ Das Web Proxy Auto-Discovery Protocol ist ein Protokoll, mit dem Web-Clients zu 
 [^8]<br>
 Das Domain Name System, ist ein hierarchisches unterteiltes Bezeichnungssystem in einem meist IP-basierten Netz zur Beantwortung von Anfragen zu Domain-Namen (Namenauflösung)
 
+## ISO/OSI-Referenzmodell
+### Schicht 1 - Bitübertragungsschicht (Physical Layer)
+### Schicht 2 - Sicherungsschicht (Data Link Layer)
+### Schicht 3 - Vermittlungsschicht (Network Layer)
+### Schicht 4 - Transportschicht (Transport Layer)
+### Schicht 5 - Sitzungsschicht (Session Layer)
+### Schicht 6 - Darstellungsschicht (Presentation Layer)
+### Schicht 7 - Anwendungsschicht (Application Layer)
+
+<br>
+<a href="https://de.wikipedia.org/wiki/OSI-Modell#Die_sieben_Schichten">
+  <img title="Die Sieben Schichten" src="./img/OSI/OSI.png">
+</a>
 
 [^1]: https://de.wikipedia.org/wiki/Sandbox
 [^2]: https://de.wikipedia.org/wiki/SOAP
