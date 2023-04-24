@@ -46,6 +46,12 @@
   - [DHCP-Nachrichten](#dhcp-nachrichten)
   - [Mögliche Zuweisung / Einstellung die ein DHCP dem Client zuweisen kann](#mögliche-zuweisung--einstellung-die-ein-dhcp-dem-client-zuweisen-kann)
   - [Einsatzbereiche](#einsatzbereiche)
+- [Firewall](#firewall)
+- [VPN (Virtual Private Network)](#vpn-virtual-private-network)
+  - [Eigentschaften von VPN](#eigentschaften-von-vpn)
+  - [OSI-Layer, auf dem die Kommunikation des VPN realisiert ist](#osi-layer-auf-dem-die-kommunikation-des-vpn-realisiert-ist)
+  - [Anwendungsbereiche für VPN](#anwendungsbereiche-für-vpn)
+  - [Ist ein VPN sicher? Nein! Welche Maßnahmen können den VPN-Tunnel sicher machen?](#ist-ein-vpn-sicher-nein-welche-maßnahmen-können-den-vpn-tunnel-sicher-machen)
 - [Docker](#docker)
   - [Grundlagen](#grundlagen)
   - [Begriffe](#begriffe)
@@ -334,6 +340,62 @@ Manche Konfigurationen vergeben IP-Adressen abhängig von der MAC-Adresse, das h
 ## Einsatzbereiche
 - große Netzwerke mit häufigen Änderungen
 - normale Anwender, die einfach nur eine Netzwerkverbindung haben wollen, ohne sich großartig mit Netzwerkkonfig auskennen zu müssen.
+
+---
+<br>
+
+# Firewall
+- Sicherheitsprobleme, wo gegen die Firewall keinen Schutz bietet?
+- Filtertechnologien
+  - Paketfilter
+  - Stateful Packet Inspection
+  - Proxyfilter
+  - Contentfilter
+- Firewallarten
+  - Person Firewall (Desktop Firewall)
+  - Externe Firewall (Netzwerk- oder Hardware Firewall)
+- Firewalltechnologien
+  - Paketfilter-Firewall
+  - Stateful Inspection Firewall (SIF)
+  - Firewall Router
+  - Application Layer Firewall
+  - Proxy-Firewall (Application Layer Firewall)
+
+---
+<br>
+
+# VPN (Virtual Private Network)
+VPNs sind Punkt-zu-Punkt verbindungen über ein privates oder ein öffentliches Netzwerk, z.B. über das Internet. Dabei werden die Verbindungen durch einen öffentlichen ISP (Internet Service Provider) bereitgestellt. Zur Übertragung im Internet wird ein sogenannter Tunnel erzeugt. Um einen virtuellen Anruf bei einem virtuellen Port auf einem VPN-Server zu tätigen, werden spezielle TCP/IP-basierte Protokolle, so genannte Tunnelprodukte verwendet.
+
+## Eigentschaften von VPN
+- Hohe flexibilität
+- Niedrige Kosten für die Übertragung
+- Kapselung
+- Reines Softwareprodukt
+
+## OSI-Layer, auf dem die Kommunikation des VPN realisiert ist
+- VPN Tunneling kann man auf OSI-Schicht 2 oder OSI-Schicht 3 realisieren.
+  - OSI-Schicht 2 (Sicherrungsschicht, Data Link Layer)
+    - Vertreter des Layer-2-Tunneling sind die Protokolle PPTP (Point to Pont Tunneling Protocoll), L2F (Layer 2 Forwarding) und L2TP (Layer 2 Tunneling Protocol)
+  - OSI-Schicht 3 (Vermittlungsschicht, Network Layer)
+    - IPSec
+
+## Anwendungsbereiche für VPN
+- Remotezugriff
+- Verbindung von Netzwerken
+- Verbindung von PCs über ein Intranet zum Aufbau geschlossener Gruppen
+- Firmennetzwerk
+
+## Ist ein VPN sicher? Nein! Welche Maßnahmen können den VPN-Tunnel sicher machen?
+- Identifikation
+- Authentifikation
+- Verschlüsselung der Daten zum Schutz vor unbefugten
+- Firewall
+- Verwendung von Tunneling Protokollen:
+  - PPTP
+  - L2TP
+  - IPSec
+  - SSTP
 
 ---
 <br>
