@@ -6,6 +6,13 @@
   - [Authentifizierung, Authentisierung, Autorisierung](#authentifizierung-authentisierung-autorisierung)
   - [ISMS (Informationssicherheitsmanagementsystem)](#isms-informationssicherheitsmanagementsystem)
   - [Schutzbedarfsanalyse](#schutzbedarfsanalyse)
+- [Symmetrische Verschlüsselung](#symmetrische-verschlüsselung)
+  - [Verfahren](#verfahren)
+  - [Vorteile](#vorteile)
+  - [Nachteile](#nachteile)
+- [Asymmetrische Verschlüsselung](#asymmetrische-verschlüsselung)
+  - [Vorteile](#vorteile-1)
+  - [Nachteile](#nachteile-1)
 
 ---
 <br>
@@ -41,6 +48,47 @@ Die Aufstellung von Verfahren und Regeln innerhalb einer Organisation, die dazu 
 ## Schutzbedarfsanalyse
 [^4]
 Bei der Schutzbedarfsanalyse wird anhand der eingesetzten Informationstechnik und der Informationen, deren Schutz bewertet je nach dem wie angemessen dies ist. Hierzu betrachtet man jede Anwendung und die verarbeiteten Informationen und welche Schäden zu erwarten sind. Meist wird hier dann in "Normal", "Hoch", "Sehr Hoch" kategorisiert. Bei der Vertraulichtkeit meist in "öffentlich", "intern", "geheim".
+
+---
+<br>
+
+# Symmetrische Verschlüsselung
+In der Symmetrischen Verschlüsselung verwenden beide Teilnehmer den gleichen Schlüssel, dieser ist für die Verschlüsselung wie auch für die Entschlüsselung Zuständig.
+
+## Verfahren
+- AES
+- DES
+- Triple-DES
+- IDEA
+- Blowfish
+- QUISCI
+- Twofish
+
+Diese Verfahren sind auch bei großen Datenmengen sehr schnell.
+
+## Vorteile
+- Einfaches Schlüsselmanagement da nur ein Schlüssel für Ent- und Verschlüsselung gebraucht wird.
+- Hohe Geschwindigkeit für Ent- und Verschlüsselung.
+
+## Nachteile
+- Nur ein Schlüssel für Ver- und Entschlüsselung, Schlüssel darf nicht in unbefugte Hände gelange.
+- Schlüssel muss über einen sicheren Weg übermittelt werden.
+- Anzahl der Schlüssel bezogen auf die Anzahl der Teilnehmer wächst quadratisch.
+
+# Asymmetrische Verschlüsselung
+Die Asymmetrische Verschlüsselung wird auch Public-Key-Verfahren genannt. Hier gibt es nicht nur einen Schlüssel sondern gleich zwei, dieses sogenannte Schlüsselpaar setzt sich aus einem privaten Schlüssel (Private Key) und einem öffentlichen Schlüssel (Public Key) zusammen. Mit dem Private Key, werden Daten Entschlüsselt oder eine digitale Signatur erzeugt. Mit dem Public Key kann man Daten verschlüsseln und erzeugte Signaturen auf ihren Authentizität überprüfen. Dieses Verfahren ist sehr langsam und eignen sich daher nur für kleine Datenmengen.
+
+## Vorteile
+- Relativ hohe Sicherheit.
+- Es werden nicht so viele Schlüssel benötigt, wie bei einem symmetrischen Verschüsselungsverfahren, somit weniger Aufwand der Geheimhaltung des Schlüssels.
+- Kein Schlüsselverteilungsproblem, da Public Key für jeden ohne Probleme zu erreichen ist.
+- Möglichkeit der Authentifikation durch elektronische Unterschriften (digitale Signaturen).
+
+## Nachteile
+- Arbeiten sehr langsam ca. 10000 Mal langsamer als symmetrische.
+- Große benötigte Schlüssellänge.
+- Probleme bei mehreren Empfänger einer verschlüsselten Nachricht, da jedes Mal die Nachricht extra verschlüsselt werden muss.
+- Sicherheitsrisiko durch für jeden zugänglichen Public Key -> Man in the Middle.
 
 [^1]: https://dsgvo-gesetz.de/art-32-dsgvo/
 [^2]: https://www.dr-datenschutz.de/authentisierung-authentifizierung-und-autorisierung/
