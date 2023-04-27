@@ -201,7 +201,8 @@ Hier müssen alle Regelungen betrachtet werden, die für das betreffende IT-Verf
 ### Datenschutzgesetze
 >__Beispiel:__<br> 
 Informationsverarbeitungsgesetz (IVG)<br>
-Bundesdatenschutzgesetz (BDSG)
+Bundesdatenschutzgesetz (BDSG)<br>
+Datenschutz-Grundverordnung (DSGVO)
 
 <br>
 
