@@ -26,7 +26,7 @@
 # Das Magische Dreieck des Projektmanagements
 
 <a href="https://www.crossgo.com/de/produkt/projektmanagement">
-    <img src="https://www.crossgo.com/site/produkt/Produktunterseiten/Projektmanagement/image-thumb__213__auto_6dd6ff1f382fe8df728890e87d4acf32/Magisches%20Dreieck_Projektmanagment.png" width="300">
+    <img src="https://www.crossgo.com/site/produkt/Produktunterseiten/Projektmanagement/image-thumb__213__auto_6dd6ff1f382fe8df728890e87d4acf32/Magisches%20Dreieck_Projektmanagment.png" width="300" title="Das Magische Dreieck des Projektmanagements">
 </a>
 
 [^1]
@@ -73,7 +73,7 @@ Ein Netzplan bildet die Grundlage für die Terminplanung und hat folgende Funkti
 - er stellt mögliche Puffer bzw. Reserven in der Terminplanung dar.
 
 <a href="https://t2informatik.de/wissen-kompakt/netzplan/">
-    <img src="https://t2informatik.de/wp-content/uploads/2018/02/netzplan-wissen-kompakt-t2informatik.jpg" width="500">
+    <img src="https://t2informatik.de/wp-content/uploads/2018/02/netzplan-wissen-kompakt-t2informatik.jpg" width="500" title="Hauptfunktionen eines Netzplans">
 </a>
 
 [^2]
@@ -87,12 +87,10 @@ Ein Netzplan ist ein Mittel aus der Graphentheorie, das aus Knoten und Pfeilen b
 - Mit einer Anordnungsbeziehung wird die logische - also fachliche, technische und personelle - und die zeitliche Abhängigkeit zwischen einzelnen Vorgängen festgelegt; sie besteht immer zwischen genau zwei Knoten.
 
 <a href="https://t2informatik.de/wissen-kompakt/netzplan/">
-    <img src="https://t2informatik.de/wp-content/uploads/2018/02/vorgangsknoten-wissen-kompakt.jpg" width="500">
+    <img src="https://t2informatik.de/wp-content/uploads/2018/02/vorgangsknoten-wissen-kompakt.jpg" width="500" title="Elemente des Netzplans">
 </a>
 
 # Gantt-Diagramm
-
-
 
 [^1]:(https://www.crossgo.com/de/produkt/projektmanagement)
 [^2]:(https://t2informatik.de/wissen-kompakt/netzplan/)

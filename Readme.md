@@ -6,6 +6,7 @@ Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 - [Datenbanken](Datenbanken.md)
 - [Politik-Wirtschaft](Politik-Wirtschaft.md)
 - [It Schutz und Sicherheit](It-Schutz-Sicherheit.md)
+- [It Service Management](It-Service-Management.md)
 - [Projektmanagement](Projektmanagement.md)
 - [Diagrams](/Diagrams/)
   - [Nassi-Shneidermann-Diagram](Diagrams/Nassi-Shneiderman-Diagram.md)
