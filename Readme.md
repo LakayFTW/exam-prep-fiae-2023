@@ -22,6 +22,9 @@ Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 ## Reminder
 Der Inhalt stellt kein offizielles Dokument weder eine offizielle Hilfestellung dar. Keine Haftung auf Fehler oder falschinformationen.
 
+### Hinweis!
+In der Abschlussprüfung 2023 GA2 wurden Excel Befehle abgefragt!
+
 ## Quellen
 Die Quellen sind jeweils per Fußnote referenziert. Die zugehörigen Quellen sind unter den Überschriften oder den Bildern direkt zu finden.
 
