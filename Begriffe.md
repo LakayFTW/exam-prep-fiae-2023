@@ -19,7 +19,7 @@
   - [OOP (Object Oriented Programming)](#oop-object-oriented-programming)
 - [Herangehensweisen](#herangehensweisen)
   - [CI (Continuos Integration)](#ci-continuos-integration)
-  - [CD (Continuos Delivery)](#cd-continuos-delivery)
+  - [CD (Continuos Delivery / Deployment)](#cd-continuos-delivery--deployment)
   - [Scrum](#scrum)
 - [Wirtschaft](#wirtschaft)
   - [GP (Geschäftsprozesse)](#gp-geschäftsprozesse)
@@ -94,8 +94,14 @@
 <br>
 
 ## OOA (Object Oriented Analysis)
+Bei der Object Oriented Analysis werden die Anforderungen an das System in Form von Szenarien, Anwendungsfällen oder Benutzergeschichten erfasst. Anschließend werden die Objekte identifiziert, die in diesem System eine Rolle spielen, und deren Eigenschaften und Verhalten beschrieben. Dabei werden Konzepte wie Klassen, Attribute, Methoden, Beziehungen und Vererbung verwendet.
+
+Das Ziel der Object Oriented Analysis besteht darin, ein klares Verständnis des Systems zu entwickeln und die Anforderungen in eine objektorientierte Struktur zu überführen. Die Ergebnisse der OOA dienen als Grundlage für das Object Oriented Design, bei dem die strukturellen und verhaltensbezogenen Aspekte der Softwareentwicklung weiter ausgearbeitet werden.
+
+Durch die Verwendung von OOA können komplexe Systeme besser abstrahiert, organisiert und modelliert werden, was zu einer besseren Wartbarkeit, Flexibilität und Wiederverwendbarkeit des Codes führen kann.
 
 ## OOD (Object Oriented Design)
+Das Object Oriented Design bezieht sich auf den Prozess der Gestaltung einer Softwareanwendung unter Verwendung der Prinzipien der Objektorientierung. Dabei werden die Anforderungen analysiert, das System in verschiedene Objekte aufgeteilt und deren Beziehungen zueinander definiert.
 
 ## OOP (Object Oriented Programming)
 [^7]<br>
@@ -105,7 +111,11 @@ Die objektorientierte Programmierung ist ein auf dem Konzept der Objektorientier
 
 # Herangehensweisen
 ## CI (Continuos Integration)
-## CD (Continuos Delivery)
+Continous Integration bezieht sich auf den Prozess bei dem Entwickler regelmäßig ihre Codeänderungen in ein gemeinsames Repository hochladen. Jedes Mal, wenn Code in das Repository eingecheckt wird, wird eine automatische Build und Testpipeline ausgelöst. Der Zweck darin besteht Probleme frühzeitig zu erkennen, Konflikte zwischen Entwicklern zu vermeiden und die Qualität des Codes kontinuirlich zu verbessern.
+
+## CD (Continuos Delivery / Deployment)
+CD baut auf CI auf und beinhaltet die automatische Bereitstellung und Auslieferung der Anwendung nach erfolgreichem Abschluss der CI-Phase. Bei Continous Delivery wird die Software automatisch in eine Umgebung (z.B. Staging oder Testumgebung) bereitgestellt, in der weitere Tests und Überprüfungen durchgeführt werden können. Bei Continous Deplyment wird die Software automatisch in die Produktionsumgebung bereitgestellt und ist für Benutzer verfügbar.
+
 ## Scrum
 
 # Wirtschaft
@@ -124,9 +134,19 @@ Sandbox ist die englischsprachige Bezeichnung für Sandkiste oder Sandkasten und
 
 # Netzwerke
 ## LAN (Local Area Network)
+LAN bezieht sich auf ein Computernetzwerk, das auf einen relativ kleinen geografischen Bereich wie ein Bürogebäude, eine Schule oder eine Campusumgebung beschränkt ist. Ein LAN ermöglicht die Vernetzung von Computern, Geräten und Ressourcen innerhalb dieses begrenzten Bereichs.
+
+In einem LAN können Geräte wie Computer, Laptops, Drucker, Server, Netzwerkswitches und Router miteinander verbunden werden. Die Verbindung erfolgt normalerweise über ein Ethernet-Kabel oder drahtlose Verbindung wie Wi-Fi.
+
 ## WAN (Wide Area Network)
+WAN bezieht sich auf ein Computernetzwerk, das sich über größere geografische Entfernung erstreckt. Ein WAN umfasst in der Regel mehrere LANs, die miteinander verbunden sin, um eine weitreichende Kommunikation zu ermöglichen. Es verwendet verschiedene Kommunikationstechnologien und Übertragungsmedien wie Telefonleitungen, Glasfaserkabel, Satellitenverbindung oder drahtlose Verbindung, um die Datenübertragung zwischen den Standorten zu ermöglichen.
+
 ## MAN (Metropolitan Area Network)
+MAN bezieht sich auf ein Computernetzwerk, das eine Stadt oder eine Metropolregion abdeckt.
+
 ## WLAN (Wireless Local Area Network)
+WLAN bezieht sich auf eine drahtlose Netzwerktechnologie, die es Geräten ermöglicht zu kommunizieren ohne das eine physische Kabelverbindung erforderlich ist.  
+WLAN basiert auf dem Standard IEEE 802.11 und verwendet Funkwellen, um Daten zwischen Geräten zu übertragen.
 
 ## NIC (Network Interface Controller)
 [^6]<br>
