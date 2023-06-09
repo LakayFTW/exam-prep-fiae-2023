@@ -1,5 +1,8 @@
 # Table of Content
 - [Table of Content](#table-of-content)
+- [Arten von Datenbanken](#arten-von-datenbanken)
+  - [Relationale Datenbanken](#relationale-datenbanken)
+  - [Dokumentenorientierte Datenbanken](#dokumentenorientierte-datenbanken)
 - [Normalformen](#normalformen)
   - [1. Normalform](#1-normalform)
     - [Erläuterung](#erläuterung)
@@ -42,6 +45,13 @@
 
 ---
 <br>
+
+# Arten von Datenbanken
+## Relationale Datenbanken
+Relationale Datenbanken bestehen aus Tabellen, jede Tabelle hat Spalten und Reihen. In solch einer Datenbank lassen sich beziehungen per Primary- und Foreign Key bilden.
+
+## Dokumentenorientierte Datenbanken
+In einer Dokumentenorientierten Datenbank werden die Daten nicht wie bei der Relationalen Datenbank in Tabellen gespeichert sondern in Dokumenten. Solch ein Dokument ist eine strukturierte Datenquelle, die in einem bestimmten Format vorliegt, häufig als JSON (Javascript Object Notation) oder als XML (eXtensible Markup Language).
 
 # Normalformen
 [^2] [^1]<br>
