@@ -2,13 +2,14 @@
 Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 ## Themen:
 - [Overall Begriffe](Begriffe.md)
+  - Dieses Dokument enthält Begriffe, welche noch nicht einsortiert worden sind oder wofür noch keinepPassende Stelle gefunden wurde.
 - [Netzwerktechnik](Netzwerktechnik.md)
+- [Virtualisierung](Virtualisierung.md)
 - [Datenbanken](Datenbanken.md)
 - [Politik-Wirtschaft](Politik-Wirtschaft.md)
 - [It Schutz und Sicherheit](It-Schutz-Sicherheit.md)
 - [It Service Management](It-Service-Management.md)
 - [Projektmanagement](Projektmanagement.md)
-- [Virtualisierung](Virtualisierung.md)
 - [Softwareentwicklung](Softwareentwicklung.md)
 - [Diagrams](/Diagrams/)
   - [Nassi-Shneidermann-Diagram](Diagrams/Nassi-Shneiderman-Diagram.md)
