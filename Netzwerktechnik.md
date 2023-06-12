@@ -33,6 +33,8 @@
     - [Private IP-Adressen](#private-ip-adressen)
       - [Adressbereiche:](#adressbereiche)
     - [Funktionsweise](#funktionsweise)
+- [LAN (Local Area Network)](#lan-local-area-network)
+- [WLAN (Wireless Local Area Network)](#wlan-wireless-local-area-network)
 - [DHCP](#dhcp)
   - [Konzept](#konzept)
   - [DHCP-Server](#dhcp-server)
@@ -52,6 +54,14 @@
   - [OSI-Layer, auf dem die Kommunikation des VPN realisiert ist](#osi-layer-auf-dem-die-kommunikation-des-vpn-realisiert-ist)
   - [Anwendungsbereiche für VPN](#anwendungsbereiche-für-vpn)
   - [Ist ein VPN sicher? Nein! Welche Maßnahmen können den VPN-Tunnel sicher machen?](#ist-ein-vpn-sicher-nein-welche-maßnahmen-können-den-vpn-tunnel-sicher-machen)
+- [OSI Schichten Modell](#osi-schichten-modell)
+    - [Schicht 1 - Bitübertragungsschicht (Physical Layer)](#schicht-1---bitübertragungsschicht-physical-layer)
+    - [Schicht 2 - Sicherungsschicht (Data Link Layer)](#schicht-2---sicherungsschicht-data-link-layer)
+    - [Schicht 3 - Vermittlungsschicht (Network Layer)](#schicht-3---vermittlungsschicht-network-layer)
+    - [Schicht 4 - Transportschicht (Transport Layer)](#schicht-4---transportschicht-transport-layer)
+    - [Schicht 5 - Sitzungsschicht (Session Layer)](#schicht-5---sitzungsschicht-session-layer)
+    - [Schicht 6 - Darstellungsschicht (Presentation Layer)](#schicht-6---darstellungsschicht-presentation-layer)
+    - [Schicht 7 - Anwendungsschicht (Application Layer)](#schicht-7---anwendungsschicht-application-layer)
 
 ---
 <br>
@@ -254,6 +264,20 @@ Somit hat man keinen unnützen administrativen Mehraufwand bei der Pflege lokale
 ---
 <br>
 
+# LAN (Local Area Network)
+[^6]
+LAN bezieht sich auf ein Computernetzwerk, das auf einen relativ kleinen geografischen Bereich wie ein Bürogebäude, eine Schule oder eine Campusumgebung beschränkt ist. Ein LAN ermöglicht die Vernetzung von Computern, Geräten und Ressourcen innerhalb dieses begrenzten Bereichs.
+
+In einem LAN können Geräte wie Computer, Laptops, Drucker, Server, Netzwerkswitches und Router miteinander verbunden werden. Die Verbindung erfolgt normalerweise über ein Ethernet-Kabel oder drahtlose Verbindung wie Wi-Fi.
+
+Ein LAN arbeitet mit Internen IP-Adressen welche von außerhalb des Netzwerkes nicht eingesehen werden können. Diese IP-Adressen sind in jedem Privaten Netz zu finden und können vergeben werden.  
+Siehe [Private IP-Adressen](#private-ip-adressen)
+
+# WLAN (Wireless Local Area Network)
+[^7]
+WLAN bezieht sich auf eine drahtlose Netzwerktechnologie, die es Geräten ermöglicht zu kommunizieren ohne das eine physische Kabelverbindung erforderlich ist.
+WLAN basiert auf dem Standard IEEE 802.11 und verwendet Funkwellen, um Daten zwischen Geräten zu übertragen.
+
 # DHCP
 [^10]<br>
 Das Dynamic Host Protocol (DHCP) ist ein Kommunikationsprotokoll. Durch einen Server können Clients die richtige Netzwerkkonfiguration erhalten.
@@ -385,10 +409,27 @@ VPNs sind Punkt-zu-Punkt verbindungen über ein privates oder ein öffentliches 
   - IPSec
   - SSTP
 
+# OSI Schichten Modell
+[^11]<br>
+### Schicht 1 - Bitübertragungsschicht (Physical Layer)
+### Schicht 2 - Sicherungsschicht (Data Link Layer)
+### Schicht 3 - Vermittlungsschicht (Network Layer)
+### Schicht 4 - Transportschicht (Transport Layer)
+### Schicht 5 - Sitzungsschicht (Session Layer)
+### Schicht 6 - Darstellungsschicht (Presentation Layer)
+### Schicht 7 - Anwendungsschicht (Application Layer)
+
+<br>
+<a href="https://de.wikipedia.org/wiki/OSI-Modell#Die_sieben_Schichten">
+  <img title="Die Sieben Schichten" src="./img/OSI/OSI.png">
+</a>
 
 [^1]: https://www.techtarget.com/searchstorage/tip/Key-differences-in-software-RAID-vs-hardware-RAID
 [^2]: https://de.wikipedia.org/wiki/RAID
 [^3]: https://en.wikipedia.org/wiki/Ethernet_frame
 [^4]: https://en.wikipedia.org/wiki/MAC_address
 [^5]: https://de.wikipedia.org/wiki/IPv4
+[^6]: https://de.wikipedia.org/wiki/Local_Area_Network
+[^7]: https://de.wikipedia.org/wiki/Wireless_Local_Area_Network
 [^10]: https://de.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+[^11]: https://de.wikipedia.org/wiki/OSI-Modell

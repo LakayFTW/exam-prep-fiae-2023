@@ -6,10 +6,6 @@
 - [Protokolle](#protokolle)
   - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
   - [HTTP/S](#https)
-    - [HTTP-400](#http-400)
-      - [Arten von HTTP-400](#arten-von-http-400)
-    - [HTTP-500](#http-500)
-      - [Arten von HTTP-500](#arten-von-http-500)
 - [Architektur](#architektur)
   - [CORBA (Common Object Request Broker Architecture)](#corba-common-object-request-broker-architecture)
   - [COM/DCOM (Distributed / Component Object Model)](#comdcom-distributed--component-object-model)
@@ -43,16 +39,9 @@
   - [DHCP (Dynamic Host Protocol)](#dhcp-dynamic-host-protocol)
   - [WPAD (Web Proxy Audodiscovery Protocol)](#wpad-web-proxy-audodiscovery-protocol)
   - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [ISO/OSI-Referenzmodell](#isoosi-referenzmodell)
-    - [Schicht 1 - Bitübertragungsschicht (Physical Layer)](#schicht-1---bitübertragungsschicht-physical-layer)
-    - [Schicht 2 - Sicherungsschicht (Data Link Layer)](#schicht-2---sicherungsschicht-data-link-layer)
-    - [Schicht 3 - Vermittlungsschicht (Network Layer)](#schicht-3---vermittlungsschicht-network-layer)
-    - [Schicht 4 - Transportschicht (Transport Layer)](#schicht-4---transportschicht-transport-layer)
-    - [Schicht 5 - Sitzungsschicht (Session Layer)](#schicht-5---sitzungsschicht-session-layer)
-    - [Schicht 6 - Darstellungsschicht (Presentation Layer)](#schicht-6---darstellungsschicht-presentation-layer)
-    - [Schicht 7 - Anwendungsschicht (Application Layer)](#schicht-7---anwendungsschicht-application-layer)
 - [Virtualisierung](#virtualisierung)
 - [Turing-Test](#turing-test)
+- [OSI/ISO Schichten Modell](#osiiso-schichten-modell)
 
 ---
 <br>
@@ -80,30 +69,7 @@
 <br>
 
 ## HTTP/S
-- Hyper Text Transport Protocol
-- Secure Hyper Text Transport Protocol
-
-### HTTP-400
-HTTP Response Code 400 bezieht sich auf Client fehler
-
-#### Arten von HTTP-400
-- 400 Bad Request
-    - Der Server kann oder will die Anfrage nicht bearbeiten wegen eines vermeidlichen Client Errors (Request falsch, Syntax falsch, Inhalt zu groß etc.)
-- 403 Forbidden
-    - Die Anfrage hat Daten enthalten die vom Server zwar verstanden wurde aber nicht verarbeitet wird (Eintrag doppelt)
-- 404 Not Found
-    - Die Angefragte Resource konnte nicht gefunden werden
-
-### HTTP-500
-HTTP Response Code 500 bezieht sich auf Server fehler
-
-#### Arten von HTTP-500
-- 500 Internal Server Error
-    - Eine generische Fehlermeldung welche gegeben wird wenn etwas unerwartetes passiert ist
-- 502 Bad Gateway
-    - Der Server fungierte als Gateway oder Proxy und erhielt eine ungültige Antwort
-- 503 Service Unavailable
-    - Der Server kann die Anfrage nicht verarbeiten (zu viele Anfragen, down for maintanance)
+Siehe [HTTP/S](/Softwareentwicklung.md/#https)
 
 # Architektur
 
@@ -124,16 +90,10 @@ HTTP Response Code 500 bezieht sich auf Server fehler
 ## XSL
 
 ## HTML - Hypertext Markup Language
-HTML ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bilder und anderen Inhalten. HTML-Dokumente sind die Grundlage des WWW (World-Wide-Web) und werden von Webbrowsern dargestellt. 
-
-Anders als einige Leute behaupten ist HTML **KEINE** Programmmiersprache.
+Siehe [HTML](/Softwareentwicklung.md/#html---hypertext-markup-language)
 
 ### DOM - Document Object Model
-Document Object Model
-
-- meist HTML
-- kann aber auch XML oder XHTML sein
-- Das DOM stellt eine Baumstruktur dar, in der jedes Element des Dokumentes als Knoten im Baum repräsentiert wird.
+Siehe [DOM](/Softwareentwicklung.md/#dom---document-object-model)
 
 # UML (Unified Modelling Language)
 
@@ -181,9 +141,7 @@ Sandbox ist die englischsprachige Bezeichnung für Sandkiste oder Sandkasten und
 
 # Netzwerke
 ## LAN (Local Area Network)
-LAN bezieht sich auf ein Computernetzwerk, das auf einen relativ kleinen geografischen Bereich wie ein Bürogebäude, eine Schule oder eine Campusumgebung beschränkt ist. Ein LAN ermöglicht die Vernetzung von Computern, Geräten und Ressourcen innerhalb dieses begrenzten Bereichs.
-
-In einem LAN können Geräte wie Computer, Laptops, Drucker, Server, Netzwerkswitches und Router miteinander verbunden werden. Die Verbindung erfolgt normalerweise über ein Ethernet-Kabel oder drahtlose Verbindung wie Wi-Fi.
+Siehe [LAN](/Netzwerktechnik.md/#lan-local-area-network)
 
 ## WAN (Wide Area Network)
 WAN bezieht sich auf ein Computernetzwerk, das sich über größere geografische Entfernung erstreckt. Ein WAN umfasst in der Regel mehrere LANs, die miteinander verbunden sin, um eine weitreichende Kommunikation zu ermöglichen. Es verwendet verschiedene Kommunikationstechnologien und Übertragungsmedien wie Telefonleitungen, Glasfaserkabel, Satellitenverbindung oder drahtlose Verbindung, um die Datenübertragung zwischen den Standorten zu ermöglichen.
@@ -192,8 +150,7 @@ WAN bezieht sich auf ein Computernetzwerk, das sich über größere geografische
 MAN bezieht sich auf ein Computernetzwerk, das eine Stadt oder eine Metropolregion abdeckt.
 
 ## WLAN (Wireless Local Area Network)
-WLAN bezieht sich auf eine drahtlose Netzwerktechnologie, die es Geräten ermöglicht zu kommunizieren ohne das eine physische Kabelverbindung erforderlich ist.  
-WLAN basiert auf dem Standard IEEE 802.11 und verwendet Funkwellen, um Daten zwischen Geräten zu übertragen.
+Siehe [WLAN](/Netzwerktechnik.md/#wlan-wireless-local-area-network)
 
 ## NIC (Network Interface Controller)
 [^6]<br>
@@ -214,26 +171,14 @@ Das Web Proxy Auto-Discovery Protocol ist ein Protokoll, mit dem Web-Clients zu 
 [^8]<br>
 Das Domain Name System, ist ein hierarchisches unterteiltes Bezeichnungssystem in einem meist IP-basierten Netz zur Beantwortung von Anfragen zu Domain-Namen (Namenauflösung)
 
-## ISO/OSI-Referenzmodell
-[^10]<br>
-### Schicht 1 - Bitübertragungsschicht (Physical Layer)
-### Schicht 2 - Sicherungsschicht (Data Link Layer)
-### Schicht 3 - Vermittlungsschicht (Network Layer)
-### Schicht 4 - Transportschicht (Transport Layer)
-### Schicht 5 - Sitzungsschicht (Session Layer)
-### Schicht 6 - Darstellungsschicht (Presentation Layer)
-### Schicht 7 - Anwendungsschicht (Application Layer)
-
-<br>
-<a href="https://de.wikipedia.org/wiki/OSI-Modell#Die_sieben_Schichten">
-  <img title="Die Sieben Schichten" src="./img/OSI/OSI.png">
-</a>
-
 # Virtualisierung
 Siehe [Virtualisierung](/Virtualisierung.md)
 
 # Turing-Test
 Mit dem Turing Test lässt sich definieren ob eine Maschine ein gleichwertiges Denkvermögen eines Menschen hätte. Beim Testen soll ein Mensch mit zwei Parteien kommunizieren wobei eine Partei ein anderer Mensch ist und eine Partei eine Maschine. Lässt sich nach intensiven Befragen nicht feststellen welcher der beiden Partein die Maschine ist, hat die Maschine den Turing-Test bestanden.
+
+# OSI/ISO Schichten Modell
+Siehe [OSI](/Netzwerktechnik.md/#osi-schichten-modell)
 
 [^1]: https://de.wikipedia.org/wiki/Sandbox
 [^2]: https://de.wikipedia.org/wiki/SOAP
@@ -244,4 +189,3 @@ Mit dem Turing Test lässt sich definieren ob eine Maschine ein gleichwertiges D
 [^7]: https://de.wikipedia.org/wiki/Objektorientierte_Programmierung
 [^8]: https://de.wikipedia.org/wiki/DNS
 [^9]: https://de.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol
-[^10]: https://de.wikipedia.org/wiki/OSI-Modell
