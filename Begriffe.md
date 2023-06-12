@@ -5,6 +5,11 @@
   - [API (Application Programming Interface)](#api-application-programming-interface)
 - [Protokolle](#protokolle)
   - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
+  - [HTTP/S](#https)
+    - [HTTP-400](#http-400)
+      - [Arten von HTTP-400](#arten-von-http-400)
+    - [HTTP-500](#http-500)
+      - [Arten von HTTP-500](#arten-von-http-500)
 - [Architektur](#architektur)
   - [CORBA (Common Object Request Broker Architecture)](#corba-common-object-request-broker-architecture)
   - [COM/DCOM (Distributed / Component Object Model)](#comdcom-distributed--component-object-model)
@@ -12,6 +17,8 @@
 - [Auszeichnungssprachen](#auszeichnungssprachen)
   - [DTD (Document Type Definition)](#dtd-document-type-definition)
   - [XSL](#xsl)
+  - [HTML - Hypertext Markup Language](#html---hypertext-markup-language)
+    - [DOM - Document Object Model](#dom---document-object-model)
 - [UML (Unified Modelling Language)](#uml-unified-modelling-language)
 - [Paradigmen](#paradigmen)
   - [OOA (Object Oriented Analysis)](#ooa-object-oriented-analysis)
@@ -44,6 +51,8 @@
     - [Schicht 5 - Sitzungsschicht (Session Layer)](#schicht-5---sitzungsschicht-session-layer)
     - [Schicht 6 - Darstellungsschicht (Presentation Layer)](#schicht-6---darstellungsschicht-presentation-layer)
     - [Schicht 7 - Anwendungsschicht (Application Layer)](#schicht-7---anwendungsschicht-application-layer)
+- [Virtualisierung](#virtualisierung)
+- [Turing-Test](#turing-test)
 
 ---
 <br>
@@ -70,6 +79,32 @@
 - Gängigste Kombination ist SOAP über HTTP und TCP
 <br>
 
+## HTTP/S
+- Hyper Text Transport Protocol
+- Secure Hyper Text Transport Protocol
+
+### HTTP-400
+HTTP Response Code 400 bezieht sich auf Client fehler
+
+#### Arten von HTTP-400
+- 400 Bad Request
+    - Der Server kann oder will die Anfrage nicht bearbeiten wegen eines vermeidlichen Client Errors (Request falsch, Syntax falsch, Inhalt zu groß etc.)
+- 403 Forbidden
+    - Die Anfrage hat Daten enthalten die vom Server zwar verstanden wurde aber nicht verarbeitet wird (Eintrag doppelt)
+- 404 Not Found
+    - Die Angefragte Resource konnte nicht gefunden werden
+
+### HTTP-500
+HTTP Response Code 500 bezieht sich auf Server fehler
+
+#### Arten von HTTP-500
+- 500 Internal Server Error
+    - Eine generische Fehlermeldung welche gegeben wird wenn etwas unerwartetes passiert ist
+- 502 Bad Gateway
+    - Der Server fungierte als Gateway oder Proxy und erhielt eine ungültige Antwort
+- 503 Service Unavailable
+    - Der Server kann die Anfrage nicht verarbeiten (zu viele Anfragen, down for maintanance)
+
 # Architektur
 
 ## CORBA (Common Object Request Broker Architecture)
@@ -87,6 +122,18 @@
 <br>
 
 ## XSL
+
+## HTML - Hypertext Markup Language
+HTML ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bilder und anderen Inhalten. HTML-Dokumente sind die Grundlage des WWW (World-Wide-Web) und werden von Webbrowsern dargestellt. 
+
+Anders als einige Leute behaupten ist HTML **KEINE** Programmmiersprache.
+
+### DOM - Document Object Model
+Document Object Model
+
+- meist HTML
+- kann aber auch XML oder XHTML sein
+- Das DOM stellt eine Baumstruktur dar, in der jedes Element des Dokumentes als Knoten im Baum repräsentiert wird.
 
 # UML (Unified Modelling Language)
 
@@ -181,6 +228,12 @@ Das Domain Name System, ist ein hierarchisches unterteiltes Bezeichnungssystem i
 <a href="https://de.wikipedia.org/wiki/OSI-Modell#Die_sieben_Schichten">
   <img title="Die Sieben Schichten" src="./img/OSI/OSI.png">
 </a>
+
+# Virtualisierung
+Siehe [Virtualisierung](/Virtualisierung.md)
+
+# Turing-Test
+Mit dem Turing Test lässt sich definieren ob eine Maschine ein gleichwertiges Denkvermögen eines Menschen hätte. Beim Testen soll ein Mensch mit zwei Parteien kommunizieren wobei eine Partei ein anderer Mensch ist und eine Partei eine Maschine. Lässt sich nach intensiven Befragen nicht feststellen welcher der beiden Partein die Maschine ist, hat die Maschine den Turing-Test bestanden.
 
 [^1]: https://de.wikipedia.org/wiki/Sandbox
 [^2]: https://de.wikipedia.org/wiki/SOAP
