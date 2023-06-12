@@ -21,6 +21,10 @@
 - [Asymmetrische Verschlüsselung](#asymmetrische-verschlüsselung)
   - [Vorteile](#vorteile-1)
   - [Nachteile](#nachteile-1)
+- [2FA - 2 Faktor Authentifizierung](#2fa---2-faktor-authentifizierung)
+  - [Authentifizieren](#authentifizieren)
+  - [Authentisieren](#authentisieren)
+  - [Autorisieren](#autorisieren)
 
 ---
 <br>
@@ -253,6 +257,11 @@ Die Asymmetrische Verschlüsselung wird auch Public-Key-Verfahren genannt. Hier 
 - Große benötigte Schlüssellänge.
 - Probleme bei mehreren Empfänger einer verschlüsselten Nachricht, da jedes Mal die Nachricht extra verschlüsselt werden muss.
 - Sicherheitsrisiko durch für jeden zugänglichen Public Key -> Man in the Middle.
+
+# 2FA - 2 Faktor Authentifizierung
+## Authentifizieren
+## Authentisieren
+## Autorisieren
 
 [^1]: https://dsgvo-gesetz.de/art-32-dsgvo/
 [^2]: https://www.dr-datenschutz.de/authentisierung-authentifizierung-und-autorisierung/
