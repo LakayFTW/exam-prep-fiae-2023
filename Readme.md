@@ -8,6 +8,8 @@ Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 - [It Schutz und Sicherheit](It-Schutz-Sicherheit.md)
 - [It Service Management](It-Service-Management.md)
 - [Projektmanagement](Projektmanagement.md)
+- [Virtualisierung](Virtualisierung.md)
+- [Softwareentwicklung](Softwareentwicklung.md)
 - [Diagrams](/Diagrams/)
   - [Nassi-Shneidermann-Diagram](Diagrams/Nassi-Shneiderman-Diagram.md)
   - [Programmablaufplan](Diagrams/Programmablaufplan.md)
