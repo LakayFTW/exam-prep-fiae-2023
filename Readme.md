@@ -23,6 +23,10 @@ Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 ## Reminder
 Der Inhalt stellt kein offizielles Dokument weder eine offizielle Hilfestellung dar. Keine Haftung auf Fehler oder falschinformationen.
 
+Auch Fragen zur Projektarbeit während der mündlichen Prüfung von mir lassen sich hier finden.  
+Es kann alles gefragt werden selbst Netzwerktechnik, Docker und ähnliches.  
+Setzt euch mit den Zuständigen Ausbildern zusammen um zu besprechen was in den Prüfungen dran kommen könnte.
+
 ### Hinweis!
 In der Abschlussprüfung 2023 GA2 wurden Excel Befehle abgefragt!
 
