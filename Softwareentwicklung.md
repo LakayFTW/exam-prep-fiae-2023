@@ -1,23 +1,28 @@
 # Table of Content
 - [Table of Content](#table-of-content)
 - [Web Entwicklung](#web-entwicklung)
-  - [Auszeichnungssprachen](#auszeichnungssprachen)
-    - [HTML - Hypertext Markup Language](#html---hypertext-markup-language)
-      - [DOM - Document Object Model](#dom---document-object-model)
-  - [Protokolle](#protokolle)
-    - [HTTP/S](#https)
-      - [HTTP-400](#http-400)
-        - [Arten von HTTP-400](#arten-von-http-400)
-      - [HTTP-500](#http-500)
-        - [Arten von HTTP-500](#arten-von-http-500)
+	- [Auszeichnungssprachen](#auszeichnungssprachen)
+		- [HTML - Hypertext Markup Language](#html---hypertext-markup-language)
+			- [DOM - Document Object Model](#dom---document-object-model)
+	- [Protokolle](#protokolle)
+		- [HTTP/S](#https)
+			- [HTTP-400](#http-400)
+				- [Arten von HTTP-400](#arten-von-http-400)
+			- [HTTP-500](#http-500)
+				- [Arten von HTTP-500](#arten-von-http-500)
 - [Objektorientierung](#objektorientierung)
-  - [Interfaces](#interfaces)
-    - [Deklaration](#deklaration)
-    - [Beispiel](#beispiel)
-    - [Namenskonventionen](#namenskonventionen)
-  - [abstraktion](#abstraktion)
-    - [Programmiersprachen](#programmiersprachen)
-    - [Abstraktion in der objektorientierten Programmierung](#abstraktion-in-der-objektorientierten-programmierung)
+	- [Interfaces](#interfaces)
+		- [Deklaration](#deklaration)
+		- [Beispiel](#beispiel)
+		- [Namenskonventionen](#namenskonventionen)
+	- [Abstraktion](#abstraktion)
+		- [Programmiersprachen](#programmiersprachen)
+		- [Abstraktion in der objektorientierten Programmierung](#abstraktion-in-der-objektorientierten-programmierung)
+		- [Abstraktion Beispiel (Java)](#abstraktion-beispiel-java)
+	- [Polymorphie](#polymorphie)
+		- [Polymorphie von Operatoren](#polymorphie-von-operatoren)
+		- [Polymorphie in der Objektorientierten Programmierung](#polymorphie-in-der-objektorientierten-programmierung)
+		- [Beispiel Polymorphie](#beispiel-polymorphie)
 
 # Web Entwicklung
 
@@ -161,7 +166,7 @@ public void Move(float x, float y)
 In einigen Programmiersprachen ist es üblich, Schnittstellen durch besondere Präfixe oder Suffixe erkennbar zu machen. So wird häufig ein "I" oder ein "IF" angehängt.  
 Im oben aufgeführtem Beispiel wäre dies ein "I" für "IFace". Dies wird normalerweise bei C# angewandt.
 
-## abstraktion
+## Abstraktion
 [^6]
 Der Begriff Abstraktion wird in der Informatik häufig eingesetzt und beschreibt die Trennung zwischen **Konzept** und **Umsetzung**.  
 
@@ -170,7 +175,95 @@ Unterschiedliche Programmiersprachen bieten unterschiedliche Möglichkeiten von 
 - In Objektorientierten Sprachen wie C++, Object Pascal oder Java, wurde das Konzept der Abstraktion in Form einer eigenen deklarativen Anweisung umgesetzt. Nach einer derartigen Deklaration ist es die Aufgabe des Programmierers, eine Klasse zu implementieren, um eine Instanz eines Objektes davon erzeugen zu können.
 
 ### Abstraktion in der objektorientierten Programmierung
+In der objektorientierten Programmierung repräsentieren Objekte die abstrakten „Akteure“, die Arbeiten verrichten, ihren Zustand verändern und mit anderen Objekten im System kommunizieren können. Dabei werden die detaillierten Informationen über den genauen Zustand des Objektes oft verborgen, was auch als Information Hiding oder Kapselung bezeichnet wird. Hier werden Details verborgen, um das Problem nicht zu komplex zu gestalten. 
 
+Eine weiter Form der Abstraktion ist die Polymorphie. Diese Vielgestaltigkeit erlaubt es, Objekte unterschiedlicher Typen miteinander auszutauschen. Auch die Vererbung von Klassen ist in einer Form eine Abstraktion, die es ermöglicht, ein komplexes Gebilde von Realationen abzubilden.
+
+Verschiedene Programmiersprachen bieten vergleichbaren Konzepte der Abstraktion. Das Ziel bei allen ist es die Vielgestaltigkeit in der Objektorientierten Programmierung zu unterstützen.
+
+### Abstraktion Beispiel (Java)
+```java
+public class Tier
+{
+     private double energieReserven;
+
+     public boolean istHungrig() {
+         return energieReserven < 2.5;
+     }
+     public void essen(Futter futter) {
+         // Futter essen
+         energieReserven += futter.getKalorien();
+     }
+}
+```
+
+Mit diesem Code können Objekte vom Typen "Tier" erstellt werden.
+```java
+schwein = new Tier();
+if(schwein.istHungrig()){
+	schwein.essen(essensreste);
+}
+
+kuh = new Tier();
+if(kuh.istHungrig()){
+	kuh.essen(gras);
+}
+```
+
+In diesem Beispiel stellt die Klasse Tier eine Abstraktion dar und wird an Stelle von tatsächlichen Tieren verwendet. 
+
+## Polymorphie
+[^7]
+Polymorphie oder Polymorphismus (griechisch für Vielgestaltigkeit | Poly = Viel, Morph = Form) ist ein Konzept in der Objektorientierten Programmierung, welches es uns ermöglicht einen Bezeichner abhängig von seiner Verwendung Objekte unterschiedlichen Datentyps annimmt. 
+
+### Polymorphie von Operatoren
+Ein Operator wie z.B. ein + oder - kann mehrmals mit anderen bedeutungen verwendet werden. Einersatz lassen sich hiermit Integer addieren oder subtrahieren, jedoch lassen sich auch Strings hiermit einander verketten.
+
+### Polymorphie in der Objektorientierten Programmierung
+Polymorphie tritt in der Objektorientierten Programmierung immer in Zusammenhang mit Vererbung und [Schnittstellen](#interfaces) auf.
+
+Gibt es mehrere Methoden auf unterschiedlicher Hierarchischen Ebenen mit gleicher Signatur, wird zur Laufzeit bestimmt welche der Methoden für ein gegebenes Objekt verwendet wird (**Dynamisches Binden**). 
+
+### Beispiel Polymorphie
+```c#
+class Fahrzeug
+{
+    public virtual void Beschleunigen()
+    {
+        Console.WriteLine("Das Fahrzeug beschleunigt.");
+    }
+}
+
+// Abgeleitete Klasse 1
+class Auto : Fahrzeug
+{
+    public override void Beschleunigen()
+    {
+        Console.WriteLine("Das Auto beschleunigt schnell.");
+    }
+}
+
+// Abgeleitete Klasse 2
+class Fahrrad : Fahrzeug
+{
+    public override void Beschleunigen()
+    {
+        Console.WriteLine("Das Fahrrad beschleunigt langsam.");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Fahrzeug fahrzeug1 = new Auto();
+        Fahrzeug fahrzeug2 = new Fahrrad();
+
+        fahrzeug1.Beschleunigen(); // Aufruf der überschriebenen Methode in der Auto-Klasse
+        fahrzeug2.Beschleunigen(); // Aufruf der überschriebenen Methode in der Fahrrad-Klasse
+    }
+}
+```
 
 [^1]: https://de.wikipedia.org/wiki/HTTP-Statuscode
 [^2]: https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol
@@ -178,3 +271,4 @@ Unterschiedliche Programmiersprachen bieten unterschiedliche Möglichkeiten von 
 [^4]: https://de.wikipedia.org/wiki/Document_Object_Model
 [^5]: https://de.wikipedia.org/wiki/Schnittstelle_(Objektorientierung)
 [^6]: https://de.wikipedia.org/wiki/Abstraktion_(Informatik)
+[^7]: https://de.wikipedia.org/wiki/Polymorphie_(Programmierung)
