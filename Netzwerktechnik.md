@@ -62,6 +62,22 @@
     - [Schicht 5 - Sitzungsschicht (Session Layer)](#schicht-5---sitzungsschicht-session-layer)
     - [Schicht 6 - Darstellungsschicht (Presentation Layer)](#schicht-6---darstellungsschicht-presentation-layer)
     - [Schicht 7 - Anwendungsschicht (Application Layer)](#schicht-7---anwendungsschicht-application-layer)
+- [Topologien](#topologien)
+  - [Punkt zu Punkt](#punkt-zu-punkt)
+    - [Vorteile](#vorteile-3)
+    - [Nachteile](#nachteile-3)
+  - [Stern](#stern)
+    - [Vorteile](#vorteile-4)
+    - [Nachteile](#nachteile-4)
+  - [Ring](#ring)
+    - [Vorteile](#vorteile-5)
+    - [Nachteile](#nachteile-5)
+  - [Bus](#bus)
+    - [Vorteile](#vorteile-6)
+    - [Nachteile](#nachteile-6)
+  - [Vermascht](#vermascht)
+    - [Vorteile](#vorteile-7)
+    - [Nachteile](#nachteile-7)
 
 ---
 <br>
@@ -421,8 +437,108 @@ VPNs sind Punkt-zu-Punkt verbindungen über ein privates oder ein öffentliches 
 
 <br>
 <a href="https://de.wikipedia.org/wiki/OSI-Modell#Die_sieben_Schichten">
-  <img title="Die Sieben Schichten" src="./img/OSI/OSI.png">
+  <img title="Die Sieben Schichten" src="./img/OSI/OSI.png" width="800">
 </a>
+
+# Topologien
+[^12]
+Ein Netzwerktopologie beschreibt den spezifischen Aufbau der Geräte und Leitungen in einem Rechnernetz. Hier unterscheidet man unter physikalischer und logischer Topologie.  
+Die physikalische Topologie beschreibt den Aufbau der Netzwerkverkabelung.  
+Die logische Topologie beschreibt den Datenfluss zwischen den Engeräten.
+
+<a href="">
+  <img title="Netztopologien" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/NetzwerkTopologien.svg/1920px-NetzwerkTopologien.svg.png" width="600px">
+</a>
+
+Topologien werden Grafisch nach der "Graphentheorie" mit Knoten und Kanten dargestellt.
+Alle hier aufgelisteten Topologien sind Physikalische Topologien.
+
+## Punkt zu Punkt
+Die einfachste Topologie ist die Punkt-zu-Punkt Topologie oder auch Zweipunkttopologie. 
+Die Punkt-zu-Punkt Topologie beschreibt ein Rechnernetz in welchem zwei Geräte direkt miteinander verbunden sind.
+
+### Vorteile
+- Dieses Netz bietet jedem angeschlossenen Rechner die gesamte Bandbreite des Übertragungsmediums.
+- Vorhersehbare nutzbare Übertragungsrate.
+- Leicht erweiterbar.
+- Leicht verständlich.
+- Leichte Fehlersuche.
+- Kein Routing benötigt.
+
+### Nachteile
+- Es können nur zwei Kommunikationsteilnehmer verbunden werden.
+
+## Stern
+Bei dieser Art von Topologie sind alle Kommunikationsteilnehmer mit einem Zentralen Teilnehmer per Punkt-zu-Punkt-Verbindung angeschlossen.
+<img title="Stern-Topologie" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Netzwerktopologie_Stern.png">
+
+### Vorteile
+- Der Ausfall eines Endgerätes hat keine Auswirkung auf den Rest des Netzes.
+- Hohe und verschiedene Übertragungsraten möglich.
+- Leicht erweiterbar.
+- Leicht verständlich.
+- Leichte Fehlersuche.
+- Sehr gute Eignung für Multicast-/Broadcastanwendungen.
+- Einfaches Routing im Sternverteiler.
+
+### Nachteile
+- Durch Ausfall des Verteilers (Zentralen Teilnehmers) wird der Netzverkehr unmöglich.
+
+## Ring
+Bei einer Ring-Verbindung werden jeweils zwei Teilnehmer über Zweitverbindungen miteinander verbunden, so dass ein geschlossener Ring entsteht.
+Informationen hier werden von Teilnehmer zu Teilnehmer weitergeleitet, bis sie ihren Zielort erreicht haben. 
+<img title="Ring-Topologie" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Netzwerktopologie_Ring.png">
+
+### Vorteile
+- Deterministische Rechnernetzkommunikation ohne Paketkollision.
+- Alle Stationen arbeiten als Verstärker (Repeater).
+- Alle Rechner haben gleiche Zugriffsmöglichkeiten.
+- Garantierte Übertragungsbandbreite.
+- Skaliert relativ gut, [Grad](https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)#Grad) bleibt bei Erweiterung konstant.
+- Reguläre Topologie, daher leicht programmierbar.
+- Kostengünstig.
+- wenig Verkabelung und Installationsaufwand.
+
+### Nachteile
+- Niedrige [Bisektionsweite](https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)#Bisektionsweite) und Konnektivität. Fällt ein Endgerät aus, kann es dazu führen dass die gesamte Kommunkation unterbrochen wrid.
+- Hohe Latenzen zu entfernten Knoten.
+- Ohne Ringverteiler viel Verkabelung da bei dem Bilden eines echten Rings meist die Bürolage ein Problem darstellt.
+- Datenübertragungen können leicht abgehört werden.
+- Langsamere Datenübertragung bei vielen angeschlossenen Endgeräten.
+- Relativ hoher Energieaufwand.
+
+## Bus
+Bei einer Bus-Topologie sind alle Engeräte direkt mit demselben Übertragungsmdedium, dem Bus verbunden. Hier befinden sich keine aktigen Komponenten zwischen den Geräten und dem Medium.
+
+<img title="Bus-Topologie" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Netzwerktopologie_Bus.png">
+
+### Vorteile
+- Geringe Kosten, da nur geringe Kabelmengen erforderlich sind.
+- Einfache Verkabelung und Netzerweiterung.
+- Es werden keine aktiven Netzwerkkomponenten benötigt.
+
+### Nachteile
+- Datenübertragungen können ziemlich abgehört werden. ([Sniffer](https://de.wikipedia.org/wiki/Sniffer)).
+- Eine Störung des Übertragungsmediums an einer einzigen Stelle im Bus blockert den gesamten Netzstrang.
+- Es kann zu jedem Zeitpunkt immer nur eine Station Daten senden. Währenddessen sind alle anderen Sender blockiert.
+- Bei Bussen, die Kollisionen zulassen und auf eine nachträgliche Behebung setzen, kann das Medium nur zu einem kleinen Teil ausgelastet werden, da bei höherem Datenverkehr überproportional viele Kollisionen auftreten.
+
+## Vermascht
+In einem vermaschten Netz ist jedes Endgerät mit einem oder mehreren anderen Endgeräten verbunden. wenn jeder Teilnehmer mit jedem Teilnehmer verbunden ist, spricht man von einem vollvermaschten Netz.  
+Bei Ausfall eines Endgerätes oder einer Leitung ist es im Regelfall möglich, durch Umleiten (Routing) der Daten weiter zu kommunizieren.
+
+<img title="Vermaschtes-Netz" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Netzwerktopologie_vermascht.png">
+
+### Vorteile
+- Sicherste Variante eines Rechnernetzes.
+- Bei Ausfall eines Endgerätes ist durch Umleitung, die Kommunikation weiterhin möglich (hohe Konnektivität).
+- Sehr leistungsfähig durch hohe [Bisektionsweite](https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)#Bisektionsweite).
+- Vollvermaschte Netze benötigen kein Routing, da es nur Direktverbindungen gibt.
+
+### Nachteile
+- Viele Kabel benötigt, was auch hohe Kosten mit sich trägt.
+- Vergleichbar komplexes Routing nötig für nich vollvermaschte Netze.
+- komplexes Routing und viele Verbindungen führen zu vergleichsweise hohem Energieverbrauch.
 
 [^1]: https://www.techtarget.com/searchstorage/tip/Key-differences-in-software-RAID-vs-hardware-RAID
 [^2]: https://de.wikipedia.org/wiki/RAID
@@ -433,3 +549,4 @@ VPNs sind Punkt-zu-Punkt verbindungen über ein privates oder ein öffentliches 
 [^7]: https://de.wikipedia.org/wiki/Wireless_Local_Area_Network
 [^10]: https://de.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
 [^11]: https://de.wikipedia.org/wiki/OSI-Modell
+[^12]: https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)
