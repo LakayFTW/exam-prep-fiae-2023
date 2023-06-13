@@ -29,7 +29,7 @@
   - [SELECT-Abfragen](#select-abfragen)
     - [Einfache Abfrage](#einfache-abfrage)
     - [Abfrage mit Spaltenauswahl(,)](#abfrage-mit-spaltenauswahl)
-    - [Abfrage mit einduetigen Werten (DISTINCT)](#abfrage-mit-einduetigen-werten-distinct)
+    - [Abfrage mit eindeutigen Werten (DISTINCT)](#abfrage-mit-eindeutigen-werten-distinct)
     - [Abfrage mit Umbenennung (AS)](#abfrage-mit-umbenennung-as)
     - [Abfrage mit Filter (WHERE)](#abfrage-mit-filter-where)
     - [Abfrage mit Filter nach Inhalt (WHERE ... LIKE ...)](#abfrage-mit-filter-nach-inhalt-where--like-)
@@ -57,7 +57,7 @@ In einer Dokumentenorientierten Datenbank werden die Daten nicht wie bei der Rel
 [^2] [^1]<br>
 Zurzeit gebräuchliche Normalformen sind:
 - 1 Normalform (1NF)
-- 2 Nromalform (2NF)
+- 2 Normalform (2NF)
 - 3 Normalform (3NF)
 - Boyce-Codd-Normalform (BCNF) [Wird hier nicht besprochen]
 - 4 Normalform (4NF) [Wird hier nicht besprochen]
@@ -213,7 +213,7 @@ Ergebnis:
 
 litet alle Spalten `VorlNr` und `Titel` aller Zeilen der Tabelle `Vorlesung` auf.
 
-### Abfrage mit einduetigen Werten (DISTINCT)
+### Abfrage mit eindeutigen Werten (DISTINCT)
 
 ```sql
 SELECT DISTINCT MatrNr FROM hoert;
