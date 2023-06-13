@@ -38,3 +38,9 @@ Die Quellen sind jeweils per Fußnote referenziert. Die zugehörigen Quellen sin
 
 ## Contribution
 Stell doch 'nen Pull-Request wenn du was ergänzen oder Korrigieren möchtest.
+
+Falls du als Collaborator an diesem Projekt arbeiten solltest, musst du einige Schritte beachten.
+- Nicht in Github die Seiten bearbeiten!!!
+- Nach dem Klonen und öffnen in deiner IDE (bevorzugsweise VSCode) das Markdown All in One Package herunterladen
+  - https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+  - Dieses Package beinhaltet z.B. das automatische Erstellen von Inhaltsverzeichnissen
