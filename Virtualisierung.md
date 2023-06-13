@@ -118,9 +118,12 @@ Eine Registry, wie zum Beispiel __Docker Hub__ oder __Artifactory__, dient der V
 
 
 # Hypervisor
+[^5]
+Hypervisor oder auch Virtual-Machine-Monitor (VMM) ist die Bezeichnung für eine Klasse von Systemen der praktischen Informatik, die als abstrahierende Schicht zwischen tatsächlich vorhandener Hardware und weiteren zu installierenden Betriebssystemen dient.
 
+Ein Hypervisor erlaubt den simultianen Betrieb von mehreren Gastsystemen auf einem Hostsystem. Der Hypervisor verwaltet die Ressourcenzuteilung für einzelne Gastsysteme.
 
-
+[^5]: https://de.wikipedia.org/wiki/Hypervisor
 [^6]: https://de.wikipedia.org/wiki/Docker_(Software)
 [^7]: https://docs.docker.com/engine/install/ubuntu/
 [^8]: https://docs.docker.com/assets/images/architecture.svg
