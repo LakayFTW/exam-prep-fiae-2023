@@ -34,9 +34,6 @@
     - [Körperliche Merkmale / Biometrie](#körperliche-merkmale--biometrie)
       - [Beispiele zur Authentifikation anhand von Biometrie](#beispiele-zur-authentifikation-anhand-von-biometrie)
 
----
-<br>
-
 # Datenschutz
 - DSGVO - Datenschutz-Grundverordnung
 - BDSG - Bundesdatenschutzgesetz
@@ -65,8 +62,6 @@ Zusätzlich muss man bei der Einhaltung und Beurteilung dieser Vorgaben an die R
 [^3]
 Die Aufstellung von Verfahren und Regeln innerhalb einer Organisation, die dazu dienen, die Informationssicherheit dauerhaft zu definieren, zu steuern, zu kontrollieren, aufrechtzuerhalten und fortlaufend zu verbessern
 
-<br>
-
 # Schutzbedarfsanalyse
 [^4] [^5]
 Bei der Schutzbedarfsanalyse wird anhand der eingesetzten Informationstechnik und der Informationen, deren Schutz bewertet je nach dem wie angemessen dies ist. Der Wert der Daten und Funktionen ist in der Regel um ein Vielfaches höher als der Wert von den IT Geräten selbst. Daher sind angemessene Sicherheitsmaßnahmen aus den Sicherheitsanforderungen der IT-Verfahren abzuleiten.
@@ -77,8 +72,6 @@ Bei der Schutzbedarfsanalyse wird anhand der eingesetzten Informationstechnik un
   <img src="https://tetfolio.fu-berlin.de/IMPAL/659400.gif" width="500" title="Struktur eine Schutzbedarfanalyse">
 </a>
 
-<br>
-
 Der Schutzbedarf wird über die Abschätzung der schlimmsten denkbaren Folgen des Verlustes von __Vertraulichkeit__, __Integrität__ und __Verfügbarkeit__ ermittelt. Die Abschätzung hat gesondert für folgende sechs Schadenskategorien zu erfolgen:
 - Beeinträchtigung des informationellen Selbstbestimmungsrechts
 - Beeinträchtigung der persönlichen Unversehrtheit
@@ -87,11 +80,7 @@ Der Schutzbedarf wird über die Abschätzung der schlimmsten denkbaren Folgen de
 - Finanzielle Auswirkungen
 - Verstoß gegen Gesetze, Vorschriften und Verträge
 
-<br>
-
 Hierzu betrachtet man jede Anwendung und die verarbeiteten Informationen und welche Schäden zu erwarten sind. Meist werden diesen in die Schutzklassen "normal", "hoch", "sehr hoch" kategorisiert. Wird als Ergebnis der Schutzbedarfsanalyse das gewählte IT-Verfahren in die Klasse "normal" eingestuft, reichen die Maßnahmen des IT-Grundschutzes aus. In allen anderen Fällen muss eine verfahrensspezifische Risikoanalyse durchgeführt werden.
-
-<br>
 
 __Bei der Schutzbedarfsanalyse werden folgende Schritte angewendet:__
 1. Identifikation der zu schützenden Daten
@@ -99,13 +88,9 @@ __Bei der Schutzbedarfsanalyse werden folgende Schritte angewendet:__
 3. Bestimmen der schlimmsten möglichen Folgen
 4. Einordnung in eine Schutzbedarfskategorie
 
-<br>
-
 ## Identifikation der zu schützenden Daten
 An erster Stelle steht die Identifikation aller Daten, die innerhalb des analysierten IT-Verfahrens verarbeitet bzw. gespeichert werden.
 > __Beispiel:__ Vorname, Nachname, Straße, Hausnummer, Postleitzahl und Ort, Forschungsergebnisse, Patentanmeldung
-
-<br>
 
 ## Zusammenfassung der Daten zu Datengruppen
 Häufig lassen sich mehrere Einzeldaten inhaltlich zu Datengruppen zusammenfassen. Die weiteren Schritte sind dann stets auf diese Datengruppen anzuwenden und nicht mehr auf die dort enthaltenen Einzeldaten.
@@ -203,12 +188,9 @@ __Hier ist ein Beispiel für die Einstufung beim Verlust von Vertraulichkeit in 
   </tbody>
 </table>
 
-<br>
 
 ## Verstoß gegen Gesetze, Vorschriften und Verträge
 Hier müssen alle Regelungen betrachtet werden, die für das betreffende IT-Verfahren relevant sind.
-
-<br>
 
 ### Datenschutzgesetze
 >__Beispiel:__<br> 

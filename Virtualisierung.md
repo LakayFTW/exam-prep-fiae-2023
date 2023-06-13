@@ -29,24 +29,21 @@ Eine VM ist ein komplettes eigenes Betriebssystem oder Gastbetriebssystem auf ei
 
 ## Kurz erklärt
 
-VMs stellen eine Vollständige Virtualisierung, bei der ein eigenständiges Betriebssystem in einem isoliertem Umfeld läuft.
-Docker-Container bieten eine leichtgewichtige, anwendungsbasierte Virtualisierung bei der Anwendungen in isolierten Containern ausgeführt werden
+VMs stellen eine Vollständige Virtualisierung, bei der ein eigenständiges Betriebssystem in einem isoliertem Umfeld läuft.  
+Docker-Container bieten eine leichtgewichtige, anwendungsbasierte Virtualisierung bei der Anwendungen in isolierten Containern ausgeführt werden.  
 Die Wahl zwischen den Beiden hängt von den Spezifischen Anforderungen, dem Ressourcenverbrauch und der Portabilität der Anwendung ab.
 
 # Weiteres zu Docker
-[^6] [^9]<br>
+[^6] [^9]  
 Docker ist eine freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung.
-<br><br>
 
 Docker vereinfacht die Bereitstellung von Anwendungen, weil sich Container, die alle nötigen Pakete enthalten, leicht als Dateien transportieren und installieren lassen. Container gewährleisten die Trennung und Verwaltung der auf einem Rechner genutzten Ressourcen. Das umfasst laut Aussage der Entwickler: Code, Laufzeitmodul, Systemwerkzeuge, Systembibliotheken – alles was auf einem Rechner installiert werden kann.
-<br>
 
 <img title="Docker Architecture" src="./img/Docker/architecture.svg"><br>
 [^8]
 
 ## Grundlagen
 Docker basiert auf Linux-Techniken wie __Cgroups__ und __Namespaces__, um Container zu realisieren. Während anfänglich noch die LXC-Schnittstelle des Linux-Kernels verwendet wurde, haben die Docker-Entwickler mittlerweile eine eigene Programmierschnittstelle namens __libcontainer__ entwickelt, die auch anderen Projekten zur Verfügung steht.
-<br>
 
 Normalerweise sind Docker auf die Virtualisierung mit Linux ausgerichtet, können aber auch mittels __HyperV__ oder __Virtualbox__  auf Windows oder mit __HyperKit__ oder __VirtualBox__ auf macOs verwendet werden.
 

@@ -1,7 +1,8 @@
 # Table of Content
+- [Table of Content](#table-of-content)
 - [Verwendung des ITSM's](#verwendung-des-itsms)
 - [Bedeutung eines Prozesses](#bedeutung-eines-prozesses)
-- [Umterscheidung von Prozessketten](#unterscheidung-von-prozessketten)
+- [Unterscheidung von Prozessketten](#unterscheidung-von-prozessketten)
   - [Wertschöpfungsprozesse](#wertschöpfungsprozesse)
   - [Supportprozesse](#supportprozesse)
   - [Managementprozesse](#managementprozesse)
@@ -19,16 +20,16 @@
   - [SAFe](#safe)
 - [IT Service Managementarten](#it-service-managementarten)
 - [Service Lebenszyklus nach ITILv4](#service-lebenszyklus-nach-itilv4)
-  - [Strategy](#strategy)
-  - [Design](#design)
-  - [Transition](#transition)
-  - [Operation](#operation)
-  - [Improvement](#improvement)
+  - [Strategy:](#strategy)
+  - [Design:](#design)
+  - [Transition:](#transition)
+  - [Operation:](#operation)
+  - [Improvement:](#improvement)
 - [Service Lebenszyklus nach IMAC/R/D](#service-lebenszyklus-nach-imacrd)
   - [Install](#install)
   - [Move](#move)
-  - [Change](#change)
   - [Add](#add)
+  - [Change](#change)
   - [Remove](#remove)
   - [Dispose](#dispose)
 - [Bedeutung von SLA's](#bedeutung-von-slas)
@@ -47,8 +48,7 @@ Die Bereitstellung und Kontrolle von Services unterliegt nicht nur der IT Branch
 
 &nbsp;
 
-[^2]
-[^3]
+[^2] [^3]
 # Bedeutung eines Prozesses
 Ein Prozess ist eine geregelter Ablauf von folgenden Aktivitäten.
 Es besitzt immer ein definiertes Ende und auch einen definierten Startpunkt. Es folgt nach dem EVA Prinzip, dass durch das Einbringen gewünschter Anforderungen eine Folge an geregelten Schritten eintritt, um einen erhofftes Ergebnis zu erhalten.
@@ -57,14 +57,14 @@ Es besitzt immer ein definiertes Ende und auch einen definierten Startpunkt. Es 
   <img src="https://qualitaetsmanagement.me/wp-content/uploads/2022/11/071122_Der-Prozess-einfach-erklaert_Logo.jpg" width="500" title="Einfacher Prozessablauf" />
 </a>
 
-&nbsp;
+<br>
 
 [^4]
 Ein Prozess muss und kann auch nicht das gewünschte Endresult erbringen.
 Somit können sich mehrere zusammengehängte Prozesse ergeben, welche das letzte Ergebnis eines Prozesses als Eingabe für das nächste weiterbringt bis zum Ende.
 Eine Reihung an Prozessen wird Prozesskette bezeichnet.
 
-&nbsp;
+<br>
 
 <a href="https://qualitaetsmanagement.me/prozessmanagement/prozess/">
   <img src="https://prozessoptimierung-sprung.de/wp-content/uploads/2019/10/Prozesslandkarte-mit-Prozesskette-Supportprozess.jpg" width="500" title="Einfache Prozesskette">
@@ -78,7 +78,7 @@ Der Verlauf von mehreren Prozessen und deren Bedingungen, welche Wege eingeschla
   <img src="https://imgs.search.brave.com/cWfLjTeeyPGmUGqsetbAOSxnWbtjExyPyiHlccT1uLw/rs:fit:766:1024:1/g:ce/aHR0cDovL2RlLnBy/b2Nlc3NvcmllbnRh/dGlvbi5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTIvMDEv/RVBLX0JlaXNwaWVs/LTc2NngxMDI0LnBu/Zw" width="400" title="Einfache Ereignisprozesskette">
 </a>
 
-&nbsp;
+<br>
 
 # Unterscheidung von Prozessketten
 __Die Prozessketten werden in folgende Arten unterteilt:__
@@ -86,22 +86,14 @@ __Die Prozessketten werden in folgende Arten unterteilt:__
 - Supportprozesse
 - Managementprozesse
 
-&nbsp;
-
 ## Wertschöpfungsprozesse
 Wertschöpfungsprozesse sind Prozesse, die direkt an der Erstellung eines verkaufbaren Produktes oder Dienstleistung mitwirken.
-
-&nbsp;
 
 ## Supportprozesse
 Supportprozesse sind notwendig, um die Wertschöpfungs- und Managementprozesse durchführen zu können.
 
-&nbsp;
-
 ## Managementprozesse
 Managementprozesse dienen der Planung, Diagnose und Steuerung von Wertschöpfungs- oder Supportprozessen. Das sind meist nicht so viele Prozesse. Und sie laufen typischerweise auf der obersten Managementebene ab. Sie beziehen sich auf das Gesamtunternehmen.
-
-&nbsp;
 
 [^5]
 # Bedeutung von IT Services
@@ -109,21 +101,15 @@ Managementprozesse dienen der Planung, Diagnose und Steuerung von Wertschöpfung
 Ein IT Service bezieht sich auf die Dienstleistung, die mit der Anwendung von technischem und betriebswirtschaftlichem Fachwissen entwickelt wurden, um die Nutzung der Technologie für Unternehmen und Endbenutzer zu erleichtern.
 Die IT Services können im eigenen Unternehmen, als auch von Drittanbietern in Anspruch genommen werden.
 
-&nbsp;
-
 # Unterscheidung von Services
 __Services können in folgende Kategorien unterschieden werden:__
 - Statusmeldung
 - Kundenanfrage
 - Störungsfall
 
-&nbsp;
-
 ## Statusmeldung
 Diese Statusmeldungen werden hier aus als Events bezeichnet.
 Diese werden nicht von einem Anwender verfasst, sondern über ein integriertes Überwachungssystem, auch als __Monitoring__ bezeichnet, automatisch bei Vorfällen erstellt.
-
-&nbsp;
 
 __Die Meldungen unterteilen sich in weitere folgende Kategorien:__
 - Information: Meldung ohne Handlungsbedarf
@@ -133,8 +119,6 @@ __Die Meldungen unterteilen sich in weitere folgende Kategorien:__
 - Ausnahme / Exception: Meldung mit sofortigen Handlungsbedarf
 > Beispiel: Netzwerkport 48 ist ausgefallen am Switch.
 
-&nbsp;
-
 ## Kundenanfrage
 Eine formale Anfrage eines Kundens für die Verbesserung oder die Erzeugung eines neuen Services.
 Wenn Informationen oder Zugriff angefragt wird, handelt es sich um einen Service Request und ist im Service-Katalog meistens hinterlegt. Diese werden über die bestehenden Prozesse durchgeführt.
@@ -142,15 +126,11 @@ Wenn Informationen oder Zugriff angefragt wird, handelt es sich um einen Service
 Wenn Anforderungen gestellt werden zur Aufrüstung der aktuellen Hard- und Software als Beispiel, handelt es sich um einen Request for Change, wo professionell der Aufwand betrieben und koordiniert werden muss.
 Hier werden Änderungen ausgelöst, welche bestehdende Prozesse umstruktuerieren und diese verständlich den anderen zur Verfügung gestellt werden muss.
 
-&nbsp;
-
 ## Störungsfall
 Eine Meldung von einer nicht geplanten Unterbrechung eines Services.
 Dies wird auch als Incident bezeichnet.
 Im Bereich der IT können Störungen im Netzwerk, an Computersystemen oder an einer Software vorliegen, welches den laufenden Betrieb entweder verlangsamt oder sogar komplett pausieren kann. Hier soll der laufende Betrieb damit sichergestellt werden. 
 
-
-&nbsp;
 
 [^6] 
 # Einsatz von ITSM Frameworks
@@ -165,37 +145,23 @@ __Beliebte Frameworks darunter sind:__
 - DevOps
 - SAFe
 
-&nbsp;
-
 ## ITIL
 Das ITIL Framework zielt darauf ab, die Lieferung an IT-Prozessen zu verbessern, um mehrere geschäftliche Ziele zu unterstützen.
-
-&nbsp;
 
 ## ISO 20000
 Bedient sich an den Prinzipien vom ITIL Framework, hat aber keine öffentliche Beziehung zu dessen.
 
-&nbsp;
-
 ## COBIT
 Das COBIT IT Governance Framework legt ihren Fokus auf kontinuierlicher IT-Sicherheit und ist das Gegenteil von ITIL.
-
-&nbsp;
 
 ## FitSM
 FitSM ist ein Standard für Leichtgewicht-Servicemanagement und besitzt zusätzlich das Service-Portfolio-Management.
 
-&nbsp;
-
 ## DevOps
 DevOps nutzt die Methodologie kreuzfunktionaler Teams, die von offener Kommunikation angeregt werden. Das DevOps Framework vereint einen nicht zusammenhängenden Satz an Prinzipien, die je nach den geschäftlichen Anforderungen des Unternehmens verbunden werden.
 
-&nbsp;
-
 ## SAFe
 Das Scaled Agile Framework wendet die Agile-Struktur, die von Softwareentwicklungsteams verwendet wird, an, indem Agile auf größere Applikationen skaliert wird.
-
-&nbsp;
 
 # IT Service Managementarten
 
@@ -205,8 +171,6 @@ Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spe
 - Problem Management: Behebungen von schwerwiegenden Zwischenfällen bei laufenden Services
 - Change Management: Vorbereitung und Umsetzung von Ändernungen an Arbeitsprozessen im Unternehmen
 
-&nbsp;
-
 [^7]
 # Service Lebenszyklus nach ITILv4
 
@@ -214,13 +178,9 @@ Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spe
   <img src="https://cdn.education-wiki.com/img/project-management-basics/9403688/itil-service-lifecycle-2.png.webp" width="300" title="Phasenaufbau nach ITILv4">
 </a>
 
-&nbsp;
-
 ## Strategy:
 - DevOps Einsatz
 - Business Relationship Management
-
-&nbsp;
 
 ## Design:
 - Service Level Managemnt
@@ -232,14 +192,10 @@ Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spe
 - Requirements Engineering
 - Data Management
 
-&nbsp;
-
 ## Transition:
 - Release- / Configuration Management
 - Knowledge Management
 - Change Management
-
-&nbsp;
 
 ## Operation:
 - Incident Management
@@ -247,13 +203,9 @@ Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spe
 - Problem Management
 - Access Management
 
-&nbsp;
-
 ## Improvement:
 - PDCA, KVP (Kontinuierlicher Verbesserungsprozess)
 - DevOps Einsatz
-
-&nbsp;
 
 [^8]
 # Service Lebenszyklus nach IMAC/R/D
@@ -267,43 +219,29 @@ Die Darstellung wird allgemein für alle Services verwendet und bietet Kunden ei
   <img src="https://www.i-doit.com/hs-fs/hubfs/imac-r-d-1600x900-1.jpg?width=550&height=309&name=imac-r-d-1600x900-1.jpg" title="IMAC/R/D Lifecycle" width="500">
 </a>
 
-&nbsp;
-
 ## Install
 Installation und Konfiguration eines Systems oder Gegenstands.
 >Beispiel: Einrichten eines IT Arbeitsplatzes mit funktionierenden Rechner, passender Peripherie, Monitoren, Netzwerkanschluss und den Office Softwareprodukten.
-
-&nbsp;
 
 ## Move
 Bereitstellung, Verpackung, Neukonfiguration existierender Geräte mit folgendem Transport zur neuen Umgebung.
 >Beispiel: Umzug eines Entwicklungsteams samt benötigten Geräten von der Grundetage in die erste Etage.
 
-&nbsp;
-
 ## Add
 Hinzufügen und Konfiguration zusätzlicher Komponenten.
 >Beispiel: Einbau einer externen Grafikeinheit in einem Rechner mit abhängigen Grafiktreibern.  
-
-&nbsp;
 
 ## Change
 Aktualisierung oder Wechsel von existierenden Komponenten.
 >Beispiel: Umtausch einer Festplatte mit allen gespeicherten Daten auf einer größeren mit mehr Speicherkapazität.
 
-&nbsp;
-
 ## Remove
 Vorbereitung und Sichern von zu entfernenden Komponenten in einem eingesetzten System.
 >Beispiel: Abbau eines Arbeitsplatzes mit allen angeschlossenen Geräten.
 
-&nbsp;
-
 ## Dispose
 Entsorgung oder Neuaufbereitung von ungebrauchten oder defekten Geräten.
 >Beispiel: Sachgerechte Entsorgung einer defekten Netzwerkkarte.
-
-&nbsp;
 
 [^9]
 # Bedeutung von SLA's
@@ -312,8 +250,6 @@ Der Kunde verlangt eine Dienstleistung festgelegt in einer SLA und kontrolliert,
 
 In einer SLA sind die einzelnen Service Levels enthalten mit den Faktoren Qualität und Zeit. Hierfür werden auch Maßnahmen verfasst, wenn es zu Beeinträchtigungen kommt bei der Durchführung einer gewünschten Dienstleistung.
 Auch sind Strafandrohungen enthalten wenn eine SLA nicht eingehalten wurde, wie Vereinbarungen zu Qualitätskontrollen der bestehenden SLA's.
-
-&nbsp;
 
 ## SLA Inhalt
 - Beschreibung
@@ -325,8 +261,6 @@ Auch sind Strafandrohungen enthalten wenn eine SLA nicht eingehalten wurde, wie 
 - Rahmenbediengungen
   - Systemumgebung, Infrastruktur, Mitwirkungspflichten, Out-of-Scope-Abgrenzung.
 
-&nbsp;
-
 ## SLA Qualität
 - KPI's
   - Betriebswirtschaftliche Kennzahlen (KPIs) werden zur Operationalisierung und Qualitätsdimensionierung benötigt
@@ -337,8 +271,6 @@ Auch sind Strafandrohungen enthalten wenn eine SLA nicht eingehalten wurde, wie 
   - SLA-Einschränkungen (z.B. Einfluss Dritter)
   - Wartungsfenster und Downtimes
 
-&nbsp;
-
 ## SLA Kosten
 - Preismodell
   - Verrechnungsmodell (Festpreis, variabel nach Zeit und Aufwand)
@@ -348,17 +280,13 @@ Auch sind Strafandrohungen enthalten wenn eine SLA nicht eingehalten wurde, wie 
   - Ausmaß von wiederholten SLA Verstößen
   - Ablauf von SLA's
 
-&nbsp;
-
 [^10]
 # Incident Management
 Das Kernstück des Incident Managements ist die Behebung von jeglichen Zwischenfällen, welche auf unterschiedlichster Weise den Ablauf der Unternehmensprozesse negativ beeinflussen kann.
 
 <a href="https://advisera.com/20000academy/knowledgebase/itil-incident-management-separate-roles-different-support-levels/">
   <img src="https://imgs.search.brave.com/2OIwiEv6-3r--ZBh5UE3uFIUlgPMcGRYAW1dzkGeJ9w/rs:fit:600:401:1/g:ce/aHR0cHM6Ly9hZHZp/c2VyYS5jb20vd3At/Y29udGVudC91cGxv/YWRzL3NpdGVzLzYv/MjAxNS8wNy9JVElM/X3JvbGVfc2VwYXJh/dGlvbi5wbmc" width="500" title="Incident Management">
-</A>
-
-&nbsp;
+</a>
 
 Wenn ein Vorfall vorliegt wird die Umgebung als erstes mit einem Tracking-System kategorisiert, ob es im Bereich Software, Hardware oder Netzwerk vorliegt. Danach erfolgt die Priorisierung des Vorfalls nach Dringlichkeit und Auswirkung. Dies geschieht beim Helpdesk oder allgemein dem Single Point of Contact (auch SPOC genannt) und leistet hier für die meldende Person den First-Level-Support.
 
