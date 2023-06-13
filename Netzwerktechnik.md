@@ -33,6 +33,8 @@
     - [Private IP-Adressen](#private-ip-adressen)
       - [Adressbereiche:](#adressbereiche)
     - [Funktionsweise](#funktionsweise)
+- [LAN (Local Area Network)](#lan-local-area-network)
+- [WLAN (Wireless Local Area Network)](#wlan-wireless-local-area-network)
 - [DHCP](#dhcp)
   - [Konzept](#konzept)
   - [DHCP-Server](#dhcp-server)
@@ -52,18 +54,30 @@
   - [OSI-Layer, auf dem die Kommunikation des VPN realisiert ist](#osi-layer-auf-dem-die-kommunikation-des-vpn-realisiert-ist)
   - [Anwendungsbereiche für VPN](#anwendungsbereiche-für-vpn)
   - [Ist ein VPN sicher? Nein! Welche Maßnahmen können den VPN-Tunnel sicher machen?](#ist-ein-vpn-sicher-nein-welche-maßnahmen-können-den-vpn-tunnel-sicher-machen)
-- [Docker](#docker)
-  - [Grundlagen](#grundlagen)
-  - [Begriffe](#begriffe)
-    - [Image](#image)
-    - [Container](#container)
-    - [Layer](#layer)
-    - [Dockerfile](#dockerfile)
-    - [Repository](#repository)
-    - [Registry](#registry)
-  - [Aufsetzen eines Dockers unter Linux (Ubuntu)](#aufsetzen-eines-dockers-unter-linux-ubuntu)
-    - [Setup vom Repository](#setup-vom-repository)
-    - [Installieren von Docker Engine](#installieren-von-docker-engine)
+- [OSI Schichten Modell](#osi-schichten-modell)
+    - [Schicht 1 - Bitübertragungsschicht (Physical Layer)](#schicht-1---bitübertragungsschicht-physical-layer)
+    - [Schicht 2 - Sicherungsschicht (Data Link Layer)](#schicht-2---sicherungsschicht-data-link-layer)
+    - [Schicht 3 - Vermittlungsschicht (Network Layer)](#schicht-3---vermittlungsschicht-network-layer)
+    - [Schicht 4 - Transportschicht (Transport Layer)](#schicht-4---transportschicht-transport-layer)
+    - [Schicht 5 - Sitzungsschicht (Session Layer)](#schicht-5---sitzungsschicht-session-layer)
+    - [Schicht 6 - Darstellungsschicht (Presentation Layer)](#schicht-6---darstellungsschicht-presentation-layer)
+    - [Schicht 7 - Anwendungsschicht (Application Layer)](#schicht-7---anwendungsschicht-application-layer)
+- [Topologien](#topologien)
+  - [Punkt zu Punkt](#punkt-zu-punkt)
+    - [Vorteile](#vorteile-3)
+    - [Nachteile](#nachteile-3)
+  - [Stern](#stern)
+    - [Vorteile](#vorteile-4)
+    - [Nachteile](#nachteile-4)
+  - [Ring](#ring)
+    - [Vorteile](#vorteile-5)
+    - [Nachteile](#nachteile-5)
+  - [Bus](#bus)
+    - [Vorteile](#vorteile-6)
+    - [Nachteile](#nachteile-6)
+  - [Vermascht](#vermascht)
+    - [Vorteile](#vorteile-7)
+    - [Nachteile](#nachteile-7)
 
 ---
 <br>
@@ -266,6 +280,20 @@ Somit hat man keinen unnützen administrativen Mehraufwand bei der Pflege lokale
 ---
 <br>
 
+# LAN (Local Area Network)
+[^6]
+LAN bezieht sich auf ein Computernetzwerk, das auf einen relativ kleinen geografischen Bereich wie ein Bürogebäude, eine Schule oder eine Campusumgebung beschränkt ist. Ein LAN ermöglicht die Vernetzung von Computern, Geräten und Ressourcen innerhalb dieses begrenzten Bereichs.
+
+In einem LAN können Geräte wie Computer, Laptops, Drucker, Server, Netzwerkswitches und Router miteinander verbunden werden. Die Verbindung erfolgt normalerweise über ein Ethernet-Kabel oder drahtlose Verbindung wie Wi-Fi.
+
+Ein LAN arbeitet mit Internen IP-Adressen welche von außerhalb des Netzwerkes nicht eingesehen werden können. Diese IP-Adressen sind in jedem Privaten Netz zu finden und können vergeben werden.  
+Siehe [Private IP-Adressen](#private-ip-adressen)
+
+# WLAN (Wireless Local Area Network)
+[^7]
+WLAN bezieht sich auf eine drahtlose Netzwerktechnologie, die es Geräten ermöglicht zu kommunizieren ohne das eine physische Kabelverbindung erforderlich ist.
+WLAN basiert auf dem Standard IEEE 802.11 und verwendet Funkwellen, um Daten zwischen Geräten zu übertragen.
+
 # DHCP
 [^10]<br>
 Das Dynamic Host Protocol (DHCP) ist ein Kommunikationsprotokoll. Durch einen Server können Clients die richtige Netzwerkkonfiguration erhalten.
@@ -397,101 +425,128 @@ VPNs sind Punkt-zu-Punkt verbindungen über ein privates oder ein öffentliches 
   - IPSec
   - SSTP
 
----
+# OSI Schichten Modell
+[^11]<br>
+### Schicht 1 - Bitübertragungsschicht (Physical Layer)
+### Schicht 2 - Sicherungsschicht (Data Link Layer)
+### Schicht 3 - Vermittlungsschicht (Network Layer)
+### Schicht 4 - Transportschicht (Transport Layer)
+### Schicht 5 - Sitzungsschicht (Session Layer)
+### Schicht 6 - Darstellungsschicht (Presentation Layer)
+### Schicht 7 - Anwendungsschicht (Application Layer)
+
 <br>
+<a href="https://de.wikipedia.org/wiki/OSI-Modell#Die_sieben_Schichten">
+  <img title="Die Sieben Schichten" src="./img/OSI/OSI.png" width="800">
+</a>
 
-# Docker
-[^6] [^9]<br>
-Docker ist eine freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung.
-<br><br>
+# Topologien
+[^12]
+Ein Netzwerktopologie beschreibt den spezifischen Aufbau der Geräte und Leitungen in einem Rechnernetz. Hier unterscheidet man unter physikalischer und logischer Topologie.  
+Die physikalische Topologie beschreibt den Aufbau der Netzwerkverkabelung.  
+Die logische Topologie beschreibt den Datenfluss zwischen den Engeräten.
 
-Docker vereinfacht die Bereitstellung von Anwendungen, weil sich Container, die alle nötigen Pakete enthalten, leicht als Dateien transportieren und installieren lassen. Container gewährleisten die Trennung und Verwaltung der auf einem Rechner genutzten Ressourcen. Das umfasst laut Aussage der Entwickler: Code, Laufzeitmodul, Systemwerkzeuge, Systembibliotheken – alles was auf einem Rechner installiert werden kann.
-<br>
+<a href="">
+  <img title="Netztopologien" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/NetzwerkTopologien.svg/1920px-NetzwerkTopologien.svg.png" width="600px">
+</a>
 
-<img title="Docker Architecture" src="./img/Docker/architecture.svg"><br>
-[^8]
+Topologien werden Grafisch nach der "Graphentheorie" mit Knoten und Kanten dargestellt.
+Alle hier aufgelisteten Topologien sind Physikalische Topologien.
 
-## Grundlagen
-Docker basiert auf Linux-Techniken wie __Cgroups__ und __Namespaces__, um Container zu realisieren. Während anfänglich noch die LXC-Schnittstelle des Linux-Kernels verwendet wurde, haben die Docker-Entwickler mittlerweile eine eigene Programmierschnittstelle namens __libcontainer__ entwickelt, die auch anderen Projekten zur Verfügung steht.
-<br>
+## Punkt zu Punkt
+Die einfachste Topologie ist die Punkt-zu-Punkt Topologie oder auch Zweipunkttopologie. 
+Die Punkt-zu-Punkt Topologie beschreibt ein Rechnernetz in welchem zwei Geräte direkt miteinander verbunden sind.
 
-Normalerweise sind Docker auf die Virtualisierung mit Linux ausgerichtet, können aber auch mittels __HyperV__ oder __Virtualbox__  auf Windows oder mit __HyperKit__ oder __VirtualBox__ auf macOs verwendet werden.
+### Vorteile
+- Dieses Netz bietet jedem angeschlossenen Rechner die gesamte Bandbreite des Übertragungsmediums.
+- Vorhersehbare nutzbare Übertragungsrate.
+- Leicht erweiterbar.
+- Leicht verständlich.
+- Leichte Fehlersuche.
+- Kein Routing benötigt.
 
-## Begriffe
-### Image
-Ein Speicherabbild eines Containers. Das Image selbst besteht aus mehreren Layern, die schreibgeschützt sind und somit nicht verändert werden können. Ein Image ist portabel, kann in Repositories gespeichert und mit anderen Nutzern geteil werden. Aus einem Image können immer mehrere Container gestartet werden.
+### Nachteile
+- Es können nur zwei Kommunikationsteilnehmer verbunden werden.
 
-### Container
-Als Container wird die aktive Instanz eines Images bezeichent. Der Container wird also gerade ausgeführt und ist beschäftigt. Sobald der Container kein Programm ausführt oder mit seinem Auftrag fertig ist, wird der Container automatisch beendet.
+## Stern
+Bei dieser Art von Topologie sind alle Kommunikationsteilnehmer mit einem Zentralen Teilnehmer per Punkt-zu-Punkt-Verbindung angeschlossen.
+<img title="Stern-Topologie" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Netzwerktopologie_Stern.png">
 
-### Layer
-Ein Layer ist ein Teil eines Images und enthält einen Befehl oder eine Datei, die dem Image hinzugefügt wurde. Anhand der Layer kann die ganze Historie des Images nachvollzogen werden.
+### Vorteile
+- Der Ausfall eines Endgerätes hat keine Auswirkung auf den Rest des Netzes.
+- Hohe und verschiedene Übertragungsraten möglich.
+- Leicht erweiterbar.
+- Leicht verständlich.
+- Leichte Fehlersuche.
+- Sehr gute Eignung für Multicast-/Broadcastanwendungen.
+- Einfaches Routing im Sternverteiler.
 
-### Dockerfile
-Eine Textdatei, die mit verschiedenen Befehlen ein Image beschreibt. Diese werden bei der Ausführung abgearbeitet und für jeden Befehl wird ein einzelner Layer angelegt.
+### Nachteile
+- Durch Ausfall des Verteilers (Zentralen Teilnehmers) wird der Netzverkehr unmöglich.
 
-### Repository
-Ein Repository ist ein Satz gleichnamiger Imags mit verschiedenen Tags, zumeist Versionen.
+## Ring
+Bei einer Ring-Verbindung werden jeweils zwei Teilnehmer über Zweitverbindungen miteinander verbunden, so dass ein geschlossener Ring entsteht.
+Informationen hier werden von Teilnehmer zu Teilnehmer weitergeleitet, bis sie ihren Zielort erreicht haben. 
+<img title="Ring-Topologie" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Netzwerktopologie_Ring.png">
 
-### Registry
-Eine Registry, wie zum Beispiel __Docker Hub__ oder __Artifactory__, dient der Verwaltung von Repositories.
+### Vorteile
+- Deterministische Rechnernetzkommunikation ohne Paketkollision.
+- Alle Stationen arbeiten als Verstärker (Repeater).
+- Alle Rechner haben gleiche Zugriffsmöglichkeiten.
+- Garantierte Übertragungsbandbreite.
+- Skaliert relativ gut, [Grad](https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)#Grad) bleibt bei Erweiterung konstant.
+- Reguläre Topologie, daher leicht programmierbar.
+- Kostengünstig.
+- wenig Verkabelung und Installationsaufwand.
 
-## Aufsetzen eines Dockers unter Linux (Ubuntu)
-[^7]
+### Nachteile
+- Niedrige [Bisektionsweite](https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)#Bisektionsweite) und Konnektivität. Fällt ein Endgerät aus, kann es dazu führen dass die gesamte Kommunkation unterbrochen wrid.
+- Hohe Latenzen zu entfernten Knoten.
+- Ohne Ringverteiler viel Verkabelung da bei dem Bilden eines echten Rings meist die Bürolage ein Problem darstellt.
+- Datenübertragungen können leicht abgehört werden.
+- Langsamere Datenübertragung bei vielen angeschlossenen Endgeräten.
+- Relativ hoher Energieaufwand.
 
-### Setup vom Repository
-1. "Update the __apt__ package index and install packages to allow apt to use a repository over HTTPS:"
+## Bus
+Bei einer Bus-Topologie sind alle Engeräte direkt mit demselben Übertragungsmdedium, dem Bus verbunden. Hier befinden sich keine aktigen Komponenten zwischen den Geräten und dem Medium.
 
-    ```sh
-    $ sudo apt update
-    ```
+<img title="Bus-Topologie" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Netzwerktopologie_Bus.png">
 
-    ```sh
-    $ sudo apt-get install \
-     ca-certificates \
-     curl \
-     gnupg \
-     lsb-release 
-    ```
+### Vorteile
+- Geringe Kosten, da nur geringe Kabelmengen erforderlich sind.
+- Einfache Verkabelung und Netzerweiterung.
+- Es werden keine aktiven Netzwerkkomponenten benötigt.
 
-2. "Add Docker’s official GPG key:"
+### Nachteile
+- Datenübertragungen können ziemlich abgehört werden. ([Sniffer](https://de.wikipedia.org/wiki/Sniffer)).
+- Eine Störung des Übertragungsmediums an einer einzigen Stelle im Bus blockert den gesamten Netzstrang.
+- Es kann zu jedem Zeitpunkt immer nur eine Station Daten senden. Währenddessen sind alle anderen Sender blockiert.
+- Bei Bussen, die Kollisionen zulassen und auf eine nachträgliche Behebung setzen, kann das Medium nur zu einem kleinen Teil ausgelastet werden, da bei höherem Datenverkehr überproportional viele Kollisionen auftreten.
 
-    ```sh
-    $ sudo mkdir -m 0755 -p /etc/apt/keyrings
-    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-    ```
+## Vermascht
+In einem vermaschten Netz ist jedes Endgerät mit einem oder mehreren anderen Endgeräten verbunden. wenn jeder Teilnehmer mit jedem Teilnehmer verbunden ist, spricht man von einem vollvermaschten Netz.  
+Bei Ausfall eines Endgerätes oder einer Leitung ist es im Regelfall möglich, durch Umleiten (Routing) der Daten weiter zu kommunizieren.
 
-3. "Use the following command to set up the repository:"
-    ```sh
-    $ echo \
-     "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-     $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    ```
+<img title="Vermaschtes-Netz" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Netzwerktopologie_vermascht.png">
 
-### Installieren von Docker Engine
-1. "Update the package index:"
-    ```sh 
-    $ sudo apt-get-update
-    ```
-2. "Install Docker Engine, containerd, and Docker Compose:"
-    ```sh
-    $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-    ```
+### Vorteile
+- Sicherste Variante eines Rechnernetzes.
+- Bei Ausfall eines Endgerätes ist durch Umleitung, die Kommunikation weiterhin möglich (hohe Konnektivität).
+- Sehr leistungsfähig durch hohe [Bisektionsweite](https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)#Bisektionsweite).
+- Vollvermaschte Netze benötigen kein Routing, da es nur Direktverbindungen gibt.
 
-3. "Verify that the Docker Engine is successful by running `hello-world` image:"
-    ```sh
-    $ sudo docker run hello-world
-    ```
-
-
+### Nachteile
+- Viele Kabel benötigt, was auch hohe Kosten mit sich trägt.
+- Vergleichbar komplexes Routing nötig für nich vollvermaschte Netze.
+- komplexes Routing und viele Verbindungen führen zu vergleichsweise hohem Energieverbrauch.
 
 [^1]: https://www.techtarget.com/searchstorage/tip/Key-differences-in-software-RAID-vs-hardware-RAID
 [^2]: https://de.wikipedia.org/wiki/RAID
 [^3]: https://en.wikipedia.org/wiki/Ethernet_frame
 [^4]: https://en.wikipedia.org/wiki/MAC_address
 [^5]: https://de.wikipedia.org/wiki/IPv4
-[^6]: https://de.wikipedia.org/wiki/Docker_(Software)
-[^7]: https://docs.docker.com/engine/install/ubuntu/
-[^8]: https://docs.docker.com/assets/images/architecture.svg
-[^9]: https://docs.docker.com/get-started/overview/
+[^6]: https://de.wikipedia.org/wiki/Local_Area_Network
+[^7]: https://de.wikipedia.org/wiki/Wireless_Local_Area_Network
 [^10]: https://de.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+[^11]: https://de.wikipedia.org/wiki/OSI-Modell
+[^12]: https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)

@@ -51,6 +51,11 @@
   - [Mutterschutz](#mutterschutz)
   - [Umweltschutz](#umweltschutz)
   - [Urheberrecht](#urheberrecht)
+- [Arbeits- und Geschäftsprozesse](#arbeits--und-geschäftsprozesse)
+  - [Unternehmensziele/Interessen](#unternehmenszieleinteressen)
+  - [Verträge](#verträge)
+- [Armotisation](#armotisation)
+  - [Wie setzen sich Entwicklungskosten zusammen?](#wie-setzen-sich-entwicklungskosten-zusammen)
 
 # Prio 1
 ## Schilder
@@ -204,3 +209,18 @@ Antwort: Bei Werbemaßnahmen sollen künftig nur noch Hochglazkataloge verwendet
 
 ## Urheberrecht
 Wenn man ein Programm in der Firma entwickelt und das nicht anders vertraglich geregelt ist, besitzt der Autor das Urheberrecht und das Unternehmen die Verwertungsrechte.
+
+# Armotisation
+## Wie setzen sich Entwicklungskosten zusammen?
+- Die Entwicklungskosten setzen sich aus den Gehälter etc. aus den Mitarbeitern und den Gemeinkosten zusammen.
+- Gemeinkosten umfassen alles was ein Mitarbeiter zum arbeiten benötigt und noch mehr. Darunter zählen:
+  - Arbeitsmaterial
+    - Computer
+    - Stuhl
+    - Tisch
+    - etc.
+  - Stromkosten
+  - Heiz/Kühlkosten
+  - Kaffe
+  - Essen
+  - etc.
