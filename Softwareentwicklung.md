@@ -10,6 +10,14 @@
         - [Arten von HTTP-400](#arten-von-http-400)
       - [HTTP-500](#http-500)
         - [Arten von HTTP-500](#arten-von-http-500)
+- [Objektorientierung](#objektorientierung)
+  - [Interfaces](#interfaces)
+    - [Deklaration](#deklaration)
+    - [Beispiel](#beispiel)
+    - [Namenskonventionen](#namenskonventionen)
+  - [abstraktion](#abstraktion)
+    - [Programmiersprachen](#programmiersprachen)
+    - [Abstraktion in der objektorientierten Programmierung](#abstraktion-in-der-objektorientierten-programmierung)
 
 # Web Entwicklung
 
@@ -59,7 +67,114 @@ HTTP Response Code 500 bezieht sich auf Server fehler
 - 503 Service Unavailable
     - Der Server kann die Anfrage nicht verarbeiten (zu viele Anfragen, down for maintanance)
 
+# Objektorientierung
+
+## Interfaces
+Ein Interface oder auch Schnittstelle definiert in der objektorientierte Programmierung, welche Methoden in den unterschiedlichen Klassen u. Ä vorhanden sind oder sein müssen.  
+Eine Schnittstelle gibt an, welche Methoden vorhanden sind oder vorhanden sein müssen.  
+Schnittstellen stellen eine Garantie über die in einer Klasse vorhandenen Methoden dar. Sie geben an, dass alle Objekte, die diese Schnittstellen besitzen, gleich behandelt werden können.
+
+In Programmiersprachen die keine Mehrfachvererbung untestützen wie z.B. Java, können Schnittstellen verwendet werden, um Kompatibilitäten zwischen Klassen zu definieren, die nicht voneinander erben.
+
+### Deklaration
+Andere Programmiersprachen, die Mehrfachvererbung unterstützen, zum Beispiel C++, kennen zwar das Konzept von Schnittstellen, behandeln diese aber wie gewöhnliche Klassen. Man spricht dann auch von abstrakten Klassen. Manchmal wird auch eine eigene Sprache (eine sogenannte Schnittstellenbeschreibungssprache, IDL) zur Deklaration der Schnittstelle verwendet – meist ist das bei Middleware-Systemen wie CORBA oder DCOM der Fall. Objektbasierte Sprachen ohne strenge Typisierung kennen meist keine Schnittstellen.
+
+### Beispiel
+**C#**
+```c#
+public interface IFace
+{
+    void Move(float x, float y);
+    void Turn(float x, float y, double angle);
+    void Scale(float factor);
+    double GetArea();
+    void SetColor(Color color);
+    Color GetColor();
+}
+
+public class Polygon : IFace
+{
+    private List<PointF> points;
+    private Color color;
+
+    public Polygon(List<PointF> points, Color color)
+    {
+        this.points = points;
+        this.color = color;
+    }
+
+public void Move(float x, float y)
+	{
+		for (int i = 0; i < points.Count; i++)
+		{
+			PointF point = points[i];
+			points[i] = new PointF(point.X + x, point.Y + y);
+		}
+	}
+	
+	public void Turn(float x, float y, double angleInDegrees)
+	{
+		double angleInRadians = angleInDegrees * (Math.PI / 180);
+		double cosine = Math.Cos(angleInRadians);
+		double sine = Math.Sin(angleInRadians);
+		for (int i = 0; i < points.Count; i++)
+		{
+			PointF point = points[i];
+			points[i] = new PointF((float) (cosine * (point.X - x) - sine * (point.Y - y) + x), (float) (sine * (point.X - x) + cosine * (point.Y - y) + y));
+		}
+	}
+	
+	public void Scale(float factor)
+	{
+		for (int i = 0; i < points.Count; i++)
+		{
+			PointF point = points[i];
+			points[i] = new PointF(factor * point.X, factor * point.Y);
+		}
+	}
+	
+	public double GetArea()
+	{
+		double area = 0.0;
+		for (int i = 0; i < points.Count; i++)
+		{
+			PointF point1 = points[i];
+			PointF point2 = points[(i + 1) % points.Count];
+			area += (point1.Y + point2.Y) * (point1.X - point2.X);
+		}
+		return Math.Abs(area / 2.0);
+	}
+	
+	public void SetColor(Color color)
+	{
+		this.color = color;
+	}
+	
+	public Color GetColor()
+	{
+		return color;
+	}
+}
+```
+
+### Namenskonventionen
+In einigen Programmiersprachen ist es üblich, Schnittstellen durch besondere Präfixe oder Suffixe erkennbar zu machen. So wird häufig ein "I" oder ein "IF" angehängt.  
+Im oben aufgeführtem Beispiel wäre dies ein "I" für "IFace". Dies wird normalerweise bei C# angewandt.
+
+## abstraktion
+[^6]
+Der Begriff Abstraktion wird in der Informatik häufig eingesetzt und beschreibt die Trennung zwischen **Konzept** und **Umsetzung**.  
+
+### Programmiersprachen
+Unterschiedliche Programmiersprachen bieten unterschiedliche Möglichkeiten von Abstraktion, wie zum Beispiel:
+- In Objektorientierten Sprachen wie C++, Object Pascal oder Java, wurde das Konzept der Abstraktion in Form einer eigenen deklarativen Anweisung umgesetzt. Nach einer derartigen Deklaration ist es die Aufgabe des Programmierers, eine Klasse zu implementieren, um eine Instanz eines Objektes davon erzeugen zu können.
+
+### Abstraktion in der objektorientierten Programmierung
+
+
 [^1]: https://de.wikipedia.org/wiki/HTTP-Statuscode
 [^2]: https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 [^3]: https://de.wikipedia.org/wiki/Hypertext_Markup_Language
 [^4]: https://de.wikipedia.org/wiki/Document_Object_Model
+[^5]: https://de.wikipedia.org/wiki/Schnittstelle_(Objektorientierung)
+[^6]: https://de.wikipedia.org/wiki/Abstraktion_(Informatik)
