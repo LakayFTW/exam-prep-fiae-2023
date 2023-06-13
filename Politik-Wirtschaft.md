@@ -51,9 +51,6 @@
   - [Mutterschutz](#mutterschutz)
   - [Umweltschutz](#umweltschutz)
   - [Urheberrecht](#urheberrecht)
-- [Arbeits- und Geschäftsprozesse](#arbeits--und-geschäftsprozesse)
-  - [Unternehmensziele/Interessen](#unternehmenszieleinteressen)
-  - [Verträge](#verträge)
 - [Armotisation](#armotisation)
   - [Wie setzen sich Entwicklungskosten zusammen?](#wie-setzen-sich-entwicklungskosten-zusammen)
 
