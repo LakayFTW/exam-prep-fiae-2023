@@ -22,9 +22,17 @@
   - [Vorteile](#vorteile-1)
   - [Nachteile](#nachteile-1)
 - [2FA - 2 Faktor Authentifizierung](#2fa---2-faktor-authentifizierung)
-  - [Authentifizieren](#authentifizieren)
+  - [Beispiele 2FA](#beispiele-2fa)
   - [Authentisieren](#authentisieren)
+  - [Authentifizieren](#authentifizieren)
   - [Autorisieren](#autorisieren)
+  - [Arten der Authentisierung](#arten-der-authentisierung)
+    - [Wissen](#wissen)
+      - [Beispiele zur Authentifikation anhand von Wissen](#beispiele-zur-authentifikation-anhand-von-wissen)
+    - [Besitz](#besitz)
+      - [Beispiele zur Authentifikation anhand von Besitz](#beispiele-zur-authentifikation-anhand-von-besitz)
+    - [Körperliche Merkmale / Biometrie](#körperliche-merkmale--biometrie)
+      - [Beispiele zur Authentifikation anhand von Biometrie](#beispiele-zur-authentifikation-anhand-von-biometrie)
 
 ---
 <br>
@@ -259,12 +267,89 @@ Die Asymmetrische Verschlüsselung wird auch Public-Key-Verfahren genannt. Hier 
 - Sicherheitsrisiko durch für jeden zugänglichen Public Key -> Man in the Middle.
 
 # 2FA - 2 Faktor Authentifizierung
-## Authentifizieren
+[^6]
+Die Zwei-Faktor-Authentisierung auch Authentifizierung genannt, bezeichnet den Identitätsnachweis eines Nutzers mittels einer Kombination zweier unterschiedlicher und insbesondere unabhängiger Komponenten. 
+
+## Beispiele 2FA
+- Bankkarte + PIN
+- Fingerabdruck
+- Zugangskarten
+- TAN beim Online-Banking
+
 ## Authentisieren
+Das allgemeine "Anmelden" bei einem Dienst des Benutzers nennt man Authentisierung.
+Der Benutzer muss sich beim Dienst Authentisieren.
+
+## Authentifizieren
+[^7]
+Wenn der Benutzer sich Authentisiert hat, und die Kontrolle erfolgreich abgeschlossen ist, kann der Dienst oder Server den Benutzer erfolgreich Authentifizieren.
+
 ## Autorisieren
+Sobald der Benutzer erfolgreich Authentifiziert ist und der Benutzer authentifiziert ist, können Berechtigungen verteilt werden, was man Autorisieren nennt.
+Das gleiche System lässt sich auch auf Gebäude oder ähnlichem Anwenden.
+
+## Arten der Authentisierung
+[^8]
+Die Authentisierung kann über mehrer Arten erreicht werden.
+
+### Wissen
+Charakteristika:
+- kann vergessen werden
+- kann dupliziert, verteilt, weitergegeben oder verraten werden
+- kann eventuell erraten werden
+  
+#### Beispiele zur Authentifikation anhand von Wissen
+- Passwort
+- PIN
+- Sicherheitsfrage
+
+### Besitz
+Charakteristika:
+- Erstellung eines Merkmals unterliegt vergeleichsweise hohen Kosten.
+- Verwaltung des Besitzes ist unsicher und mit Aufwand verbunden (muss mitgeführt werden)
+- kann verlorgen gehen
+- kann gestohlen werden
+- kann übergeben, weitergereicht, dupliziert werden
+- kann ersetzt werden
+
+#### Beispiele zur Authentifikation anhand von Besitz
+- Chipkarte
+- Magnetstreifenkarte
+- RFID-Karte/Chip
+- Physischer Schlüssel
+- Schlüssel-Codes auf einer Festplatte
+- SIM-Karte beim mTAN-Verfahren
+- Zertifikat z.B. bei SSL
+- TAN
+- One Time PIN
+- USB-Stick mit Passworttresor
+
+### Körperliche Merkmale / Biometrie
+Charakteristika:
+- wird duch Personen immer mitgeführt
+- kann nicht an andere Personen weitergegeben werden
+- benötigt zum Erkennen spezielle Vorrichtung
+- ist im Laufe der Zeit oder durch Unfälle veränderlich
+- kann nicht ersetzt werden
+- kann Probleme beim Datenschutz aufwerfen
+
+#### Beispiele zur Authentifikation anhand von Biometrie
+- Fingerabdruck
+- Gesichtserkennung
+- Tippverhalten
+- Stimmerkennung
+- Iriserkennung (Augen)
+- Retinamerkmale (Augenhintergrund)
+- Handschrift (Unterschrift)
+- Handgeometrie (Handflächenscanner)
+- Handlinienstruktur
+- Erbinformationen (DNA)
 
 [^1]: https://dsgvo-gesetz.de/art-32-dsgvo/
 [^2]: https://www.dr-datenschutz.de/authentisierung-authentifizierung-und-autorisierung/
 [^3]: https://de.wikipedia.org/wiki/Information_Security_Management_System
 [^4]: https://de.wikipedia.org/wiki/IT-Grundschutz#Schutzbedarfsfeststellung
 [^5]: https://tetfolio.fu-berlin.de/web/ii_555094:9
+[^6]: https://de.wikipedia.org/wiki/Zwei-Faktor-Authentisierung
+[^7]: https://de.wikipedia.org/wiki/Authentifizierung
+[^8]: https://de.wikipedia.org/wiki/Authentifizierung#Methoden
