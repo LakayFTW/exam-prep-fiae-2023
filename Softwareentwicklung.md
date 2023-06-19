@@ -1,23 +1,23 @@
 # Table of Content
 - [Table of Content](#table-of-content)
 - [Web Entwicklung](#web-entwicklung)
-  - [Auszeichnungssprachen](#auszeichnungssprachen)
-    - [HTML - Hypertext Markup Language](#html---hypertext-markup-language)
-      - [DOM - Document Object Model](#dom---document-object-model)
-  - [Protokolle](#protokolle)
-    - [HTTP/S](#https)
-      - [HTTP-400](#http-400)
-        - [Arten von HTTP-400](#arten-von-http-400)
-      - [HTTP-500](#http-500)
-        - [Arten von HTTP-500](#arten-von-http-500)
+	- [Auszeichnungssprachen](#auszeichnungssprachen)
+		- [HTML - Hypertext Markup Language](#html---hypertext-markup-language)
+			- [DOM - Document Object Model](#dom---document-object-model)
+	- [Protokolle](#protokolle)
+		- [HTTP/S](#https)
+			- [HTTP-400](#http-400)
+				- [Arten von HTTP-400](#arten-von-http-400)
+			- [HTTP-500](#http-500)
+				- [Arten von HTTP-500](#arten-von-http-500)
 - [Objektorientierung](#objektorientierung)
-  - [Interfaces](#interfaces)
-    - [Deklaration](#deklaration)
-    - [Beispiel](#beispiel)
-    - [Namenskonventionen](#namenskonventionen)
-  - [abstraktion](#abstraktion)
-    - [Programmiersprachen](#programmiersprachen)
-    - [Abstraktion in der objektorientierten Programmierung](#abstraktion-in-der-objektorientierten-programmierung)
+	- [Interfaces](#interfaces)
+		- [Deklaration](#deklaration)
+		- [Beispiel](#beispiel)
+		- [Namenskonventionen](#namenskonventionen)
+	- [abstraktion](#abstraktion)
+		- [Programmiersprachen](#programmiersprachen)
+		- [Abstraktion in der objektorientierten Programmierung](#abstraktion-in-der-objektorientierten-programmierung)
 
 # Web Entwicklung
 
@@ -28,7 +28,7 @@
 HTML ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bilder und anderen Inhalten. HTML-Dokumente sind die Grundlage des WWW (World-Wide-Web) und werden von Webbrowsern dargestellt. 
 
 Anders als einige Leute behaupten ist HTML **KEINE** Programmmiersprache.
-HTML kann Merkmale einer Programmiersprache wie **Variablen** und **Kontrollstukturen** nicht auweisen.
+HTML kann Merkmale einer Programmiersprache wie **Variablen** und **Kontrollstukturen** nicht ausweisen.
 
 #### DOM - Document Object Model
 [^4]
