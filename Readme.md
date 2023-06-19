@@ -2,7 +2,7 @@
 Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 ## Themen:
 - [Overall Begriffe](Begriffe.md)
-  - Dieses Dokument enthält Begriffe, welche noch nicht einsortiert worden sind oder wofür noch keinepPassende Stelle gefunden wurde.
+  - Dieses Dokument enthält Begriffe, welche noch nicht einsortiert worden sind oder wofür noch keine Passende Stelle gefunden wurde.
 - [Netzwerktechnik](Netzwerktechnik.md)
 - [Virtualisierung](Virtualisierung.md)
 - [Datenbanken](Datenbanken.md)
