@@ -33,7 +33,7 @@
 HTML ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bilder und anderen Inhalten. HTML-Dokumente sind die Grundlage des WWW (World-Wide-Web) und werden von Webbrowsern dargestellt. 
 
 Anders als einige Leute behaupten ist HTML **KEINE** Programmmiersprache.
-HTML kann Merkmale einer Programmiersprache wie **Variablen** und **Kontrollstukturen** nicht auweisen.
+HTML kann Merkmale einer Programmiersprache wie **Variablen** und **Kontrollstukturen** nicht ausweisen.
 
 #### DOM - Document Object Model
 [^4]

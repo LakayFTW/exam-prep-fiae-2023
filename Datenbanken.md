@@ -29,7 +29,7 @@
   - [SELECT-Abfragen](#select-abfragen)
     - [Einfache Abfrage](#einfache-abfrage)
     - [Abfrage mit Spaltenauswahl(,)](#abfrage-mit-spaltenauswahl)
-    - [Abfrage mit einduetigen Werten (DISTINCT)](#abfrage-mit-einduetigen-werten-distinct)
+    - [Abfrage mit eindeutigen Werten (DISTINCT)](#abfrage-mit-eindeutigen-werten-distinct)
     - [Abfrage mit Umbenennung (AS)](#abfrage-mit-umbenennung-as)
     - [Abfrage mit Filter (WHERE)](#abfrage-mit-filter-where)
     - [Abfrage mit Filter nach Inhalt (WHERE ... LIKE ...)](#abfrage-mit-filter-nach-inhalt-where--like-)
@@ -57,7 +57,7 @@ In einer Dokumentenorientierten Datenbank werden die Daten nicht wie bei der Rel
 [^2] [^1]  
 Zurzeit gebräuchliche Normalformen sind:
 - 1 Normalform (1NF)
-- 2 Nromalform (2NF)
+- 2 Normalform (2NF)
 - 3 Normalform (3NF)
 - Boyce-Codd-Normalform (BCNF) [Wird hier nicht besprochen]
 - 4 Normalform (4NF) [Wird hier nicht besprochen]
@@ -107,7 +107,7 @@ Das Ergebnis könnte so aussehen:
 Eine Relation ist dann in der zweiten Normalform wenn die erste Normalform erreicht wurde und kein Nichtprimärattribut funktionial von einer echten Teilmenge eines Schlüsselkandidaten abhängt.
 
 ### Beispiel
-Wir müssen die Tabelle aus dem Beispiel der ersten Normalform aufteilen, da weder der Name des Studenten noch die Bezeichnung des Prüfungsfach voll vom Pirmärschlüssel abhängig sind. Das Attribut Note ist voll vom Primäschlüssel abhängig und bleibt in der Relation.<br>
+Wir müssen die Tabelle aus dem Beispiel der ersten Normalform aufteilen, da weder der Name des Studenten noch die Bezeichnung des Prüfungsfachs voll vom Primärschlüssel abhängig sind. Das Attribut Note ist voll vom Primäschlüssel abhängig und bleibt in der Relation.<br>
 So ergibt sich folgende Realtionen in der zweiten Normalform.
 
 <a href="https://info-wsf.de/Normalformen/">
@@ -148,7 +148,7 @@ Eine **"eins zu viele"-Beziehung in relationalen Datenbanken** ist der häufigst
 <img title="1:n" src="./img/ERM/OneToMany.png">
 
 ## n:m Beziehung
-Bei **"viele zu viele"-Beziehungen in relationalen Datenbanken** können jedem Datenstz in Tabelle A mehrere passende Datensätze in Tabelle B zugeordnet sein und umgekehrt. Diese Beziehung können nur über eine dritte Tabelle, eine Verbindungstabelle C, realisiert werden. Die Verbindungstabelle C enthält in der Regel nur die Fremdschlüssel der beiden anderen Tabellen (A/B). Der Primärschlüssel der Verbindungstabelle wird aus diesen beiden Fremschlüsseln gebildet. Daraus folgt das eine m:n Beziehung in Wirklichkeit zwei 1:n Beziehungen sind.
+Bei **"viele zu viele"-Beziehungen in relationalen Datenbanken** können jedem Datensatz in Tabelle A mehrere passende Datensätze in Tabelle B zugeordnet sein und umgekehrt. Diese Beziehung können nur über eine dritte Tabelle, eine Verbindungstabelle C, realisiert werden. Die Verbindungstabelle C enthält in der Regel nur die Fremdschlüssel der beiden anderen Tabellen (A/B). Der Primärschlüssel der Verbindungstabelle wird aus diesen beiden Fremdschlüsseln gebildet. Daraus folgt das eine m:n Beziehung in Wirklichkeit zwei 1:n Beziehungen sind.
 
 <img title="m:n" src="./img/ERM/ManyToMany.png">
 
@@ -205,9 +205,9 @@ Ergebnis:
 |5022|IT|
 |5045|DB|
 
-litet alle Spalten `VorlNr` und `Titel` aller Zeilen der Tabelle `Vorlesung` auf.
+listet alle Spalten `VorlNr` und `Titel` aller Zeilen der Tabelle `Vorlesung` auf.
 
-### Abfrage mit einduetigen Werten (DISTINCT)
+### Abfrage mit eindeutigen Werten (DISTINCT)
 
 ```sql
 SELECT DISTINCT MatrNr FROM hoert;
@@ -247,7 +247,7 @@ Ergebnis:
 |---|---|
 |5001|ET|
 
-listet `VorlNr` und `Titel` aller derjenigen Zeilen der Tabelle auf, deren Titel `ER` ist.
+listet `VorlNr` und `Titel` aller derjenigen Zeilen der Tabelle auf, deren Titel `ET` ist.
 
 ### Abfrage mit Filter nach Inhalt (WHERE ... LIKE ...)
 
@@ -343,13 +343,13 @@ Bemerkung: `COUNT(Professor.PersNr)` oder `COUNT(*)` wären falsch (`NULL`-Werte
 **Erläuterung:**
 
 - **DISTINCT:**
-  - Gibt an, dass aus der Ergebnisrelation gleiche Ergebnistupel entfernt werden sollen. Es wird also jeder Datensatz nureinmal ausgegeben, auch wenn er mehrfach in der Tabelle vorkommt. Sonst liefert SQL eine Multimenge zurück.
+  - Gibt an, dass aus der Ergebnisrelation gleiche Ergebnistupel entfernt werden sollen. Es wird also jeder Datensatz nur einmal ausgegeben, auch wenn er mehrfach in der Tabelle vorkommt. Sonst liefert SQL eine Multimenge zurück.
 - **Auswahlliste:**
-  - Bestimmt, welche Spalten der Quelle auzugeben sind (* für alle) und ob Aggregatfunktionen anzuwenden sind. Wie bei allen anderen Aufzählungen werden die einzelnen Elemente mit Komma (,) voneinander getrennt.
+  - Bestimmt, welche Spalten der Quelle auszugeben sind (* für alle) und ob Aggregatfunktionen anzuwenden sind. Wie bei allen anderen Aufzählungen werden die einzelnen Elemente mit Komma (,) voneinander getrennt.
 - **Quelle:**
-  - Gibt an, wo die Daten herkommen. Es können Relationen und Sichten angegeben werden und miteinander als kertesisches Produkt oder als Verbund (JOIN, ab SQL-92) verknüpft werden. Mit der zusätzlichen Angaben eines Namens können Relationen für die Abfrage umbenannt werden.
+  - Gibt an, wo die Daten herkommen. Es können Relationen und Sichten angegeben werden und miteinander als kartesisches Produkt oder als Verbund (JOIN, ab SQL-92) verknüpft werden. Mit der zusätzlichen Angaben eines Namens können Relationen für die Abfrage umbenannt werden.
 - **WHERE-Klausel:**
-  - Bestimmt Bedingungen, auch Filter genannt, unter denen die Daten ausgegeben werden sollen. In SQL ist hier auch die Angabe von Unerabfragen möglich, so dass SQL streng relational vollständig wird.
+  - Bestimmt Bedingungen, auch Filter genannt, unter denen die Daten ausgegeben werden sollen. In SQL ist hier auch die Angabe von Unterabfragen möglich, so dass SQL streng relational vollständig wird.
 - **GROUP BY-Attribut:**
   - Legt fest, ob unterschiedliche Werte als einzelne Zeilen ausgegeben werden sollen (GROUP BY = Gruppierung) oder aber die Feldwerte der Zeilen durch Aggregationen wie Addition (`SUM`), Durchschnitt (`AVG`), Minimum (`MIN`), Maximum (`MAX`) zu einem Ergebniswert zusammengefasst werden, der sich auf die Gruppierung bezieht.
 - **HAVING-Klausel:**
@@ -360,9 +360,9 @@ Bemerkung: `COUNT(Professor.PersNr)` oder `COUNT(*)` wären falsch (`NULL`-Werte
 **Mengenoperatoren** können auf mehrere `SELECT`-Abfragen angewandt werden, die gleich viele Attribute haben und bei denen die Datentypen der Attribute übereinstimmen:
 
 - **UNION:**
-  - Vereinigt die Ergebnismengen. In einigen Implementierungen werden mehrfach vorkommende Ergebnistupel wie bei `DISTINCT` entfernt, ohne dass `UNTION DISTINCT` geschrieben werden muss beziehungsweise darf.
+  - Vereinigt die Ergebnismengen. In einigen Implementierungen werden mehrfach vorkommende Ergebnistupel wie bei `DISTINCT` entfernt, ohne dass `UNION DISTINCT` geschrieben werden muss beziehungsweise darf.
 - **UNTION ALL:**
-  - Vereinigt die Ergebnismengen. Mehrfach vorkommende Ergebnistupel beliben erhalten. Einige Implementierungen interpretieren aber `UNION` wie `UNION ALL` und verstehen das `ALL` möglicherweise nicht und geben eine Fehlermeldung aus.
+  - Vereinigt die Ergebnismengen. Mehrfach vorkommende Ergebnistupel bleiben erhalten. Einige Implementierungen interpretieren aber `UNION` wie `UNION ALL` und verstehen das `ALL` möglicherweise nicht und geben eine Fehlermeldung aus.
 - **EXCEPT:**
   - Liefert die Tupel, die in einer ersten, jedoch nicht in einer zweiten Ergebnismenge enthalten sind. Mehrfach vorkommende Ergebnistupel werden entfernt.
 - **MINUS:**
@@ -406,7 +406,7 @@ löscht alle Datensätze, für die PersNr den Wert 12 hat.
 - **DOUBLE oder DOUBLE PRECISION:**
   - Gleitkommazahl (positiv oder negativ). Die Genauigkeit ist jeweils vom Datenbanksystem definiert.
 - **FLOAT UND DOUBLE:**
-  - Sind für technisch-wissenschaftliche Werte geeignet und umfassen auch die Exponentialdarstellung. Wegen der Speicherung im Binärformat sind sie aber für Geldbeträge nicht geeignet, weil sich beispielsweise der Wert 0,10€ (entrspricht 10 Cent) nichte exakt abbilden lässt.
+  - Sind für technisch-wissenschaftliche Werte geeignet und umfassen auch die Exponentialdarstellung. Wegen der Speicherung im Binärformat sind sie aber für Geldbeträge nicht geeignet, weil sich beispielsweise der Wert 0,10€ (entrspricht 10 Cent) nicht exakt abbilden lässt.
 - **CHARACTER (n) oder CHAR (n):**
   - Zeichenkette Text mit n Zeichen.
 - **TEXT:**
@@ -418,7 +418,7 @@ löscht alle Datensätze, für die PersNr den Wert 12 hat.
 - **TIMESTAMP:**
   - Zeitstempel (umfasst Datum und Uhrzeit; evtl. inklusive Zeitzone), meistens mit Millisekundenauflösung, teilweise auch mikrosekundengenau.
 - **Boolean:**
-  - Boolesche Variable (kann die Werte true oder false oder NULL annehmen). Dieser Datentyp ist laut SQL:2003 optional und nicht alle DBMS stellen diesen Datentypen bereit.
+  - Boolsche Variable (kann die Werte true oder false oder NULL annehmen). Dieser Datentyp ist laut SQL:2003 optional und nicht alle DBMS stellen diesen Datentypen bereit.
 - **BLOB (n) oder BINARY LARGE OBJECT (n):**
   - Binärdaten von maximal n Bytes Länge.
 - **CLOB (n) oder CHARACTER LARGE OBJECT (n):**

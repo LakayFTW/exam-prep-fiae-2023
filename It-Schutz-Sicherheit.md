@@ -42,7 +42,7 @@
 [^1]
 1. Pseudonymisierung und Verschlüsselung personbezogener Daten
 2. die Fähigkeit, die Vertraulichkeit, die Integrität und Belastbarkeit der Systeme und Dienste im Zusammenhang mit der Verarbeitung auf Dauer sicherzustellen
-3. die Fähigkeit, die Verfügbarkeit der personenbezogener Daten und den Zugang zu ihnen bei einem physischen oder technischen Zwischenfall rasch wiederherzustellen
+3. die Fähigkeit, die Verfügbarkeit der personenbezogenen Daten und den Zugang zu ihnen bei einem physischen oder technischen Zwischenfall rasch wiederherzustellen
 4. ein Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit der technischen und organisatorischen Maßnahmen zur Gewährleistung der Sicherheit der Verarbeitung
 
 Zusätzlich muss man bei der Einhaltung und Beurteilung dieser Vorgaben an die Risiken denken und einhalten, die mit der Verarbeitung verbunden sind.
@@ -229,12 +229,12 @@ Diese Verfahren sind auch bei großen Datenmengen sehr schnell.
 - Hohe Geschwindigkeit für Ent- und Verschlüsselung.
 
 ## Nachteile
-- Nur ein Schlüssel für Ver- und Entschlüsselung, Schlüssel darf nicht in unbefugte Hände gelange.
+- Nur ein Schlüssel für Ver- und Entschlüsselung, Schlüssel darf nicht in unbefugte Hände gelangen.
 - Schlüssel muss über einen sicheren Weg übermittelt werden.
 - Anzahl der Schlüssel bezogen auf die Anzahl der Teilnehmer wächst quadratisch.
 
 # Asymmetrische Verschlüsselung
-Die Asymmetrische Verschlüsselung wird auch Public-Key-Verfahren genannt. Hier gibt es nicht nur einen Schlüssel sondern gleich zwei, dieses sogenannte Schlüsselpaar setzt sich aus einem privaten Schlüssel (Private Key) und einem öffentlichen Schlüssel (Public Key) zusammen. Mit dem Private Key, werden Daten Entschlüsselt oder eine digitale Signatur erzeugt. Mit dem Public Key kann man Daten verschlüsseln und erzeugte Signaturen auf ihren Authentizität überprüfen. Dieses Verfahren ist sehr langsam und eignen sich daher nur für kleine Datenmengen.
+Die Asymmetrische Verschlüsselung wird auch Public-Key-Verfahren genannt. Hier gibt es nicht nur einen Schlüssel sondern gleich zwei, dieses sogenannte Schlüsselpaar setzt sich aus einem privaten Schlüssel (Private Key) und einem öffentlichen Schlüssel (Public Key) zusammen. Mit dem Private Key, werden Daten Entschlüsselt oder eine digitale Signatur erzeugt. Mit dem Public Key kann man Daten verschlüsseln und erzeugte Signaturen auf ihren Authentizität überprüfen. Dieses Verfahren ist sehr langsam und eignet sich daher nur für kleine Datenmengen.
 
 ## Vorteile
 - Relativ hohe Sicherheit.
@@ -272,7 +272,7 @@ Das gleiche System lässt sich auch auf Gebäude oder ähnlichem Anwenden.
 
 ## Arten der Authentisierung
 [^8]
-Die Authentisierung kann über mehrer Arten erreicht werden.
+Die Authentisierung kann über mehrere Arten erreicht werden.
 
 ### Wissen
 Charakteristika:
@@ -287,9 +287,9 @@ Charakteristika:
 
 ### Besitz
 Charakteristika:
-- Erstellung eines Merkmals unterliegt vergeleichsweise hohen Kosten.
+- Erstellung eines Merkmals unterliegt vergleichsweise hohen Kosten.
 - Verwaltung des Besitzes ist unsicher und mit Aufwand verbunden (muss mitgeführt werden)
-- kann verlorgen gehen
+- kann verloren gehen
 - kann gestohlen werden
 - kann übergeben, weitergereicht, dupliziert werden
 - kann ersetzt werden

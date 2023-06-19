@@ -107,7 +107,7 @@
 ## Host Raid
 Host Raid ist eine Zwischenstufe von Hard- und Software-RAID.
 Hier werden Chipsätze, die sich auf dem Mainboard befinden oder günstige RAID-Adapter verwendet.
-Mainbords mit RAID-Funktion beherrschen meist nur RAID 0, 1 und teurere Varianten möglicherweise noch RAID 5.
+Mainboards mit RAID-Funktion beherrschen meist nur RAID 0, 1 und teurere Varianten möglicherweise noch RAID 5.
 Man spricht von Host-RAID, da die RAID-Funktionen von der Firmware bzw. den Treibern erledigt werden.
 
 ## Verschiedene Raid Stufen
@@ -137,7 +137,7 @@ Darstellung Raid 0:<br>
 
 ### RAID 1: Mirroring - Spiegelung
 RAID 1 ist der Verbund von zwei Platte, wobei auf allen Festplatten die gleichen Daten gespeichert werden (Spiegelung). Somit ist volle Redundanz geboten.
-Die Platten müssen paarweise vorhanden sein und die Kapazität richtet sich auch hier nach der kleinsten Platte. Beim Bescheiben ist das RAID nur so schnell wie die langsamste Platte.
+Die Platten müssen paarweise vorhanden sein und die Kapazität richtet sich auch hier nach der kleinsten Platte. Beim Beschreiben ist das RAID nur so schnell wie die langsamste Platte.
 
 #### Vorteile
 - Bei Ausfall einer Platte kann ohne Daten- und mit geringen Geschwindigkeitsverlust weiter gearbeitet werden.
@@ -251,7 +251,7 @@ Merke: Die Adressen `192.168.0.0` und `192.168.0.255` sind reserviert.<br>
 `192.168.0.255`: Die Broadcast Adresse<br>
 
 ### Private IP-Adressen
-Private IP-Adressen gehören zu bestimmten IP-Bereichen, die im Internet nicht groutet werden. Sie können von jedem innerhalb privater Netze (z.B. LANs) genutzt werden.
+Private IP-Adressen gehören zu bestimmten IP-Bereichen, die im Internet nicht geroutet werden. Sie können von jedem innerhalb privater Netze (z.B. LANs) genutzt werden.
 Folgende Adressbereiche wurden aus dem öffentlichen Adressraum ausgespart für die private Nutzung.
 
 #### Adressbereiche:
@@ -271,10 +271,10 @@ Folgende Adressbereiche wurden aus dem öffentlichen Adressraum ausgespart für 
 Somit hat man keinen unnützen administrativen Mehraufwand bei der Pflege lokaler Netzwerke.
 
 ### Funktionsweise
-- PCs in einem Rechnernet, denen private IP-Adressen zugewiesen wurden, bilden ein Intranet und können nur untereinander kommunizieren. 
+- PCs in einem Rechnernetz, denen private IP-Adressen zugewiesen wurden, bilden ein Intranet und können nur untereinander kommunizieren. 
 - Aus dem Internet heraus kann nicht auf das Intranet zugegriffen werden
 - Internet-Router ignorieren die privaten Adressbereiche. 
-- Um einen Internetzugang herzustellen muss ein Gateway oder Router im privaten Netz plaziert werden, der sowohl eine private als auch eine öffentliche IP-Adresse besitzt.
+- Um einen Internetzugang herzustellen muss ein Gateway oder Router im privaten Netz platziert werden, der sowohl eine private als auch eine öffentliche IP-Adresse besitzt.
 - Der genutzte private Adressbereich ist immer nur innerhalb des privaten Netzes sichtbar, womit die Adressen auch in anderen privaten Netzen vergeben werden können.
 
 ---
@@ -322,7 +322,7 @@ Eine statische Zuordnung kann dann von Vorteil sein, wenn Netzwerkdienste über 
 Dabei kann das Problem aufteten, dass keine weiteren Clients dem Netzwerk zugeteilt werden können, da alle Adressen fest vergeben sind. Das kann unter manchen Sicherheitsaspekten problematisch sein.
 
 ### Automatische Zuordnung
-Bei der Automatischen Zuordnung werden am DHCP-Server Bereiche von IP-Adressen (range) definiert. Neue Cleints erhalten dabei IP-Adressen welche den MAC-Adressen zugeordnet werden, das wird in einer Tabelle festgehalten. Im Unterschied zur dynamischen Zuordung werden automatische Adressen fest vergeben und nicht entfernt. 
+Bei der Automatischen Zuordnung werden am DHCP-Server Bereiche von IP-Adressen (range) definiert. Neue Clients erhalten dabei IP-Adressen welche den MAC-Adressen zugeordnet werden, das wird in einer Tabelle festgehalten. Im Unterschied zur dynamischen Zuordnung werden automatische Adressen fest vergeben und nicht entfernt. 
 
 #### Vorteil
 Der Vorteil darin liegt, dass IP-Adressen immer dem gleichen Host zugeordnet sind und keinem anderem Host zugeordnet werden können.
@@ -338,7 +338,7 @@ Manche Konfigurationen vergeben IP-Adressen abhängig von der MAC-Adresse, das h
 ## DHCP-Nachrichten
 
 - DHCP**DISCOVER**:
-  - EIn Client ohne IP-Adresse sendet eine Broadcast-Anfrage nach Adress-Angeboten an alle DHCP-Server im lokalen Netz.
+  - Ein Client ohne IP-Adresse sendet eine Broadcast-Anfrage nach Adress-Angeboten an alle DHCP-Server im lokalen Netz.
 - DHCP**OFFER**:
   - Die DHCP-Server antworten mit entsprechenden Werten auf eine DHCP**DISCOVER**-Anfrage.
 - DHCP**REQUEST**:

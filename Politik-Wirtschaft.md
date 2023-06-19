@@ -209,7 +209,7 @@ Wenn man ein Programm in der Firma entwickelt und das nicht anders vertraglich g
 
 # Armotisation
 ## Wie setzen sich Entwicklungskosten zusammen?
-- Die Entwicklungskosten setzen sich aus den Gehälter etc. aus den Mitarbeitern und den Gemeinkosten zusammen.
+- Die Entwicklungskosten setzen sich aus den Gehältern etc. aus den Mitarbeitern und den Gemeinkosten zusammen.
 - Gemeinkosten umfassen alles was ein Mitarbeiter zum arbeiten benötigt und noch mehr. Darunter zählen:
   - Arbeitsmaterial
     - Computer

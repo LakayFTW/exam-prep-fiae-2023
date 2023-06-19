@@ -49,19 +49,19 @@ Normalerweise sind Docker auf die Virtualisierung mit Linux ausgerichtet, könne
 
 ## Begriffe
 ### Image
-Ein Speicherabbild eines Containers. Das Image selbst besteht aus mehreren Layern, die schreibgeschützt sind und somit nicht verändert werden können. Ein Image ist portabel, kann in Repositories gespeichert und mit anderen Nutzern geteil werden. Aus einem Image können immer mehrere Container gestartet werden.
+Ein Speicherabbild eines Containers. Das Image selbst besteht aus mehreren Layern, die schreibgeschützt sind und somit nicht verändert werden können. Ein Image ist portabel, kann in Repositories gespeichert und mit anderen Nutzern geteilt werden. Aus einem Image können immer mehrere Container gestartet werden.
 
 ### Container
-Als Container wird die aktive Instanz eines Images bezeichent. Der Container wird also gerade ausgeführt und ist beschäftigt. Sobald der Container kein Programm ausführt oder mit seinem Auftrag fertig ist, wird der Container automatisch beendet.
+Als Container wird die aktive Instanz eines Images bezeichnet. Der Container wird also gerade ausgeführt und ist beschäftigt. Sobald der Container kein Programm ausführt oder mit seinem Auftrag fertig ist, wird der Container automatisch beendet.
 
 ### Layer
 Ein Layer ist ein Teil eines Images und enthält einen Befehl oder eine Datei, die dem Image hinzugefügt wurde. Anhand der Layer kann die ganze Historie des Images nachvollzogen werden.
 
 ### Dockerfile
-Eine Textdatei, die mit verschiedenen Befehlen ein Image beschreibt. Diese werden bei der Ausführung abgearbeitet und für jeden Befehl wird ein einzelner Layer angelegt.
+Eine Textdatei, die mit verschiedenen Befehlen ein Image beschreibt. Diese werden bei der Ausführung abgearbeitet und für jeden Befehl wird ein einzelnes Layer angelegt.
 
 ### Repository
-Ein Repository ist ein Satz gleichnamiger Imags mit verschiedenen Tags, zumeist Versionen.
+Ein Repository ist ein Satz gleichnamiger Images mit verschiedenen Tags, zumeist Versionen.
 
 ### Registry
 Eine Registry, wie zum Beispiel __Docker Hub__ oder __Artifactory__, dient der Verwaltung von Repositories.

@@ -28,21 +28,21 @@
   - [Vorteile für den Servicenehmer](#vorteile-für-den-servicenehmer)
   - [Nachteile für den Servicenehmer](#nachteile-für-den-servicenehmer)
   - [Vorteile für den Servicegeber](#vorteile-für-den-servicegeber)
-  - [Nachteile für Softwaregeber](#nachteile-für-softwaregeber)
+  - [Nachteile für Servicegeber](#nachteile-für-servicegeber)
   - [Datenschutz](#datenschutz)
   - [Saas-Unternehmen](#saas-unternehmen)
 
 # Cloud-Computing
 Cloud Computing ist die Datenverarbeitung in einer "Wolke".
-Es beschreibt die Bereitstellung der IT-Infrastuktur und IT-Leistungen als Service über das Internet, dabei werden die Cloud Dienste bedarfsgerecht und dynamisch abgerufen, die Berechnung erfolgt über ein nutzungsabhängiges Abrechnungsmodell. Angebot und Nutzung erfolgen ausschließlich über technische Schnittstellen und Protokolle. Es umfasst das ganze Spektrum der Informationstechnik und beinhaltet u.a. Infrastuktur, Plattformen und Software. Es entbindet den Nutzer von der konstenintensiven Bereitstellung, Installation und Betreuung eigener Rechensysteme.
+Es beschreibt die Bereitstellung der IT-Infrastuktur und IT-Leistungen als Service über das Internet, dabei werden die Cloud Dienste bedarfsgerecht und dynamisch abgerufen, die Berechnung erfolgt über ein nutzungsabhängiges Abrechnungsmodell. Angebot und Nutzung erfolgen ausschließlich über technische Schnittstellen und Protokolle. Es umfasst das ganze Spektrum der Informationstechnik und beinhaltet u.a. Infrastuktur, Plattformen und Software. Es entbindet den Nutzer von der kostenintensiven Bereitstellung, Installation und Betreuung eigener Rechensysteme.
 
 ## Wesentliche Eigenschaften (NIST - National Institute of Standards and Technology)
 - On-Demand Self Service
   - Automatische Selbstbedienbarkeit für die Nutzer ohne zutun des Anbieters.
 - Broad Network Access
-  - Zugang von Desktops, Laptops und Mobilfunk über das Breitband, ohne Anbdindung an einen bestimmten Client
+  - Zugang von Desktops, Laptops und Mobilfunk über das Breitband, ohne Anbindung an einen bestimmten Client
 - Resource Pooling
-  - Zusammenlegungvon Ressourcen für mehrere Benutzer
+  - Zusammenlegung von Ressourcen für mehrere Benutzer
 - Rapid Elasticity
   - Flexible Ressourcen, die im Bedarfsfall schnell umdisponiert werden können.
 - Measured Services
@@ -50,15 +50,15 @@ Es beschreibt die Bereitstellung der IT-Infrastuktur und IT-Leistungen als Servi
   - Können den  Nutzer bei Bedarf zur Verfügung gestellt werden.
 
 # Schichten 
-- Infrastrukutr
+- Infrastruktur
 - Plattform
 - Anwendung
 
 ## IaaS - Infrastructure as a Service
-Das IaaS bildet die unterste Schicht im Cloud-Computing, es wird auch die Cloud-Foundation genannt. Hier werden IT-Leistungen wie Rechenleistung, Speicherplatz und Netzwerke angeboten, es umfasst quasi die Basisinfrastruktur. Nutzer gestalten sich frei ihre eigenen virtuellen PC-Cluster, sie sind aberfür die Auwahl, Installation, Betriebund Funktionen der Software selbst verantwortlich.
+Das IaaS bildet die unterste Schicht im Cloud-Computing, es wird auch die Cloud-Foundation genannt. Hier werden IT-Leistungen wie Rechenleistung, Speicherplatz und Netzwerke angeboten, es umfasst quasi die Basisinfrastruktur. Nutzer gestalten sich frei ihre eigenen virtuellen PC-Cluster, sie sind aber für die Auwahl, Installation, Betrieb und Funktionen der Software selbst verantwortlich.
 
 ### Vorteile
-- Skalierbarkeit, d.H.die Cloud Dienste können je nach Nutzungsgrad und Bedarf dynamisch angepasst werden.
+- Skalierbarkeit, d.H. die Cloud Dienste können je nach Nutzungsgrad und Bedarf dynamisch angepasst werden.
 - Beispiel -> Speicherplatz kann jederzeit erweitert oder verkleinert werden.
 
 ### Beispiele
@@ -66,7 +66,7 @@ Das IaaS bildet die unterste Schicht im Cloud-Computing, es wird auch die Cloud-
 - Linode
 
 ## PaaS - Platform as a Service
-PaaS liegt eine Schicht über der Infrastruktur, hier werden IT-Leistungen angeboten mit denen sich Anwendungssoftwareund Kommponenten entwickeln und integriert lassen. Dabei stellt der Cloud Service eine Programmschnittstelle bzw. einen Zugang zu einer Softwareumgebung zur Verfügung. Darin kann der Entwickler Anwendungssoftware erstellen undüber Cloud Dienste anbieten. Der Kunde hat aber keine Zugriffe auf die darunterliegenden Schichten (BS, Hardware)
+PaaS liegt eine Schicht über der Infrastruktur, hier werden IT-Leistungen angeboten mit denen sich Anwendungssoftware und Kommponenten entwickeln und integrieren lassen. Dabei stellt der Cloud Service eine Programmschnittstelle bzw. einen Zugang zu einer Softwareumgebung zur Verfügung. Darin kann der Entwickler Anwendungssoftware erstellen und über Cloud Dienste anbieten. Der Kunde hat aber keine Zugriffe auf die darunterliegenden Schichten (BS, Hardware)
 
 ### Vorteile
 - Keinen Administrationsaufwand
@@ -98,7 +98,7 @@ Es wird hierbei zwischen Zwei Formen unterschieden:
   
 ##### Open Cloud
 - Anbieter und Nutzter kennen sich vorher nicht.
-- Der Anbieter muss sein Angebot ohne direktenInput von Kunden entwickeln undin Form von SLAs festlegen.
+- Der Anbieter muss sein Angebot ohne direkten Input von Kunden entwickeln und in Form von SLAs festlegen.
 - Wegen der Vielzahl an potentiellen Nutzern muss der gesamte Geschäftsabschluss und die Nutzung von Instanzen anbieterseitig vollautomatisch ablaufen.
 - Beispiel -> Amazon Web Serivces
 
@@ -123,9 +123,9 @@ Darunter versteht man, dass ein Unternehmen eine eigene Private Cloud betreibt u
 
 # SaaS - Software as a Service -- Allgemein
 - Teilbereich des Cloud-Computings.
-- Bedeutet das Software als Dienstleistung angeboten undan Kunden "vermietet" wird.
+- Bedeutet das Software als Dienstleistung angeboten und an Kunden "vermietet" wird.
 - Hierbei wird die Software (und IT-Infrastruktur) bei einem externen IT-Dienstleister betrieben und vom Kunden als Service genutzt.
-- Dazu braucht der Kunde nur eine Internetfähigen PC.
+- Dazu braucht der Kunde nur einen Internet fähigen PC.
 - Der Zugriff wird meist über einen Webbrowser realisiert.
 - Bei diesen Applikationen handelt es sich um Collaborations- oder Branchensoftware, die ein Unternehmen für den Betrieb seines Geschäftes oder temporärer Projekte benötigt.
 
@@ -136,7 +136,7 @@ Darunter versteht man, dass ein Unternehmen eine eigene Private Cloud betreibt u
 - Die Installation benötigt eine komplette IT-Infrastruktur (Hardware, BS, Datenbank etc.)
 - Nach der Installation wird die Software entsprechend den Geschäftsanforderungen konfiguriert.
 - Mit Abschluss der Softwareeinführung übernimmt das Unternehmen den kompletten Betrieb der IT-Infrastruktur und die IT-Aufgaben, wie Administration, Wartung etc.
-- Unkalkulierbare Folgekosten fallen meist durch einene Wartungsvertrag an, der mit dem Lizenzkauf verbunden ist.
+- Unkalkulierbare Folgekosten fallen meist durch einen Wartungsvertrag an, der mit dem Lizenzkauf verbunden ist.
 - Dies beinhaltet die Installation neuer Releases und die Behebung von Fehlern in der Software.
 
 ### SaaS
@@ -146,11 +146,11 @@ Darunter versteht man, dass ein Unternehmen eine eigene Private Cloud betreibt u
 - Außerdem werden weitere operative Dienstleistungen wie Authentifizierung, Verfügbarkeit, Identitätsmanagement, Fertigungssteuerung, Patchverwaltung, Aktivitätsüberwachung, Softwareupgrades und Anpassungen durchgeführt..
 - Der Servicenehmer hingegen braucht nur einen internetfähigen PC und muss keine eigene Software installieren.
 - Der Zugriff erfolgt über den Webbrowser.
-- Für diese Nutzun und Betrieb zahl der Servicenehmer eine nutzerabhängige Gebühr.
+- Für diese Nutzung und Betrieb zahlt der Servicenehmer eine nutzerabhängige Gebühr.
 
 ### Zusammenfassung
 - Hier kann man sagen, dass die IT-Infrastruktur und die IT-Aufgaben nicht mehr durch den Servicenehmer, sondern durch den Servicegeber betrieben werden.
-- Der Softwarenehmer zahlt keine Softwarelizenz, sondern eine monatliche nutzerabhängige Gebürt.
+- Der Softwarenehmer zahlt keine Softwarelizenz, sondern eine monatliche nutzerabhängige Gebühr.
 
 ## Ziel
 - Einsparung der Investitionskosten für die IT-Infrastruktur (Hardware, Speicher etc) und die IT-Aufgaben (Softwarewartung, Updates etc.)
@@ -190,13 +190,13 @@ Darunter versteht man, dass ein Unternehmen eine eigene Private Cloud betreibt u
 - Daten- und Transaktionssicherheit
 
 ## Vorteile für den Servicegeber
-- Erweiterung ders IT-Leistungsangebots
+- Erweiterung des IT-Leistungsangebots
 - Erzielung zusätzlicher Umsatzerlöse
 - Längerfristig gesicherte Einnahmen
-- Besser Liquidätsplanungsoption
-- Geringer Warhscheinlichkeit des Auftretens von Softwarepiraterie
+- Bessere Liquidätsplanungsoption
+- Geringere Wahrscheinlichkeit des Auftretens von Softwarepiraterie
 
-## Nachteile für Softwaregeber
+## Nachteile für Servicegeber
 - Investitionsrisiko
 - Akzeptansprobleme auf dem IT-Markt
 - Möglicher Imagesschaden und Umsatzverluste
@@ -208,7 +208,7 @@ Darunter versteht man, dass ein Unternehmen eine eigene Private Cloud betreibt u
   - Regelmäßige Kontrollen
   - Dokumentation der Ergebnisse der Kontrollen
 - Außerdem bleibt der Kunde für die Rechtmäßigkeit der Datenverarbeitung verantwortlich.
-- SaaS-Verträge müssen zudem den 10-Punkte-Katalog des $11 BDSG umsetzen, da dem Kunden ansosten Bußgelder in der höhe von bis zu 50.000 Euro drohen (§43 Absatz 1 Nr. 2b BDSG)
+- SaaS-Verträge müssen zudem den 10-Punkte-Katalog des $11 BDSG umsetzen, da dem Kunden ansonsten Bußgelder in der höhe von bis zu 50.000 Euro drohen (§43 Absatz 1 Nr. 2b BDSG)
 
 ## Saas-Unternehmen
 - Salesforce.com

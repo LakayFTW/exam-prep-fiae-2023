@@ -50,8 +50,8 @@ Die Bereitstellung und Kontrolle von Services unterliegt nicht nur der IT Branch
 
 [^2] [^3]
 # Bedeutung eines Prozesses
-Ein Prozess ist eine geregelter Ablauf von folgenden Aktivitäten.
-Es besitzt immer ein definiertes Ende und auch einen definierten Startpunkt. Es folgt nach dem EVA Prinzip, dass durch das Einbringen gewünschter Anforderungen eine Folge an geregelten Schritten eintritt, um einen erhofftes Ergebnis zu erhalten.
+Ein Prozess ist ein geregelter Ablauf von folgenden Aktivitäten.
+Es besitzt immer ein definiertes Ende und auch einen definierten Startpunkt. Es folgt nach dem EVA Prinzip, dass durch das Einbringen gewünschter Anforderungen eine Folge an geregelten Schritten eintritt, um ein erhofftes Ergebnis zu erhalten.
 
 <a href="https://qualitaetsmanagement.me/prozessmanagement/prozess/">
   <img src="https://qualitaetsmanagement.me/wp-content/uploads/2022/11/071122_Der-Prozess-einfach-erklaert_Logo.jpg" width="500" title="Einfacher Prozessablauf" />
@@ -134,7 +134,7 @@ Im Bereich der IT können Störungen im Netzwerk, an Computersystemen oder an ei
 
 [^6] 
 # Einsatz von ITSM Frameworks
-Damit eine Organisation in allen Abteilung effizient miteinander arbeiten kann, wie auch mit dem Kunden selbst, muss eine gute Struktur gegeben sein an die sich die Organisation halten kann für den Einsatz derer Services.
+Damit eine Organisation in allen Abteilung effizient miteinander arbeiten kann, wie auch mit dem Kunden selbst, muss eine gute Struktur gegeben sein an die sich die Organisation halten kann für den Einsatz der Services.
 Hierzu existieren einige Frameworks, wo jedes seine eigene Bandbreite an Möglichkeiten bietet sowie einen eigenen Ansatz, die alle dazu beitragen können, die speziellen Anforderungen einer Organisation zu erfüllen
 
 __Beliebte Frameworks darunter sind:__
@@ -165,11 +165,11 @@ Das Scaled Agile Framework wendet die Agile-Struktur, die von Softwareentwicklun
 
 # IT Service Managementarten
 
-Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spezielle Bereiche wie diese koordiniert werden. Einige von diesen Arten sind:
+Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spezielle Bereiche diese können unterschiedlich koordiniert werden. Einige von diesen Arten sind:
 - Incident Mangement: Behebungen von eintretenden Zwischenfällen bei laufenden Services
 - Service-Level Management: Bereitstellung und Kontrolle von SLA's
 - Problem Management: Behebungen von schwerwiegenden Zwischenfällen bei laufenden Services
-- Change Management: Vorbereitung und Umsetzung von Ändernungen an Arbeitsprozessen im Unternehmen
+- Change Management: Vorbereitung und Umsetzung von Änderungen an Arbeitsprozessen im Unternehmen
 
 [^7]
 # Service Lebenszyklus nach ITILv4
@@ -183,7 +183,7 @@ Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spe
 - Business Relationship Management
 
 ## Design:
-- Service Level Managemnt
+- Service Level Management
 - Service Capacity Management
 - Service Availability Management
 - Service Continuity Management
@@ -209,9 +209,9 @@ Beim Anbieten und Verfolgen der Services im Unternehmen gibt es verschiedene spe
 
 [^8]
 # Service Lebenszyklus nach IMAC/R/D
-International verbreitet veranschaulichen Unternehmen die Durchführung iheres Service Lebenszyklus nach der IMAC/R/D Darstellung.
+International verbreitet veranschaulichen Unternehmen die Durchführung ihres Service Lebenszyklus nach der IMAC/R/D Darstellung.
 Hier können Kunden ihre Probleme und oder Anfragen direkt in einer der Phasen einordnen wenn sie den Kontakt mit dem Unternehmen aufnehmen.
-Die Darstellung wird allgemein für alle Services verwendet und bietet Kunden eine bessere Findung in das bestehdende Unternehmenssystem durch die konkrete Unterscheidung aller Services.
+Die Darstellung wird allgemein für alle Services verwendet und bietet Kunden eine bessere Findung in das bestehende Unternehmenssystem durch die konkrete Unterscheidung aller Services.
 
 &nbsp;
 
@@ -245,7 +245,7 @@ Entsorgung oder Neuaufbereitung von ungebrauchten oder defekten Geräten.
 
 [^9]
 # Bedeutung von SLA's
-Eine Service-Level-Agreement ist eine Vereinbarung zwischen Kunde und Dienstleister für die detaillierte Regelung wiederkehrender Dienstleistungen.
+Ein Service-Level-Agreement ist eine Vereinbarung zwischen Kunde und Dienstleister für die detaillierte Regelung wiederkehrender Dienstleistungen.
 Der Kunde verlangt eine Dienstleistung festgelegt in einer SLA und kontrolliert, ob diese erfüllt wurde. Wenn es zu einem größeren Umfang kommt von einer Dienstleistung, wird in der Regel Bezug auf die bestehende SLA genommen und nach Erfüllung der Dienstleistung diese um den zusätzlichen Inhalt erweitert.
 
 In einer SLA sind die einzelnen Service Levels enthalten mit den Faktoren Qualität und Zeit. Hierfür werden auch Maßnahmen verfasst, wenn es zu Beeinträchtigungen kommt bei der Durchführung einer gewünschten Dienstleistung.
@@ -258,7 +258,7 @@ Auch sind Strafandrohungen enthalten wenn eine SLA nicht eingehalten wurde, wie 
   - Ergebnis der Dienstleistung und Kundennutzen aus deren Inanspruchnahme.
 - Ablauf
   - Prozessschritte für Ablauf.
-- Rahmenbediengungen
+- Rahmenbedingungen
   - Systemumgebung, Infrastruktur, Mitwirkungspflichten, Out-of-Scope-Abgrenzung.
 
 ## SLA Qualität
@@ -276,7 +276,7 @@ Auch sind Strafandrohungen enthalten wenn eine SLA nicht eingehalten wurde, wie 
   - Verrechnungsmodell (Festpreis, variabel nach Zeit und Aufwand)
   - Festgelegte Inhalte
   - Nicht geregelte Inhalte
-  - Ausmaßen von SLA Verstößen
+  - Ausmaße von SLA Verstößen
   - Ausmaß von wiederholten SLA Verstößen
   - Ablauf von SLA's
 
@@ -290,7 +290,7 @@ Das Kernstück des Incident Managements ist die Behebung von jeglichen Zwischenf
 
 Wenn ein Vorfall vorliegt wird die Umgebung als erstes mit einem Tracking-System kategorisiert, ob es im Bereich Software, Hardware oder Netzwerk vorliegt. Danach erfolgt die Priorisierung des Vorfalls nach Dringlichkeit und Auswirkung. Dies geschieht beim Helpdesk oder allgemein dem Single Point of Contact (auch SPOC genannt) und leistet hier für die meldende Person den First-Level-Support.
 
-Hier wird in der Known-Error-Database nach einem ähnlichen Sachzusammenhang geguckt und versucht eine Lösung anzubieten. Wenn eine Lösung gefunden wurden und diese die Behebung der Störung erzielt hat, wird somit der Prozess erfolgreich beendet und protokolliert.
+Hier wird in der Known-Error-Database nach einem ähnlichen Sachzusammenhang geguckt und versucht eine Lösung anzubieten. Wenn eine Lösung gefunden wurde und diese die Behebung der Störung erzielt hat, wird somit der Prozess erfolgreich beendet und protokolliert.
 
 Wenn das Problem mangels an Fachwissen und hinterlegten Einträgen nicht zur Zufriedenheit behoben wurde, werden die Anforderungen der definierten SLA's nicht erfüllt und der Incident wird eskaliert.
 
@@ -299,7 +299,7 @@ Nicht jeder Incident wird automatisch zu einem Problem, da es von der Priorisier
 Wenn hier auch nach den verfassten SLA's keine Zufriedenheit geschaffen werden kann, dann erfolgt eine letzte Eskalation zum Third-Level-Support bei Fachkräften, die bei jedem Detailaspekt Einfluss besitzen das System auf jede Art und Weise zu verändern.
 
 Wenn eine Lösung gefunden wurde im aktuellen Level, wird jeweils dem vorherigen ein Bericht erstattet bis nichts mehr weitergetragen werden kann.
-Alle Schritte werden auf dem Weg protokolliert und in der Known-Error-Database hintergelgt für zukünftig auftretende Vorfälle. Wenn der Kunde zufrieden ist nach allen ausgeführten Operationen, ist auch dieser Prozess erfolgreich beendet worden.
+Alle Schritte werden auf dem Weg protokolliert und in der Known-Error-Database hinterlegt für zukünftig auftretende Vorfälle. Wenn der Kunde zufrieden ist nach allen ausgeführten Operationen, ist auch dieser Prozess erfolgreich beendet worden.
 
 
 [^1]: https://www.atlassian.com/de/itsm
