@@ -11,6 +11,7 @@ Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 - [It Service Management](It-Service-Management.md)
 - [Projektmanagement](Projektmanagement.md)
 - [Softwareentwicklung](Softwareentwicklung.md)
+- [Cloud Computing](Cloud-Computing.md)
 - [Diagrams](/Diagrams/)
   - [Nassi-Shneidermann-Diagram](Diagrams/Nassi-Shneiderman-Diagram.md)
   - [Programmablaufplan](Diagrams/Programmablaufplan.md)
