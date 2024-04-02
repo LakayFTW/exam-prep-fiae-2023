@@ -12,16 +12,16 @@ Die Grafische Darstellung eines Algorithmus in einem Programm und beschreibt die
 
 ## Elemente
 - Kreis; Oval/Rechtek abgerundet: Terminator<br>
-<img title="Start/Stop" src="../img/pap/Start-Stop_(PAP).png">
+<img title="Start/Stop" src="../../img/pap/Start-Stop_(PAP).png">
 - Pfeil, Linie: Verbindung zum nächsten Element<br>
-<img title="Connection" src="../img/pap/Connection(PAP).png">
+<img title="Connection" src="../../img/pap/Connection(PAP).png">
 - Rechteck: Operation (Tätigkeit)<br>
-<img title="Operation" src="../img/pap/Operation_(PAP).png">
+<img title="Operation" src="../../img/pap/Operation_(PAP).png">
 - Rechteck mit doppelten, vertikalen Linien: Unterpogramm ausführen<br>
-<img title="Sub-Program" src="../img/pap/Sub-Program_(PAP).png">
+<img title="Sub-Program" src="../../img/pap/Sub-Program_(PAP).png">
 - Raute: Verzweigung / Entscheidung</br>
-<img title="Branching" src="../img/pap/Branching_(PAP).png">
+<img title="Branching" src="../../img/pap/Branching_(PAP).png">
 - Parallelogramm: Ein- und Ausgabe<br>
-<img title="In-Out" src="../img/pap/In-Out_(PAP).png">
+<img title="In-Out" src="../../img/pap/In-Out_(PAP).png">
 
 [^1]: https://de.wikipedia.org/wiki/Programmablaufplan

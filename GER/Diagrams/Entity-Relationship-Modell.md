@@ -9,13 +9,13 @@ Das Entity-Relationship-Modell - kurz ER-Modell oder ERM, dient dazu im Rahmen d
 # Grundlegende Komponenten
 - Entität (Entitiy): Typisierung gleichartiger Entitäten.
   - BSP: Angestellter
-  - <img title="Entität" src="../img/ERM/Entity.PNG" height="40px">
+  - <img title="Entität" src="../../img/ERM/Entity.PNG" height="40px">
 - Beziehung (Relationship): Verknüpfung / Zusammenhang zwischen zwei oder mehreren Entitäten.
   - BSP: Angestellter __leitet__
-  - <img title="Relation" src="../img/ERM/Relation.PNG" height="40px">
+  - <img title="Relation" src="../../img/ERM/Relation.PNG" height="40px">
 - Eigenschaft (attribute): Was über eine Entität (im Kontext) von Interesse ist. Diese Attribute Identifizieren.
   - BSP: Name des Angestellten
-  - <img title="Attribut" src="../img/ERM/Attribute.PNG" height="40px">
+  - <img title="Attribut" src="../../img/ERM/Attribute.PNG" height="40px">
 
 # Notationsformen
 Die Elemente der Beziehungen können in verschiedene Notationsformen eingeteilt werden:
