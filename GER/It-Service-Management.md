@@ -67,12 +67,6 @@ Eine Reihung an Prozessen wird Prozesskette bezeichnet.
 
 &nbsp;
 
-<a href="https://qualitaetsmanagement.me/prozessmanagement/prozess/">
-  <img src="https://prozessoptimierung-sprung.de/wp-content/uploads/2019/10/Prozesslandkarte-mit-Prozesskette-Supportprozess.jpg" width="500" title="Einfache Prozesskette">
-</a>
-
-&nbsp;
-
 Der Verlauf von mehreren Prozessen und deren Bedingungen, welche Wege eingeschlagen werden können, lassen sich in einem Ereignisgesteuerten Prozesskettenmodell(EPK Modell) darstellen.
 
 <a href="http://de.processorientation.com/?p=668">

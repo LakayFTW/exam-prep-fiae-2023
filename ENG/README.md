@@ -6,23 +6,23 @@ The english version is translated with AI. The possibility for errors is high.
 Most the Pictures are currently in German, as well as some of the sources
 
 ## Topics:
-- [Networking Technology](NetworkingTechnology.md)
+- [Network Technology](NetworkTechnology.md) - Cant be translated atm due to the file being to big
 - [Virtualization](Virtualization.md)
-- [Databases](Databases.md)
-- [Politics-Economy](Politics-Economy.md)
-- [IT Security](IT-Security.md)
-- [IT Service Management](IT-Service-Management.md)
-- [Project Management](ProjectManagement.md)
-- [Software Development](SoftwareDevelopment.md)
-- [Cloud Computing](Cloud-Computing.md)
+- [Databases](Databases.md) - Translated
+- [Politics-Economy](Politics-Economy.md) - Translated
+- [IT Security](IT-Security.md) - Translated
+- [IT Service Management](IT-Service-Management.md) - Translated
+- [Project Management](ProjectManagement.md) - Translated
+- [Software Development](SoftwareDevelopment.md) - Translated
+- [Cloud Computing](Cloud-Computing.md) - Translated
 - [Diagrams](/Diagrams/)
-  - [Nassi-Shneiderman Diagram](Diagrams/Nassi-Shneiderman-Diagram.md)
-  - [Flowchart](Diagrams/Flowchart.md)
-  - [Class Diagram](Diagrams/Class-Diagram.md)
-  - [Entity-Relationship Model](Diagrams/Entity-Relationship-Model.md)
+  - [Nassi-Shneiderman Diagram](Diagrams/Nassi-Shneiderman-Diagram.md) - Translated
+  - [Flowchart](Diagrams/Flowchart.md) - Translated
+  - [Class Diagram](Diagrams/Class-Diagram.md) - Translated
+  - [Entity-Relationship Model](Diagrams/Entity-Relationship-Model.md) - Translated
   - [State Diagram]
   - [Object Diagram]
-  - [Use Case Diagram](Diagrams/Use-Case-Diagram.md)
+  - [Use Case Diagram](Diagrams/Use-Case-Diagram.md) - Translated
   - [Sequence Diagram]
   - [Activity Diagram]
 
