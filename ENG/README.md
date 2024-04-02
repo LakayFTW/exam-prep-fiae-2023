@@ -7,7 +7,7 @@ Most the Pictures are currently in German, as well as some of the sources
 
 ## Topics:
 - [Network Technology](NetworkTechnology.md) - Cant be translated atm due to the file being to big
-- [Virtualization](Virtualization.md)
+- [Virtualization](Virtualization.md) - Translated
 - [Databases](Databases.md) - Translated
 - [Politics-Economy](Politics-Economy.md) - Translated
 - [IT Security](IT-Security.md) - Translated
