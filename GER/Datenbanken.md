@@ -180,7 +180,7 @@ Die Bezeichnung SQL bezieht sich auf das englische Wort "query" (deutsch: "Abfra
 ## SELECT-Abfragen
 Beispiel Datenbank:
 <a href="https://de.wikipedia.org/wiki/SQL">
-  <img title="Datenbank-Beispiel" src="./img/Datenbanken/SQL-Datenbank-Beispiel.png">
+  <img title="Datenbank-Beispiel" src="../img/Datenbanken/SQL-Datenbank-Beispiel.png">
 </a>
 
 ### Einfache Abfrage

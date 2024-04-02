@@ -41,7 +41,7 @@ Docker ist eine freie Software zur Isolierung von Anwendungen mit Hilfe von Cont
 Docker vereinfacht die Bereitstellung von Anwendungen, weil sich Container, die alle nötigen Pakete enthalten, leicht als Dateien transportieren und installieren lassen. Container gewährleisten die Trennung und Verwaltung der auf einem Rechner genutzten Ressourcen. Das umfasst laut Aussage der Entwickler: Code, Laufzeitmodul, Systemwerkzeuge, Systembibliotheken – alles was auf einem Rechner installiert werden kann.
 <br>
 
-<img title="Docker Architecture" src="./img/Docker/architecture.svg"><br>
+<img title="Docker Architecture" src="../img/Docker/architecture.svg"><br>
 [^8]
 
 ## Grundlagen

@@ -170,6 +170,7 @@ Unterschiedliche Programmiersprachen bieten unterschiedliche Möglichkeiten von 
 - In Objektorientierten Sprachen wie C++, Object Pascal oder Java, wurde das Konzept der Abstraktion in Form einer eigenen deklarativen Anweisung umgesetzt. Nach einer derartigen Deklaration ist es die Aufgabe des Programmierers, eine Klasse zu implementieren, um eine Instanz eines Objektes davon erzeugen zu können.
 
 ### Abstraktion in der objektorientierten Programmierung
+Benötigt ausarbeitung
 
 
 [^1]: https://de.wikipedia.org/wiki/HTTP-Statuscode

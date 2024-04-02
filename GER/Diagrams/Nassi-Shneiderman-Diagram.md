@@ -54,7 +54,7 @@ Alternative Begriffe: Verzweigung, Alternative, Selektion
 
 #### Case-Statement
 
-[![Case-Statement](../img/Nassi-Shneiderman/NassiShneiderman-case.svg.png "Case-Statement")](https://de.wikipedia.org/wiki/Nassi-Shneiderman-Diagramm#Decision_Symbol)
+[![Case-Statement](../../img/Nassi-Shneiderman/NassiShneiderman-case.svg.png "Case-Statement")](https://de.wikipedia.org/wiki/Nassi-Shneiderman-Diagramm#Decision_Symbol)
 
 - Der Wert von __Variable__ kann bedingt auf Gleichheit aber auch auf Bereiche (größer/kleiner bei Zahlen) geprüft werden. Der entsprchend Zutreffende "Fall" mit dem zugehörigen Anweisungsblock wird durchlaufen (`switch`, `select`).
 - Alternative Begriffe: Mehrfache Alternative, Fallauswahl, Mehrfachauswahl, Case, Select.
