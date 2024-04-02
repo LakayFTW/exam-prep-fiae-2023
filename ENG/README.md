@@ -3,7 +3,7 @@ Here, everything that should be known for the exam will be gradually compiled.
 
 ## Translation
 The english version is translated with AI. The possibility for errors is high.  
-All the Pictures are currently in German, as well as some of the sources
+Most the Pictures are currently in German, as well as some of the sources
 
 ## Topics:
 - [Networking Technology](NetworkingTechnology.md)
@@ -14,11 +14,11 @@ All the Pictures are currently in German, as well as some of the sources
 - [IT Service Management](IT-Service-Management.md)
 - [Project Management](ProjectManagement.md)
 - [Software Development](SoftwareDevelopment.md)
-- [Cloud Computing](CloudComputing.md)
+- [Cloud Computing](Cloud-Computing.md)
 - [Diagrams](/Diagrams/)
   - [Nassi-Shneiderman Diagram](Diagrams/Nassi-Shneiderman-Diagram.md)
   - [Flowchart](Diagrams/Flowchart.md)
-  - [Class Diagram](Diagrams/ClassDiagram.md)
+  - [Class Diagram](Diagrams/Class-Diagram.md)
   - [Entity-Relationship Model](Diagrams/Entity-Relationship-Model.md)
   - [State Diagram]
   - [Object Diagram]
