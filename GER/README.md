@@ -8,7 +8,7 @@ Hier soll nach und nach alles rein, was man für die Prüfung wissen sollte.
 - [Virtualisierung](Virtualisierung.md)
 - [Datenbanken](Datenbanken.md)
 - [Politik-Wirtschaft](Politik-Wirtschaft.md)
-- [It Schutz und Sicherheit](IT-Schutz-Sicherheit.md)
+- [It Schutz und Sicherheit](It-Schutz-Sicherheit.md)
 - [It Service Management](IT-Service-Management.md)
 - [Projektmanagement](Projektmanagement.md)
 - [Softwareentwicklung](Softwareentwicklung.md)
